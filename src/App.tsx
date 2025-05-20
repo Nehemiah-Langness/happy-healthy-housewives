@@ -1,61 +1,50 @@
-import { BrowserRouter, Outlet, Route, Routes, useLocation } from 'react-router';
+import { BrowserRouter, Link, Outlet, Route, Routes, useLocation, useNavigate } from 'react-router';
 import { baseUrl } from './base-url';
 import logo from './assets/logo.png';
 import icon from './assets/icon.png';
 import 'bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import { HomePage } from './pages/HomePage';
+import { useEffect } from 'react';
+import { RecipeHomePage } from './pages/RecipeHomePage';
+import { RecipeTagPage } from './pages/RecipeTagPage';
+import { RecipePage } from './pages/RecipePage';
+
+function Redirect({ to, replace }: { to: string; replace?: undefined } | { to?: undefined; replace: (current: string) => string }) {
+    const navigate = useNavigate();
+    const location = useLocation();
+    useEffect(() => {
+        if (to) {
+            navigate(to);
+        } else if (replace) {
+            navigate(replace(location.pathname));
+        }
+    }, [location.pathname, navigate, replace, to]);
+    return null;
+}
 
 function App() {
     return (
         <BrowserRouter basename={baseUrl}>
             <Routes>
                 <Route element={<Layout />}>
-                    <Route path='/' element={<HomePage />} />
+                    <Route index element={<HomePage />} />
+                    <Route
+                        path='/carb-e-meals/*'
+                        element={<Redirect replace={(path) => path.toLowerCase().replace('/carb-e-meals', '/recipes/thm-e')} />}
+                    />
+                    <Route path='recipes'>
+                        <Route index element={<RecipeHomePage />} />
+
+                        <Route path=':tag'>
+                            <Route index element={<RecipeTagPage />} />
+                            <Route path=':recipe' element={<RecipePage />} />
+                        </Route>
+                    </Route>
                 </Route>
             </Routes>
         </BrowserRouter>
-    );
-}
-
-function HomePage() {
-    return (
-        <div className='container pt-5 d-flex flex-column gap-5'>
-            <img className='w-100' src={effectiveBaseUrl + '/banner.png'} />
-
-            <div className='d-flex flex-column gap-4'>
-                <div className='ff-title text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
-                    What's New
-                </div>
-                <RecipeLink
-                    image='/recipe-images/twice-baked-cheesy-potatoes.jpeg'
-                    title='Twice Baked Cheesy Potatoes (THM E) (GF)'
-                    description="Trying to up your daily protein goals but also miss cheesy starchies? All your dreams (and goals) are possible with Bri's Twice Baked Cheesy Potatoes!"
-                />
-                <RecipeLink
-                    image='/recipe-images/brownie-batter-fruit-dip.jpg'
-                    title='Brownie Batter Fruit Dip (THM FP) (GF) (DF)'
-                    description="Want a tasty dessert that's easy and weight loss friendly? Look no further! Bri's yogurt based dip is just the thing you need for your sweet cravings."
-                />
-            </div>
-        </div>
-    );
-}
-
-const effectiveBaseUrl = import.meta.env.PROD ? baseUrl : '';
-
-function RecipeLink({ image, description, title }: { image: string; title: string; description: string }) {
-    return (
-        <div style={{ cursor: 'pointer' }} className='d-flex flex-column flex-lg-row recipe-link'>
-            <div
-                className='flex-shrink-0'
-                style={{ background: `center/cover url('${effectiveBaseUrl + image}')`, minHeight: '22rem', width: '16rem' }}
-            ></div>
-            <div className='d-flex flex-column gap-2 px-3 py-1'>
-                <h1 className='ff-title'>{title}</h1>
-                <span className=''>{description}</span>
-            </div>
-        </div>
     );
 }
 
@@ -87,14 +76,18 @@ function Layout() {
                     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                         <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
                             <li className='nav-item'>
-                                <a className={'nav-link ' + (pathname === `/` ? 'active' : '')} aria-current='page' href='#'>
+                                <Link to='/' className={'nav-link ' + (pathname === `/` ? 'active' : '')} aria-current='page'>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className='nav-item'>
-                                <a className={'nav-link ' + (pathname === `/recipes` ? 'active' : '')} aria-current='page' href='#'>
+                                <Link
+                                    to='/recipes'
+                                    className={'nav-link ' + (pathname.startsWith('/recipes') ? 'active' : '')}
+                                    aria-current='page'
+                                >
                                     Recipes
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

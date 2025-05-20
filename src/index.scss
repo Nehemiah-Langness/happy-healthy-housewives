@@ -2,14 +2,9 @@ $light: #fff6eb;
 $primary: #77519d;
 $secondary: #fbd93d;
 $info: #1f9e4f;
-// $navbar-toggler-padding-y
-// $navbar-toggler-padding-x
-// $navbar-toggler-font-size
 $navbar-light-toggler-border-color: transparent;
 $navbar-toggler-border-radius: 0;
 $navbar-toggler-focus-width: 1px;
-// $navbar-toggler-focus-width
-// $navbar-toggler-transition
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -38,13 +33,20 @@ body {
     font-style: normal;
 }
 
-.navbar-toggler:focus {
-    box-shadow: none;
-    outline: 2px solid rgba(var(--bs-primary-rgb), 0.7) !important;
+.navbar-toggler {
+    &[aria-expanded='true'] .navbar-toggler-icon {
+        background-image: #{escape-svg($btn-close-bg)};
+        background-size: 1rem;
+    }
+
+    &:focus {
+        box-shadow: none;
+        outline: 2px solid rgba(var(--bs-primary-rgb), 0.7) !important;
+    }
 }
 
 .recipe-link {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         background: rgba(var(--bs-secondary-rgb), 0.1);
