@@ -59,7 +59,7 @@ function Layout() {
                         <img src={logo} className='d-none d-lg-inline-block' style={{ maxHeight: '5rem' }} />
                         <div className='d-lg-none d-flex align-content-center gap-1'>
                             <img src={icon} style={{ maxHeight: '2rem' }} />
-                            <span className='ff-title'>Happy Health Housewives</span>
+                            <span className='ff-title'>Happy Healthy Housewives</span>
                         </div>
                     </a>
                     <button
