@@ -21,7 +21,7 @@ function App() {
 function HomePage() {
     return (
         <div className='container pt-5 d-flex flex-column gap-5'>
-            <img className='w-100' src={'/banner.png'} />
+            <img className='w-100' src={effectiveBaseUrl + '/banner.png'} />
 
             <div className='d-flex flex-column gap-4'>
                 <div className='ff-title text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
@@ -42,10 +42,15 @@ function HomePage() {
     );
 }
 
+const effectiveBaseUrl = import.meta.env.PROD ? baseUrl : '';
+
 function RecipeLink({ image, description, title }: { image: string; title: string; description: string }) {
     return (
         <div style={{ cursor: 'pointer' }} className='d-flex flex-column flex-lg-row recipe-link'>
-            <div className='flex-shrink-0' style={{ background: `center/cover url('${image}')`, minHeight: '22rem', width: '16rem' }}></div>
+            <div
+                className='flex-shrink-0'
+                style={{ background: `center/cover url('${effectiveBaseUrl + image}')`, minHeight: '22rem', width: '16rem' }}
+            ></div>
             <div className='d-flex flex-column gap-2 px-3 py-1'>
                 <h1 className='ff-title'>{title}</h1>
                 <span className=''>{description}</span>

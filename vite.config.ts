@@ -8,5 +8,5 @@ export default defineConfig({
     server: {
         port: 3500,
     },
-    base: '/' + baseUrl,
+    base: baseUrl,
 });
