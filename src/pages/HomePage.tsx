@@ -17,7 +17,7 @@ export function HomePage() {
                     description="Trying to up your daily protein goals but also miss cheesy starchies? All your dreams (and goals) are possible with Bri's Twice Baked Cheesy Potatoes!"
                 />
                 <RecipeLink
-                    to='/recipes'
+                    to='/recipes/thm-fp/brownie-batter-fruit-dip'
                     image='brownie-batter-fruit-dip.jpg'
                     title='Brownie Batter Fruit Dip (THM FP) (GF) (DF)'
                     description="Want a tasty dessert that's easy and weight loss friendly? Look no further! Bri's yogurt based dip is just the thing you need for your sweet cravings."

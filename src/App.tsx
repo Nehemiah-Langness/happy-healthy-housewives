@@ -34,6 +34,22 @@ function App() {
                         path='/carb-e-meals/*'
                         element={<Redirect replace={(path) => path.toLowerCase().replace('/carb-e-meals', '/recipes/thm-e')} />}
                     />
+                    <Route
+                        path='/fp-recipes/*'
+                        element={<Redirect replace={(path) => path.toLowerCase().replace('/fp-recipes', '/recipes/thm-fp')} />}
+                    />
+                    <Route
+                        path='/fats-s-recipes/*'
+                        element={<Redirect replace={(path) => path.toLowerCase().replace('/fats-s-recipes', '/recipes/thm-s')} />}
+                    />
+                    <Route
+                        path='/xo-recipes/*'
+                        element={<Redirect replace={(path) => path.toLowerCase().replace('/xo-recipes', '/recipes/thm-xo')} />}
+                    />
+                    <Route
+                        path='/drinks-and-sippers/*'
+                        element={<Redirect replace={(path) => path.toLowerCase().replace('/drinks-and-sippers', '/recipes/drinks-and-sippers')} />}
+                    />
                     <Route path='recipes'>
                         <Route index element={<RecipeHomePage />} />
 

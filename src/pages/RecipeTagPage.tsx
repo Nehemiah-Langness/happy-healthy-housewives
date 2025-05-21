@@ -5,14 +5,15 @@ import { useMemo } from 'react';
 import { recipeList } from '../services/recipe-list';
 import { RecipesIntro } from '../components/RecipesIntro';
 import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
+import type { Tag } from '../types/tag';
 
 export function RecipeTagPage() {
     const { tag } = useParams<{ tag: string }>();
 
     const matchingTag = useMemo(() => tags.find((t) => t.tag.toLowerCase().replace(/ /g, '-') === tag), [tag]);
     const taggedRecipes = useMemo(() => {
-        return recipeList.filter((r) => r.tags.includes(matchingTag?.tag ?? ''));
-    }, [matchingTag?.tag]);
+        return matchingTag ? recipeList.filter((r) => r.tags.includes(matchingTag?.tag as Tag)) : [];
+    }, [matchingTag]);
 
     return (
         <div className='container pt-5 d-flex flex-column gap-5'>

@@ -2,7 +2,7 @@ import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
     title: 'Twice Baked Cheesy Potatoes',
-    tags: ['THM E'],
+    tags: ['THM E', 'GF'],
     dateAdded: new Date('2025-05-20'),
     brief: `Trying to up your daily protein goals but also miss cheesy starchies? 
             All your dreams (and goals) are possible with Bri's Twice Baked Cheesy Potatoes!`,

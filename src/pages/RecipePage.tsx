@@ -1,8 +1,9 @@
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { RecipeLinkImage } from '../components/RecipeLink';
 import { recipes } from '../recipes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { tagMap } from '../services/tag-map';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
@@ -27,7 +28,28 @@ export function RecipePage() {
                     </figure>
                 </div>
             </div>
+            <div className='d-flex gap-3 flex-wrap'>
+                {matchingRecipe.tags
+                    .map((x) => ({
+                        tag: x,
+                        label: tagMap[x],
+                    }))
+                    .filter((x) => x.label)
+                    .map((t) => (
+                        <Link className='badge bg-primary text-decoration-none' to={`/recipes/${t.tag.toLowerCase().replace(/ /g, '-')}`}>
+                            {t.tag}
+                        </Link>
+                    ))}
+            </div>
 
+            {!!matchingRecipe.servings && (
+                <div className='d-flex flex-column gap-1'>
+                    <span id='servingss' className='ff-title fw-bold'>
+                        Servings:
+                    </span>
+                    <div className='px-2'>{matchingRecipe.servings}</div>
+                </div>
+            )}
             <div className='d-flex flex-column gap-1'>
                 <span id='ingredients' className='ff-title fw-bold'>
                     Ingredients:

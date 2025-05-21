@@ -1,3 +1,5 @@
+import type { tagMap } from "../services/tag-map";
+
 export interface Recipe {
     /** The name of the recipe */
     title: string;
@@ -7,6 +9,9 @@ export interface Recipe {
 
     /** The name of the image file in the folder: /public/recipe-images */
     image: string;
+
+    /** The quantity of servings the recipe makes */
+    servings?: string;
 
     /** The quote at the start of the recipe */
     quote: {
@@ -27,7 +32,7 @@ export interface Recipe {
     Directions: React.ReactNode;
 
     /** Tags to display, such as THM meal type, dietary notes, etc */
-    tags: string[];
+    tags: (keyof typeof tagMap)[];
 
     /** The date the recipe was added to the site */
     dateAdded: Date;

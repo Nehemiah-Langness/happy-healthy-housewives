@@ -1,4 +1,4 @@
-export const tagMap: Record<string, string> = {
+export const tagMap = {
     'THM E': 'Carbs - "E" Meals',
     'THM S': 'Fats - "S" Meals',
     'THM FP': 'Fuel Pull - "FP" Meals',
