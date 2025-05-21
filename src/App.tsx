@@ -6,7 +6,7 @@ import 'bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 import { HomePage } from './pages/HomePage';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { RecipeHomePage } from './pages/RecipeHomePage';
 import { RecipeTagPage } from './pages/RecipeTagPage';
 import { RecipePage } from './pages/RecipePage';
@@ -51,6 +51,15 @@ function App() {
 function Layout() {
     const { pathname } = useLocation();
 
+    const bodyRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        bodyRef.current?.scrollTo({
+            top: 0,
+            behavior: 'instant',
+        });
+    }, [pathname]);
+
     return (
         <div className='flex-grow-1 d-flex flex-column overflow-hidden'>
             <nav className='navbar navbar-expand-lg bg-light'>
@@ -93,7 +102,7 @@ function Layout() {
                     </div>
                 </div>
             </nav>
-            <div className='flex-grow-1 overflow-auto'>
+            <div className='flex-grow-1 overflow-auto' ref={bodyRef}>
                 <Outlet />
                 <footer className='container pt-5 pb-1'>
                     <div className='d-flex justify-content-center flex-column'>

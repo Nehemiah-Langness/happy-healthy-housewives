@@ -1,10 +1,10 @@
 import { useParams } from 'react-router';
-import { baseUrl } from '../base-url';
 import { RecipeLink } from '../components/RecipeLink';
 import { tags } from '../services/tags';
 import { useMemo } from 'react';
 import { recipeList } from '../services/recipe-list';
 import { RecipesIntro } from '../components/RecipesIntro';
+import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
 
 export function RecipeTagPage() {
     const { tag } = useParams<{ tag: string }>();
@@ -16,19 +16,15 @@ export function RecipeTagPage() {
 
     return (
         <div className='container pt-5 d-flex flex-column gap-5'>
-            <img className='w-100' src={baseUrl + '/recipes.png'} />
+            <RecipeHeaderImage title={matchingTag?.label || matchingTag?.tag} />
 
             <div className='d-flex flex-column gap-4'>
-                <div className='ff-title text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
-                    {matchingTag?.label || matchingTag?.tag}
-                </div>
-
                 <RecipesIntro />
 
                 {taggedRecipes.map((r) => (
                     <RecipeLink
                         key={r.title}
-                        to={`/recipes/${tag??''}/${r.slug}`}
+                        to={`/recipes/${tag ?? ''}/${r.slug}`}
                         description={r.brief}
                         image={r.image}
                         title={r.title}

@@ -1,19 +1,14 @@
 import { Link } from 'react-router';
-import { baseUrl } from '../base-url';
 import { RecipeLinkImage } from '../components/RecipeLink';
 import { tags } from '../services/tags';
 import { RecipesIntro } from '../components/RecipesIntro';
+import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
 
 export function RecipeHomePage() {
     return (
         <div className='container pt-5 d-flex flex-column gap-5'>
-            <img className='w-100' src={baseUrl + '/recipes.png'} />
-
+            <RecipeHeaderImage />
             <div className='d-flex flex-column gap-4'>
-                <div className='ff-title text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
-                    Recipes
-                </div>
-
                 <RecipesIntro />
 
                 <div className='row'>
