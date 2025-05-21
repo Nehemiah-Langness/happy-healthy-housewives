@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
-import { RecipeHeader } from '../components/RecipeHeader';
 
 const recipe: Recipe = {
     title: 'Allergen Friendly Texas Chocolate Brownies',
@@ -67,19 +66,22 @@ const recipe: Recipe = {
         <>
             <p>Preheat oven to 350&deg; F. Grease an 8×8 baking pan with coconut oil.</p>
             <p>
-                <RecipeHeader>Make the Brownies:</RecipeHeader> Whisk together baking blend, erythritol, cocoa, baking powder, and mineral
+                <b>Make the Brownies:</b> Whisk together baking blend, erythritol, cocoa, baking powder, and mineral
                 salt in a large bowl. Add milk, vinegar, vanilla, yogurt, and coconut oil and mix until well combined. Pour into baking pan.
             </p>
             <p>Bake for 40-45 minutes or until a toothpick punctured in the center comes out clean.</p>
             <p>
-                <RecipeHeader>While baking, make the topping:</RecipeHeader> Combine all ingredients in a double boiler and melt together.
+                <b>While baking, make the topping:</b> Combine all ingredients in a double boiler and melt together.
                 When brownies are removed the oven, pour on the topping.
             </p>
             <p>Place in fridge overnight for a great fudgey texture!</p>
+        </>
+    ),
+    Notes: (
+        <>
             <p>
-                <RecipeHeader>Notes:</RecipeHeader> I have made this with almond milk, cashew milk, coconut milk, and flax milk (if you’re
-                nut free) and all have turned out fantastic. Oat milk and rice milk are considered Not On Plan because of the high sugars
-                from the carbohydrates.
+                I have made this with almond milk, cashew milk, coconut milk, and flax milk (if you’re nut free) and all have turned out
+                fantastic. Oat milk and rice milk are considered Not On Plan because of the high sugars from the carbohydrates.
             </p>
             <p>Whatever you decide to use for your family, make sure it has no added sugar.</p>
         </>

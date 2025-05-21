@@ -7,6 +7,7 @@ import { tagMap } from '../services/tag-map';
 import { IngredientList } from '../components/IngredientList';
 import { baseUrl } from '../base-url';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { RecipeHeader } from '../components/RecipeHeader';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
@@ -35,9 +36,7 @@ export function RecipePage() {
                         <figcaption className='blockquote-footer mb-0 ff-title'>{matchingRecipe.quote.person}</figcaption>
                     </figure>
                     <div className='d-flex gap-3 flex-wrap align-items-center'>
-                        <span id='servings' className='ff-title fw-bold'>
-                            Tags:
-                        </span>
+                        <RecipeHeader>Tags:</RecipeHeader>
                         {matchingRecipe.tags
                             .map((x) => ({
                                 tag: x,
@@ -56,7 +55,7 @@ export function RecipePage() {
             </div>
 
             {matchingRecipe.file && (
-                <div style={{marginTop: '-1.75rem'}}>
+                <div style={{ marginTop: '-1.75rem' }}>
                     <a
                         className='btn btn-outline-danger btn-sm border-0'
                         target='_blank'
@@ -71,20 +70,23 @@ export function RecipePage() {
 
             {!!matchingRecipe.servings && (
                 <div className='d-flex flex-column gap-1'>
-                    <span id='servings' className='ff-title fw-bold'>
-                        Servings:
-                    </span>
+                    <RecipeHeader>Servings:</RecipeHeader>
                     <div className='px-2'>{matchingRecipe.servings}</div>
                 </div>
             )}
             <IngredientList Ingredients={matchingRecipe.Ingredients} title='Ingredients' IngredientNotes={matchingRecipe.IngredientNotes} />
 
             <div className='d-flex flex-column gap-1'>
-                <span id='directions' className='ff-title fw-bold'>
-                    Directions:
-                </span>
+                <RecipeHeader>Directions:</RecipeHeader>
                 <div className='px-2'>{matchingRecipe.Directions}</div>
             </div>
+
+            {!!matchingRecipe.Notes && (
+                <div className='d-flex flex-column gap-1'>
+                    <RecipeHeader>Notes:</RecipeHeader>
+                    <div className='px-2'>{matchingRecipe.Notes}</div>
+                </div>
+            )}
 
             <div>
                 <div className='ff-title mb-2'>Questions or Comments on this Recipe?</div>

@@ -1,4 +1,4 @@
-import type { tagMap } from "../services/tag-map";
+import type { tagMap } from '../services/tag-map';
 
 export interface Recipe {
     /** The name of the recipe */
@@ -39,4 +39,7 @@ export interface Recipe {
 
     /** The filename of the recipe file in the folder public/recipe-files */
     file?: string;
+
+    /** Any additional content to add to the end of the recipe */
+    Notes?: React.ReactNode;
 }
