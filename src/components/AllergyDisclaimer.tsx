@@ -8,11 +8,11 @@ export function AllergyDisclaimer() {
                 </a>{' '}
                 before making these recipes
             </div>
-            <div className='modal fade' id='allergen-disclaimer' tabIndex={-1} aria-labelledby='allergen-disclaimer' aria-hidden='true'>
+            <div className='modal fade' id='allergen-disclaimer' tabIndex={-1} aria-labelledby='allergen-disclaimer-label' aria-hidden='true'>
                 <div className='modal-dialog modal-dialog-centered'>
                     <div className='modal-content'>
                         <div className='modal-header'>
-                            <h1 className='modal-title fs-5' id='allergen-disclaimer'>
+                            <h1 className='modal-title fs-5' id='allergen-disclaimer-label'>
                                 Allergen Disclaimer
                             </h1>
                             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
