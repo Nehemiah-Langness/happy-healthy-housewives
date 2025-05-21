@@ -36,4 +36,7 @@ export interface Recipe {
 
     /** The date the recipe was added to the site */
     dateAdded: Date;
+
+    /** The filename of the recipe file in the folder public/recipe-files */
+    file?: string;
 }

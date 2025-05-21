@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { tagMap } from '../services/tag-map';
 import { IngredientList } from '../components/IngredientList';
+import { baseUrl } from '../base-url';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
@@ -52,6 +54,20 @@ export function RecipePage() {
                     </div>
                 </div>
             </div>
+
+            {matchingRecipe.file && (
+                <div style={{marginTop: '-1.75rem'}}>
+                    <a
+                        className='btn btn-outline-danger btn-sm border-0'
+                        target='_blank'
+                        href={`${baseUrl}/recipe-files/${matchingRecipe.file}`}
+                    >
+                        <div className='d-flex align-items-center gap-2'>
+                            <FontAwesomeIcon style={{ fontSize: '1.2em' }} icon={faFilePdf} /> Download Recipe
+                        </div>
+                    </a>
+                </div>
+            )}
 
             {!!matchingRecipe.servings && (
                 <div className='d-flex flex-column gap-1'>
