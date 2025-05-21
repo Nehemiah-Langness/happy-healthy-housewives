@@ -19,9 +19,7 @@ export function HomePage() {
                 {recipesFavorites.map((recipe) => (
                     <RecipeLink
                         to={`/recipes/${recipe.tags[0].toLowerCase().replace(/ /g, '-')}/${recipe.slug}`}
-                        description={recipe.brief}
-                        image={recipe.image}
-                        title={recipe.title}
+                        recipe={recipe}
                     />
                 ))}
             </div>

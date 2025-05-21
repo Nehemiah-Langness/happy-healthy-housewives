@@ -23,13 +23,7 @@ export function RecipeTagPage() {
                 <RecipesIntro />
 
                 {taggedRecipes.map((r) => (
-                    <RecipeLink
-                        key={r.title}
-                        to={`/recipes/${tag ?? ''}/${r.slug}`}
-                        description={r.brief}
-                        image={r.image}
-                        title={r.title}
-                    />
+                    <RecipeLink key={r.title} to={`/recipes/${tag ?? ''}/${r.slug}`} recipe={r} />
                 ))}
             </div>
         </div>

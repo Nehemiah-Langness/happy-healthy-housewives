@@ -5,6 +5,9 @@ $info: #1f9e4f;
 $navbar-light-toggler-border-color: transparent;
 $navbar-toggler-border-radius: 0;
 $navbar-toggler-focus-width: 1px;
+$input-group-addon-bg: $light;
+$input-group-addon-color: $primary;
+$input-border-radius: 0px;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
