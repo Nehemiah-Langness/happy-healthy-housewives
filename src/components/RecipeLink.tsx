@@ -19,8 +19,11 @@ export function RecipeLink({ recipe, to }: { to: string; recipe: Recipe }) {
         <Link
             to={to}
             style={{ cursor: 'pointer' }}
-            className='rounded-3 overflow-hidden text-decoration-none d-flex flex-column flex-lg-row recipe-link gap-2'
+            className='rounded-3 overflow-hidden text-decoration-none d-flex flex-column flex-lg-row recipe-link gap-2 position-relative'
         >
+            <div className='link-slide'>
+                Read Recipe
+            </div>
             <RecipeLinkImage image={recipe.image} />
             <div className='d-flex flex-column gap-2 px-3 py-1'>
                 <h1 className='dancing-script text-dark'>{recipe.title}</h1>

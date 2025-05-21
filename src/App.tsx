@@ -10,6 +10,8 @@ import { useEffect, useRef } from 'react';
 import { RecipeHomePage } from './pages/RecipeHomePage';
 import { RecipeTagPage } from './pages/RecipeTagPage';
 import { RecipePage } from './pages/RecipePage';
+import { AllergyDisclaimer } from './components/AllergyDisclaimer';
+import { AcronymKey } from './components/AcronymKey';
 
 function Redirect({ to, replace }: { to: string; replace?: undefined } | { to?: undefined; replace: (current: string) => string }) {
     const navigate = useNavigate();
@@ -48,7 +50,11 @@ function App() {
                     />
                     <Route
                         path='/drinks-and-sippers/*'
-                        element={<Redirect replace={(path) => path.toLowerCase().replace('/drinks-and-sippers', '/recipes/drinks-and-sippers')} />}
+                        element={
+                            <Redirect
+                                replace={(path) => path.toLowerCase().replace('/drinks-and-sippers', '/recipes/drinks-and-sippers')}
+                            />
+                        }
                     />
                     <Route path='recipes'>
                         <Route index element={<RecipeHomePage />} />
@@ -132,7 +138,11 @@ function Layout() {
                             </a>
                         </div>
                     </div>
-                    <div className='text-center'>
+                    <div className='text-center mt-3'>
+                        <AllergyDisclaimer />
+                        <div>
+                            <AcronymKey />
+                        </div>
                         <span className='text-center' style={{ fontFamily: 'var(--bs-body-font-family)', fontSize: '12px' }}>
                             &copy; {new Date().getFullYear()} Happy Healthy Housewives. All Rights Reserved.
                         </span>

@@ -20,15 +20,16 @@ export function RecipeTagPage() {
     }, [matchingTag]);
 
     return (
-        <div className='container pt-5 d-flex flex-column gap-5'>
+        <div className='d-flex flex-column gap-5'>
             <RecipeHeaderImage title={matchingTag?.label || matchingTag?.tag} />
+            <div className='container d-flex flex-column gap-5'>
+                <div className='d-flex flex-column gap-4'>
+                    <RecipesIntro />
 
-            <div className='d-flex flex-column gap-4'>
-                <RecipesIntro />
-
-                {taggedRecipes.map((r) => (
-                    <RecipeLink key={r.title} to={`/recipes/${tag ?? ''}/${r.slug}`} recipe={r} />
-                ))}
+                    {taggedRecipes.map((r) => (
+                        <RecipeLink key={r.title} to={`/recipes/${tag ?? ''}/${r.slug}`} recipe={r} />
+                    ))}
+                </div>
             </div>
         </div>
     );

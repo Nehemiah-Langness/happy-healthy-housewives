@@ -9,19 +9,20 @@ const recipesFavorites = recipeList
 
 export function HomePage() {
     return (
-        <div className='container pt-5 d-flex flex-column gap-5'>
-            <img className='w-100' src={baseUrl + '/banner.png'} />
-
-            <div className='d-flex flex-column gap-4'>
-                <div className='dancing-script text-center border-bottom border-info border-2 display-4'>
-                    What's New
+        <div className='d-flex flex-column gap-5'>
+            {' '}
+            <div className='bg-light'>
+                <div className='container'>
+                    <img className='w-100' src={baseUrl + '/banner.png'} />
                 </div>
-                {recipesFavorites.map((recipe) => (
-                    <RecipeLink
-                        to={`/recipes/${recipe.tags[0].toLowerCase().replace(/ /g, '-')}/${recipe.slug}`}
-                        recipe={recipe}
-                    />
-                ))}
+            </div>
+            <div className='container d-flex flex-column gap-5'>
+                <div className='d-flex flex-column gap-4'>
+                    <div className='dancing-script text-center border-bottom border-info border-2 display-4'>What's New</div>
+                    {recipesFavorites.map((recipe) => (
+                        <RecipeLink to={`/recipes/${recipe.tags[0].toLowerCase().replace(/ /g, '-')}/${recipe.slug}`} recipe={recipe} />
+                    ))}
+                </div>
             </div>
         </div>
     );

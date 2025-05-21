@@ -1,14 +1,20 @@
 export function AllergyDisclaimer() {
     return (
         <>
-            <div className='fst-italic text-center mx-auto'>
+            <div className='fst-italic text-center mx-auto' style={{ fontSize: '0.8rem' }}>
                 Please read our{' '}
                 <a href='#' className='text-decoration-none fw-bold' data-bs-toggle='modal' data-bs-target='#allergen-disclaimer'>
                     allergen disclaimer
                 </a>{' '}
                 before making these recipes
             </div>
-            <div className='modal fade' id='allergen-disclaimer' tabIndex={-1} aria-labelledby='allergen-disclaimer-label' aria-hidden='true'>
+            <div
+                className='modal fade'
+                id='allergen-disclaimer'
+                tabIndex={-1}
+                aria-labelledby='allergen-disclaimer-label'
+                aria-hidden='true'
+            >
                 <div className='modal-dialog modal-dialog-centered'>
                     <div className='modal-content'>
                         <div className='modal-header'>

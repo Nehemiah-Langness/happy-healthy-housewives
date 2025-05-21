@@ -1,8 +1,8 @@
 export function AcronymKey() {
     return (
         <>
-            <a href='#' className='text-decoration-none fw-bold' data-bs-toggle='modal' data-bs-target='#acronym-key'>
-                Acronym Key
+            <a href='#' className='text-decoration-none fw-bold' data-bs-toggle='modal' data-bs-target='#acronym-key' style={{ fontSize: '0.8rem' }}>
+                View our Acronym Key
             </a>
             <div className='modal fade text-start' id='acronym-key' tabIndex={-1} aria-labelledby='acronym-key-label' aria-hidden='true'>
                 <div className='modal-dialog modal-dialog-centered'>

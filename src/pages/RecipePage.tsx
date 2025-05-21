@@ -8,8 +8,6 @@ import { baseUrl } from '../base-url';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { RecipeHeader } from '../components/RecipeHeader';
 import { MessageUsButton } from '../components/MessageUsButton';
-import { AllergyDisclaimer } from '../components/AllergyDisclaimer';
-import { AcronymKey } from '../components/AcronymKey';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
@@ -121,11 +119,6 @@ export function RecipePage() {
             <div>
                 <div className='ff-title mb-2'>Questions or Comments on this Recipe?</div>
                 <MessageUsButton />
-            </div>
-
-            <div>
-                <div className='text-center'>View our <AcronymKey /></div>
-                <AllergyDisclaimer />
             </div>
         </div>
     );

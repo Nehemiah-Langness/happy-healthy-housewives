@@ -57,8 +57,38 @@ body {
 
 .recipe-link {
     transition: all 0.2s ease-in-out;
+    .dancing-script {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .link-slide {
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        left: 0;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(3px);
+        color: var(--bs-dark);
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+    }
 
     &:hover {
-        background: rgba(var(--bs-secondary-rgb), 0.1);
+        background: var(--bs-secondary-bg-subtle);
+        .dancing-script {
+            top: 0 !important;
+            bottom: 0 !important;
+            transform: none !important;
+        }
+        .link-slide {
+            width: 16rem;
+        }
     }
 }

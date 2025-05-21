@@ -44,57 +44,65 @@ export function RecipeHomePage() {
     }, [filter]);
 
     return (
-        <div className='container pt-5 d-flex flex-column gap-5'>
+        <div className='d-flex flex-column gap-5'>
             <RecipeHeaderImage />
-            <div className='d-flex flex-column gap-4'>
-                <RecipesIntro />
-                <div className='input-group'>
-                    <span className='input-group-text'>
-                        <FontAwesomeIcon icon={faSearch} />
-                    </span>
-                    <input
-                        placeholder='Search Our Recipes'
-                        type='text'
-                        className='form-control'
-                        value={filter}
-                        onChange={(e) => setFilter(e.target.value)}
-                    />
-                    {filter && (
-                        <button type='button' className='btn btn-link' onClick={() => setFilter('')}>
-                            <FontAwesomeIcon icon={faTimes} />
-                        </button>
-                    )}
-                </div>
+            <div className='container d-flex flex-column gap-5'>
+                <div className='d-flex flex-column gap-4'>
+                    <div className='input-group '>
+                        <span className='input-group-text'>
+                            <FontAwesomeIcon icon={faSearch} />
+                        </span>
+                        <input
+                            placeholder='Search Our Recipes'
+                            type='text'
+                            className='form-control'
+                            value={filter}
+                            onChange={(e) => setFilter(e.target.value)}
+                        />
+                        {filter && (
+                            <button type='button' className='btn btn-link' onClick={() => setFilter('')}>
+                                <FontAwesomeIcon icon={faTimes} />
+                            </button>
+                        )}
+                    </div>
+                    <datalist id='recipe-names'>
+                        {recipeList
+                            .map((r) => (
+                                <option key={r.slug} value={r.title} />
+                            ))}
+                    </datalist>
+                    <RecipesIntro />
 
-                {filter ? (
-                    <>
-                        {!!matchingTags.length && (
+                    {filter ? (
+                        <>
+                            {!!matchingTags.length && (
+                                <div className='row gy-5 mt-0'>
+                                    {matchingTags.map((t) => (
+                                        <TagLink key={t.tag} tag={t} />
+                                    ))}
+                                </div>
+                            )}
+
                             <div className='row gy-5 mt-0'>
-                                {matchingTags.map((t) => (
-                                    <TagLink key={t.tag} tag={t} />
+                                {matchingRecipes.map((r) => (
+                                    <RecipeLink
+                                        key={r.title}
+                                        to={`/recipes/${r.tags[0].toLowerCase().replace(/ /g, '-')}/${r.slug}`}
+                                        recipe={r}
+                                    />
                                 ))}
                             </div>
-                        )}
-
+                        </>
+                    ) : (
                         <div className='row gy-5 mt-0'>
-                            {matchingRecipes.map((r) => (
-                                <RecipeLink
-                                    key={r.title}
-                                    to={`/recipes/${r.tags[0].toLowerCase().replace(/ /g, '-')}/${r.slug}`}
-                                    recipe={r}
-                                />
-                            ))}
+                            {tags
+                                .filter((x) => x.label)
+                                .map((t) => (
+                                    <TagLink key={t.tag} tag={t} />
+                                ))}
                         </div>
-                    </>
-                ) : (
-                    <div className='row gy-5 mt-0'>
-                        {tags
-                            .filter((x) => x.label)
-                            .map((t) => (
-                                <TagLink key={t.tag} tag={t} />
-                            ))}
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
         </div>
     );
@@ -109,7 +117,7 @@ const TagLink = memo(({ tag: t }: { tag: (typeof tags)[0] }) => (
             <RecipeLinkImage image={t.image} />
         </div>
         <div
-            className='position-absolute start-0 end-0 top-50 py-2 text-center dancing-script fw-bold'
+            className='position-absolute start-0 end-0 top-50 py-2 dancing-script fw-bold d-flex align-items-center justify-content-center'
             style={{
                 background: 'rgba(255, 255, 255, 0.7)',
                 fontSize: '1.75rem',
