@@ -3,7 +3,6 @@ import { RecipeLinkImage } from '../components/RecipeLink';
 import { tags } from '../services/tags';
 import { RecipesIntro } from '../components/RecipesIntro';
 import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
-import type React from 'react';
 
 export function RecipeHomePage() {
     return (
@@ -12,7 +11,7 @@ export function RecipeHomePage() {
             <div className='d-flex flex-column gap-4'>
                 <RecipesIntro />
 
-                <div className='row' style={{ '--bs-gutter-y': '1.5rem' } as React.CSSProperties}>
+                <div className='row gy-5 mt-0'>
                     {tags
                         .filter((x) => x.label)
                         .map((t) => (
