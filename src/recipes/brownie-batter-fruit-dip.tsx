@@ -2,8 +2,8 @@ import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
     title: 'Brownie Batter Fruit Dip',
-    tags: ['THM FP'],
-    dateAdded: new Date('2025-05-20'),
+    tags: ['THM FP', 'Keto Friendly', 'GF', 'DF'],
+    dateAdded: new Date('2025-05-19'),
     brief: `Want a tasty dessert that's easy and weight loss friendly? Look no further! 
             Bri's yogurt based dip is just the thing you need for your sweet cravings.`,
     image: 'brownie-batter-fruit-dip.jpg',

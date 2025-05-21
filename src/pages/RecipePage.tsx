@@ -4,6 +4,7 @@ import { recipes } from '../recipes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { tagMap } from '../services/tag-map';
+import { IngredientList } from '../components/IngredientList';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
@@ -17,50 +18,51 @@ export function RecipePage() {
             <div className='d-flex gap-5 flex-column flex-lg-row'>
                 <RecipeLinkImage image={matchingRecipe.image} />
                 <div className='d-flex flex-column gap-4'>
-                    <div className='ff-title text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
+                    <div className='dancing-script text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
                         {matchingRecipe.title}
                     </div>
-                    <figure>
-                        <blockquote className='blockquote'>
-                            <p>{matchingRecipe.quote.quote}</p>
+                    <figure className='mb-0'>
+                        <blockquote className='blockquote' style={{ fontSize: '0.9em' }}>
+                            {(typeof matchingRecipe.quote.quote === 'string'
+                                ? [matchingRecipe.quote.quote]
+                                : matchingRecipe.quote.quote
+                            ).map((q, index) => (
+                                <p key={index}>{q}</p>
+                            ))}
                         </blockquote>
-                        <figcaption className='blockquote-footer'>{matchingRecipe.quote.person}</figcaption>
+                        <figcaption className='blockquote-footer mb-0 ff-title'>{matchingRecipe.quote.person}</figcaption>
                     </figure>
+                    <div className='d-flex gap-3 flex-wrap align-items-center'>
+                        <span id='servings' className='ff-title fw-bold'>
+                            Tags:
+                        </span>
+                        {matchingRecipe.tags
+                            .map((x) => ({
+                                tag: x,
+                                label: tagMap[x],
+                            }))
+                            .map((t) => (
+                                <Link
+                                    className='badge bg-primary text-decoration-none'
+                                    to={`/recipes/${t.tag.toLowerCase().replace(/ /g, '-')}`}
+                                >
+                                    {t.tag}
+                                </Link>
+                            ))}
+                    </div>
                 </div>
-            </div>
-            <div className='d-flex gap-3 flex-wrap'>
-                {matchingRecipe.tags
-                    .map((x) => ({
-                        tag: x,
-                        label: tagMap[x],
-                    }))
-                    .filter((x) => x.label)
-                    .map((t) => (
-                        <Link className='badge bg-primary text-decoration-none' to={`/recipes/${t.tag.toLowerCase().replace(/ /g, '-')}`}>
-                            {t.tag}
-                        </Link>
-                    ))}
             </div>
 
             {!!matchingRecipe.servings && (
                 <div className='d-flex flex-column gap-1'>
-                    <span id='servingss' className='ff-title fw-bold'>
+                    <span id='servings' className='ff-title fw-bold'>
                         Servings:
                     </span>
                     <div className='px-2'>{matchingRecipe.servings}</div>
                 </div>
             )}
-            <div className='d-flex flex-column gap-1'>
-                <span id='ingredients' className='ff-title fw-bold'>
-                    Ingredients:
-                </span>
-                {matchingRecipe.Ingredients.map((Ingredient, index) => (
-                    <div key={index} className='px-2'>
-                        {Ingredient}
-                    </div>
-                ))}
-                {matchingRecipe.IngredientNotes}
-            </div>
+            <IngredientList Ingredients={matchingRecipe.Ingredients} title='Ingredients' IngredientNotes={matchingRecipe.IngredientNotes} />
+
             <div className='d-flex flex-column gap-1'>
                 <span id='directions' className='ff-title fw-bold'>
                     Directions:

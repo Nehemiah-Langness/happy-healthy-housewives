@@ -19,7 +19,7 @@ export interface Recipe {
         person: string;
 
         /** What was said */
-        quote: string;
+        quote: string | string[];
     };
 
     /** The list of ingredients */

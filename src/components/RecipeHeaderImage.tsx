@@ -18,7 +18,7 @@ export const RecipeHeaderImage = memo(({ title }: { title?: string; }) => (
 
         <div className='position-absolute top-50 end-0 start-0'>
             <div
-                className='ff-title text-center display-4'
+                className='dancing-script text-center display-4'
                 style={{
                     transform: 'translateY(-50%)',
                     background: 'rgba(255,255,255,0.6)',

@@ -1,5 +1,11 @@
 import { baseUrl } from '../base-url';
 import { RecipeLink } from '../components/RecipeLink';
+import { recipeList } from '../services/recipe-list';
+import { howManyRecipesOnHomePage } from '../settings.json';
+
+const recipesFavorites = recipeList
+    .sort((a, b) => -Math.sign(a.dateAdded.valueOf() - b.dateAdded.valueOf()))
+    .slice(0, howManyRecipesOnHomePage);
 
 export function HomePage() {
     return (
@@ -7,21 +13,17 @@ export function HomePage() {
             <img className='w-100' src={baseUrl + '/banner.png'} />
 
             <div className='d-flex flex-column gap-4'>
-                <div className='ff-title text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
+                <div className='dancing-script text-center border-bottom border-info border-2 display-4'>
                     What's New
                 </div>
-                <RecipeLink
-                    to='/recipes/thm-e/twice-baked-cheesy-potatoes-thm-e'
-                    image='twice-baked-cheesy-potatoes.jpeg'
-                    title='Twice Baked Cheesy Potatoes (THM E) (GF)'
-                    description="Trying to up your daily protein goals but also miss cheesy starchies? All your dreams (and goals) are possible with Bri's Twice Baked Cheesy Potatoes!"
-                />
-                <RecipeLink
-                    to='/recipes/thm-fp/brownie-batter-fruit-dip'
-                    image='brownie-batter-fruit-dip.jpg'
-                    title='Brownie Batter Fruit Dip (THM FP) (GF) (DF)'
-                    description="Want a tasty dessert that's easy and weight loss friendly? Look no further! Bri's yogurt based dip is just the thing you need for your sweet cravings."
-                />
+                {recipesFavorites.map((recipe) => (
+                    <RecipeLink
+                        to={`/recipes/${recipe.tags[0].toLowerCase().replace(/ /g, '-')}/${recipe.slug}`}
+                        description={recipe.brief}
+                        image={recipe.image}
+                        title={recipe.title}
+                    />
+                ))}
             </div>
         </div>
     );

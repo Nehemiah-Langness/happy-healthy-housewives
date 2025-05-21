@@ -5,5 +5,9 @@ export const tagMap = {
     'THM XO': 'Crossover - "XO" Meals',
     GF: 'Gluten Free',
     DF: 'Dairy Free',
-    'Drinks and Sippers': '',
+    'Drinks and Sippers': 'Drinks and Sippers',
+    'Keto Friendly': '',
+    'Nut Free Option': '',
+    'Egg Free': '',
+    'Apple Free': '',
 };

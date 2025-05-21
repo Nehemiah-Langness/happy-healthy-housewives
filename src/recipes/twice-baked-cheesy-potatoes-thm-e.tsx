@@ -37,11 +37,8 @@ const recipe: Recipe = {
                 Combine all ingredients (minus mozzarella, potatoes, and add-ins) in a blender and blend well. Add to the mixing bowl with
                 1/4 cup of mozzarella and optional chicken or turkey bacon. Stir until well combined.
             </p>
-            <p>
-                Spoon the mixture into the potato skins. Top with the remaining mozzarella and bake in the oven for 20-30 minutes.
-                <br />
-                Serve warm and enjoy!
-            </p>
+            <p>Spoon the mixture into the potato skins. Top with the remaining mozzarella and bake in the oven for 20-30 minutes.</p>
+            <p>Serve warm and enjoy!</p>
         </>
     ),
 };

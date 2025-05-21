@@ -80,13 +80,13 @@ function Layout() {
         <div className='flex-grow-1 d-flex flex-column overflow-hidden'>
             <nav className='navbar navbar-expand-lg bg-light'>
                 <div className='container'>
-                    <a className='navbar-brand' href='#'>
+                    <Link to='/' className='navbar-brand'>
                         <img src={logo} className='d-none d-lg-inline-block' style={{ maxHeight: '5rem' }} />
                         <div className='d-lg-none d-flex align-content-center gap-1'>
                             <img src={icon} style={{ maxHeight: '2rem' }} />
-                            <span className='ff-title'>Happy Healthy Housewives</span>
+                            <span className='dancing-script'>Happy Healthy Housewives</span>
                         </div>
-                    </a>
+                    </Link>
                     <button
                         className='navbar-toggler'
                         type='button'

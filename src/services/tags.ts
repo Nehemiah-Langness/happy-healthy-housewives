@@ -13,11 +13,13 @@ export const tags = Object.entries(
             {} as Record<string, string>
         )
 )
-    .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
     .map((x) => ({
         tag: x[0] as keyof typeof tagMap,
         label: x[1],
+        order: Object.keys(tagMap).indexOf(x[0]),
         image:
-            recipeList.filter((r) => r.tags.includes(x[0] as Tag)).sort((a, b) => Math.sign(a.dateAdded.valueOf() - b.dateAdded.valueOf()))[0]
-                ?.image ?? '',
-    }));
+            recipeList
+                .filter((r) => r.tags.includes(x[0] as Tag))
+                .sort((a, b) => -Math.sign(a.dateAdded.valueOf() - b.dateAdded.valueOf()))[0]?.image ?? '',
+    }))
+    .sort((a, b) => (a.order < b.order ? -1 : a.order > b.order ? 1 : 0));
