@@ -3,10 +3,14 @@ import { baseUrl } from '../base-url';
 import { Link } from 'react-router';
 import type { Recipe } from '../types/recipe';
 
-export const RecipeLinkImage = memo(({ image }: { image: string }) => (
+export const RecipeLinkImage = memo(({ image, wide }: { image: string; wide?: boolean }) => (
     <div
         className='flex-shrink-0 mx-auto mx-lg-0 rounded-3'
-        style={{ background: `center/cover url('${baseUrl + '/recipe-images/' + image}')`, minHeight: '22rem', width: '16rem' }}
+        style={{
+            background: `center/cover url('${baseUrl + '/recipe-images/' + image}')`,
+            minHeight: '22rem',
+            width: wide ? '25rem' : '16rem',
+        }}
     ></div>
 ));
 
@@ -23,7 +27,9 @@ export function RecipeLink({ recipe, to }: { to: string; recipe: Recipe }) {
                 <span className=''>{recipe.brief}</span>
                 <div className='flex-grow-1 d-flex align-items-end flex-wrap gap-2'>
                     {recipe.tags.map((x) => (
-                        <span key={x} className='text-dark badge bg-info-subtle'>{x}</span>
+                        <span key={x} className='text-dark badge bg-info-subtle'>
+                            {x}
+                        </span>
                     ))}
                 </div>
             </div>

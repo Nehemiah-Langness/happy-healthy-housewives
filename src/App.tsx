@@ -118,7 +118,7 @@ function Layout() {
                     </div>
                 </div>
             </nav>
-            <div className='flex-grow-1 overflow-auto' ref={bodyRef}>
+            <div className='flex-grow-1 overflow-auto d-flex flex-column' ref={bodyRef}>
                 <Outlet />
                 <footer className='container pt-5 pb-1'>
                     <div className='d-flex justify-content-center flex-column'>

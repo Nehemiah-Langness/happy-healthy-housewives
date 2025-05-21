@@ -14,7 +14,7 @@ export function RecipeTagPage() {
     const taggedRecipes = useMemo(() => {
         return matchingTag
             ? recipeList
-                  .filter((r) => r.tags.includes(matchingTag?.tag as Tag))
+                  .filter((r) => r.tags.includes(matchingTag.tag as Tag) || r.tags.includes((matchingTag.tag + ' Option') as Tag))
                   .sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0))
             : [];
     }, [matchingTag]);

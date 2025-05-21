@@ -2,24 +2,46 @@ import { Link, useParams } from 'react-router';
 import { RecipeLinkImage } from '../components/RecipeLink';
 import { recipes } from '../recipes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { tagMap } from '../services/tag-map';
 import { IngredientList } from '../components/IngredientList';
 import { baseUrl } from '../base-url';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { RecipeHeader } from '../components/RecipeHeader';
+import { MessageUsButton } from '../components/MessageUsButton';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
     const matchingRecipe = recipes[recipe ?? ''];
     if (!matchingRecipe) {
-        return null; // Need 404
+        return (
+            <div className='flex-grow-1 container d-flex justify-content-center align-items-center'>
+                <div
+                    className='w-100 position-relative'
+                    style={{
+                        aspectRatio: '16/4',
+                        background: `center/cover url('${baseUrl}/404.jpg')`,
+                        minHeight: '15rem'
+                    }}
+                >
+                    <div
+                        className='position-absolute top-50 start-0 end-0 text-center d-flex flex-column gap-2 align-items-center py-3'
+                        style={{ background: 'rgba(255, 255, 255, 0.8)', transform: 'translateY(-50%)' }}
+                    >
+                        <div className='dancing-script display-5 '>Recipe not Found</div>
+                        <div>The recipe you are looking for does not seem to exist. Please message us on Instagram to let us know!</div>
+                        <div>
+                            <MessageUsButton small />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
     }
 
     return (
         <div className='container pt-5 d-flex gap-5 flex-column'>
             <div className='d-flex gap-5 flex-column flex-lg-row'>
-                <RecipeLinkImage image={matchingRecipe.image} />
+                <RecipeLinkImage image={matchingRecipe.image} wide />
                 <div className='d-flex flex-column gap-4'>
                     <div className='dancing-script text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
                         {matchingRecipe.title}
@@ -96,11 +118,7 @@ export function RecipePage() {
 
             <div>
                 <div className='ff-title mb-2'>Questions or Comments on this Recipe?</div>
-                <a className='btn btn-primary ' href='https://ig.me/m/happyhealthyhousewives/'>
-                    <div className='d-flex align-items-center gap-2'>
-                        <FontAwesomeIcon style={{ fontSize: '1.3em' }} icon={faInstagram} /> Message us on Instagram!
-                    </div>
-                </a>
+                <MessageUsButton />
             </div>
         </div>
     );

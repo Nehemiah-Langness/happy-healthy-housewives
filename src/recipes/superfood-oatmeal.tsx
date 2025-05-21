@@ -1,0 +1,78 @@
+import { Link } from 'react-router';
+import { IngredientList } from '../components/IngredientList';
+import type { Recipe } from '../types/recipe';
+
+const recipe: Recipe = {
+    title: 'Superfood Oatmeal',
+    tags: ['THM E', 'GF', 'DF'],
+    dateAdded: new Date('2025-05-15'),
+    brief: `The best part of waking up is a hot bowl of superfood nutrition and nourishing carbs!`,
+    image: 'superfood-oatmeal.jpg',
+    file: 'SuperfoodOatmeal.pdf',
+    quote: {
+        person: 'Mandy',
+        Quote: [
+            `If you follow me on any of our social accounts, you know I have a passion for oatmeal. I enjoy a bowl almost every morning!`,
+            `Whenever I enjoy something frequently, I like to boost the nutrition up the whazoo. That’s how I’ve made this recipe! Over 
+            months of experimenting with different superfoods, I’ve landed on a winning combination.`,
+            `The best thing about this recipe is you can modify it however you like! I added some recommendations for flavorings, but 
+            feel free to own it!`,
+        ],
+    },
+    servings: 'Single Serving',
+    Ingredients: [
+        '1/8 – 1/4 c. old fashioned oats',
+        '1/8 – 1/4 c. quick cook steel cut oats',
+        '1 doonk THM Pure Stevia',
+        '1/2 – 1 tsp. ground flaxseed',
+        '1 – 2 tsp. whole husk psyllium flakes',
+        '1 tsp. baobab powder',
+        '1 tsp. THM Creamy Dreamy Hemp Protein (optional)',
+        '1/4 c. frozen cauliflower rice',
+        '1/4 c. egg whites (boxed is best)',
+        '1 1/4 – 2 1/2 c. water',
+        '1/2 – 1 tsp. gelatin',
+        'Sprinkle of mineral salt',
+        'Sprinkle of THM Gentle Sweet',
+    ],
+    IngredientNotes: (
+        <IngredientList
+            title='Optional Flavors and Toppings'
+            Ingredients={[
+                <span>
+                    <b>Peanut Butter Banana:</b> Add 2 Tbsp. Peanut Flour to pot, top bowl with 1/2 chopped banana + drizzle of Peanut
+                    Butter.
+                </span>,
+                <Link to='/recipes/thm-e/apple-pie-oatmeal'>Apple Pie</Link>,
+                <Link to='/recipes/thm-e/peaches-n-cream-oatmeal'>Peaches and Cream</Link>,
+                <span>
+                    <b>Blueberry:</b> pour 1/4 c. frozen Wild Blueberries in the bottom of your bowl, top with the oatmeal.
+                </span>,
+                <span>
+                    <b>Strawberries and Cream:</b> Top with sliced frozen strawberries + splash of Vanilla NutPods. Place a plate on top of
+                    oatmeal bowl for 5 minutes to melt the strawberries.
+                </span>,
+            ]}
+        />
+    ),
+    Directions: (
+        <>
+            <p>
+                Combine oats, stevia, flaxseed, psyllium flakes, baobab, Hemp Protein (if using), and any optional dry flavorings. Mix well.
+            </p>
+            <p>Add in cauliflower rice, egg whites, and water. Stir until well combined.</p>
+            <p>Place on stovetop on medium heat. Once boiling, add in the gelatin and stir well.</p>
+            <p>Pour into a bowl and top with any optional toppings, sprinkle of mineral salt, and THM Gentle Sweet.</p>
+        </>
+    ),
+    Notes: (
+        <>
+            <p>
+                The larger measurements listed will make a HUGE bowl of oats. Sometimes my metabolism needs more and sometimes it needs to
+                the smaller, more manageable bowl. Just see what your body needs!
+            </p>
+        </>
+    ),
+};
+
+export default recipe;
