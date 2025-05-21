@@ -21,9 +21,15 @@ export function RecipeHomePage() {
                 (term) =>
                     recipe.title.toLowerCase().includes(term) ||
                     recipe.brief.toLowerCase().includes(term) ||
-                    recipe.quote.person.toLowerCase().includes(term) ||
-                    (typeof recipe.quote.quote === 'string' ? [recipe.quote.quote] : recipe.quote.quote).some((q) =>
-                        q.toLowerCase().includes(term)
+                    (Array.isArray(recipe.quote) ? recipe.quote : [recipe.quote]).some(
+                        (quote) =>
+                            quote.person.toLowerCase().includes(term) ||
+                            (typeof quote.Quote === 'string'
+                                ? [quote.Quote]
+                                : Array.isArray(quote.Quote)
+                                ? (quote.Quote.filter((x) => typeof x === 'string') as string[])
+                                : []
+                            ).some((q) => q.toLowerCase().includes(term))
                     )
             )
         );

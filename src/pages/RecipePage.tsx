@@ -24,17 +24,17 @@ export function RecipePage() {
                     <div className='dancing-script text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
                         {matchingRecipe.title}
                     </div>
-                    <figure className='mb-0'>
-                        <blockquote className='blockquote' style={{ fontSize: '0.9em' }}>
-                            {(typeof matchingRecipe.quote.quote === 'string'
-                                ? [matchingRecipe.quote.quote]
-                                : matchingRecipe.quote.quote
-                            ).map((q, index) => (
-                                <p key={index}>{q}</p>
-                            ))}
-                        </blockquote>
-                        <figcaption className='blockquote-footer mb-0 ff-title'>{matchingRecipe.quote.person}</figcaption>
-                    </figure>
+                    {(Array.isArray(matchingRecipe.quote) ? matchingRecipe.quote : [matchingRecipe.quote]).map((quote, index) => (
+                        <figure key={index} className='mb-0'>
+                            <blockquote className='blockquote' style={{ fontSize: '0.9em' }}>
+                                {(Array.isArray(quote.Quote) ? quote.Quote : [quote.Quote]).map((q, index) => (
+                                    <p key={index}>{q}</p>
+                                ))}
+                            </blockquote>
+                            <figcaption className='blockquote-footer mb-0 ff-title'>{quote.person}</figcaption>
+                        </figure>
+                    ))}
+
                     <div className='d-flex gap-3 flex-wrap align-items-center'>
                         <RecipeHeader>Tags:</RecipeHeader>
                         {matchingRecipe.tags
@@ -69,9 +69,15 @@ export function RecipePage() {
             )}
 
             {!!matchingRecipe.servings && (
-                <div className='d-flex flex-column gap-1'>
+                <div className='d-flex gap-1 align-items-baseline'>
                     <RecipeHeader>Servings:</RecipeHeader>
                     <div className='px-2'>{matchingRecipe.servings}</div>
+                </div>
+            )}
+            {!!matchingRecipe.servingSize && (
+                <div className='d-flex flex gap-1 align-items-baseline'>
+                    <RecipeHeader>Servings Size:</RecipeHeader>
+                    <div className='px-2'>{matchingRecipe.servingSize}</div>
                 </div>
             )}
             <IngredientList Ingredients={matchingRecipe.Ingredients} title='Ingredients' IngredientNotes={matchingRecipe.IngredientNotes} />

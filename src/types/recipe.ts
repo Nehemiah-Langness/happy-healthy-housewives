@@ -13,14 +13,11 @@ export interface Recipe {
     /** The quantity of servings the recipe makes */
     servings?: string;
 
-    /** The quote at the start of the recipe */
-    quote: {
-        /** Who said the quote */
-        person: string;
+    /** The recommended serving size */
+    servingSize?: string;
 
-        /** What was said */
-        quote: string | string[];
-    };
+    /** The quote at the start of the recipe */
+    quote: Quote | Quote[];
 
     /** The list of ingredients */
     Ingredients: React.ReactNode[];
@@ -43,3 +40,11 @@ export interface Recipe {
     /** Any additional content to add to the end of the recipe */
     Notes?: React.ReactNode;
 }
+
+type Quote = {
+    /** Who said the quote */
+    person: string;
+
+    /** What was said */
+    Quote: React.ReactNode | React.ReactNode[];
+};

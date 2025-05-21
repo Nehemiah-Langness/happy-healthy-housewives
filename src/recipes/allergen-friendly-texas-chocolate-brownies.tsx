@@ -11,7 +11,7 @@ const recipe: Recipe = {
     image: 'allergen-friendly-texas-chocolate-brownies.jpg',
     quote: {
         person: 'Mandy',
-        quote: [
+        Quote: [
             `Mamas, I pray most of you will never have a need to find a brownie recipe that's free 
             from a whole laundry list of allergens. It can be frustrating, exhausting, and cake just 
             isn't the same without eggs! But for you strong woman who are doing your honest-to-God best 
@@ -66,13 +66,14 @@ const recipe: Recipe = {
         <>
             <p>Preheat oven to 350&deg; F. Grease an 8×8 baking pan with coconut oil.</p>
             <p>
-                <b>Make the Brownies:</b> Whisk together baking blend, erythritol, cocoa, baking powder, and mineral
-                salt in a large bowl. Add milk, vinegar, vanilla, yogurt, and coconut oil and mix until well combined. Pour into baking pan.
+                <b>Make the Brownies:</b> Whisk together baking blend, erythritol, cocoa, baking powder, and mineral salt in a large bowl.
+                Add milk, vinegar, vanilla, yogurt, and coconut oil and mix until well combined. Pour into baking pan.
             </p>
             <p>Bake for 40-45 minutes or until a toothpick punctured in the center comes out clean.</p>
+            <br />
             <p>
-                <b>While baking, make the topping:</b> Combine all ingredients in a double boiler and melt together.
-                When brownies are removed the oven, pour on the topping.
+                <b>While baking, make the topping:</b> Combine all ingredients in a double boiler and melt together. When brownies are
+                removed the oven, pour on the topping.
             </p>
             <p>Place in fridge overnight for a great fudgey texture!</p>
         </>

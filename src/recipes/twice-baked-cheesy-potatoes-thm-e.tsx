@@ -9,7 +9,7 @@ const recipe: Recipe = {
     image: 'twice-baked-cheesy-potatoes.jpeg',
     quote: {
         person: 'Brianna',
-        quote: `Sometimes you just want to dive into a cheesy, decadent, delicious thing.  These twice baked potatoes allow you to do that AND meet your goals!
+        Quote: `Sometimes you just want to dive into a cheesy, decadent, delicious thing.  These twice baked potatoes allow you to do that AND meet your goals!
                 These higher protein, lower calorie, THM E potatoes will leave you and your family completely satisfied!`,
     },
     Ingredients: [

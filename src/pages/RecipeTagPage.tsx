@@ -12,7 +12,11 @@ export function RecipeTagPage() {
 
     const matchingTag = useMemo(() => tags.find((t) => t.tag.toLowerCase().replace(/ /g, '-') === tag), [tag]);
     const taggedRecipes = useMemo(() => {
-        return matchingTag ? recipeList.filter((r) => r.tags.includes(matchingTag?.tag as Tag)) : [];
+        return matchingTag
+            ? recipeList
+                  .filter((r) => r.tags.includes(matchingTag?.tag as Tag))
+                  .sort((a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0))
+            : [];
     }, [matchingTag]);
 
     return (

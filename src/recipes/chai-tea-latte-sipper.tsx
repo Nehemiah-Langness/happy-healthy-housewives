@@ -9,7 +9,7 @@ const recipe: Recipe = {
     file: 'IcedChaiTeaLatteSipper.pdf',
     quote: {
         person: 'Brianna',
-        quote: [
+        Quote: [
             "When I first started THM, I found myself missing the sweet treat type coffee I'd save up my money to go purchase at large chains that shall not be named.",
             'I was determined to stay on plan, and decided that I should no longer be deprived of my sweet treats! This sipper is a product of my determination to enjoy my beautiful coffee.',
         ],

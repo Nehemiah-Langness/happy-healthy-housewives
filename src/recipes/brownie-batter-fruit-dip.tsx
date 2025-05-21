@@ -9,7 +9,7 @@ const recipe: Recipe = {
     image: 'brownie-batter-fruit-dip.jpg',
     quote: {
         person: 'Brianna',
-        quote: `Are you someone who loves to lick the spoon when making brownies, cookies, or cake? Me too! 
+        Quote: `Are you someone who loves to lick the spoon when making brownies, cookies, or cake? Me too! 
             I created this dip to have all the deliciousness of brownie batter, while still helping you 
             achieve your goals! Don't worry, you don't have to resist licking the spoon!`,
     },

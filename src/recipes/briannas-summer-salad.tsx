@@ -10,7 +10,7 @@ const recipe: Recipe = {
     file: 'BriannasSummerSalad.pdf',
     quote: {
         person: 'Brianna',
-        quote: `This is probably my all time favorite salad. It's equally indulgent as it is bursting with freshness! 
+        Quote: `This is probably my all time favorite salad. It's equally indulgent as it is bursting with freshness! 
         To me, it screams summer is here! `,
     },
     servings: 'Single Serving',
