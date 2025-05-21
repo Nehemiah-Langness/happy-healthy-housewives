@@ -11,7 +11,7 @@ import { MessageUsButton } from '../components/MessageUsButton';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
-    const matchingRecipe = recipes[recipe ?? ''];
+    const matchingRecipe = recipes[(recipe ?? '') as keyof typeof recipes];
     if (!matchingRecipe) {
         return (
             <div className='flex-grow-1 container d-flex justify-content-center align-items-center'>

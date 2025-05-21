@@ -1,6 +1,6 @@
-import { Link } from 'react-router';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
+import { LinkToRecipe } from '../components/LinkToRecipe';
 
 const recipe: Recipe = {
     title: 'Allergen Friendly Texas Chocolate Brownies',
@@ -43,7 +43,7 @@ const recipe: Recipe = {
                 '1/2 tsp apple cider vinegar or white vinegar',
                 '1/2 tsp vanilla extract',
                 <span>
-                    2 Tbsp yogurt (my <Link to={'/recipes/thm-fp/dairy-free-yogurt'}>Dairy Free Yogurt</Link> works great!)
+                    2 Tbsp yogurt (my <LinkToRecipe recipe='dairy-free-yogurt'>Dairy Free Yogurt</LinkToRecipe> works great!)
                 </span>,
                 '1/4 cup measured, then melted coconut oil',
             ]}

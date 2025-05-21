@@ -1,3 +1,4 @@
+import { LinkToRecipe } from '../components/LinkToRecipe';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -15,7 +16,9 @@ const recipe: Recipe = {
     },
     servings: 'Single Serving',
     Ingredients: [
-        '1/2 cup of low-fat Greek yogurt (or a dairy free yogurt)',
+        <span>
+            1/2 cup of low-fat Greek yogurt (or a <LinkToRecipe recipe='dairy-free-yogurt'>dairy free yogurt</LinkToRecipe>)
+        </span>,
         '1/2 Tbsp of Cocoa Powder',
         '1 tsp THM Super Sweet (or more to taste)',
         '1/4 tsp vanilla extract',

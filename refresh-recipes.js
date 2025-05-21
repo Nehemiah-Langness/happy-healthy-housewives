@@ -29,10 +29,9 @@ const pathToVariable = (filename) => {
 
     await writeFile(
         './src/recipes/index.ts',
-        `import type { Recipe } from '../types/recipe';
-${results.map((x) => `import ${x.variable} from './${x.path}';`).join('\n')}
+        `${results.map((x) => `import ${x.variable} from './${x.path}';`).join('\n')}
 
-export const recipes: Record<string, Recipe> = {
+export const recipes = {
 ${results.map((x) => `    ['${x.path}']: ${x.variable},`).join('\n')}
 };`
     );

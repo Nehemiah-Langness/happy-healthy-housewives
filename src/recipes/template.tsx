@@ -1,7 +1,7 @@
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
-    title: '',
+    title: "",
     tags: [],
     dateAdded: new Date('2025-05-15'),
     brief: ``,
@@ -9,11 +9,15 @@ const recipe: Recipe = {
     file: '',
     quote: {
         person: '',
-        Quote: [``],
+        Quote: [
+            ``,
+        ],
     },
     servings: '',
     servingSize: '',
-    Ingredients: [''],
+    Ingredients: [
+        '',
+    ],
     IngredientNotes: (
         <>
             <b></b>

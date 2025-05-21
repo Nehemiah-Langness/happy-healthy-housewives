@@ -1,5 +1,6 @@
-import { Link } from 'react-router';
 import type { Recipe } from '../types/recipe';
+import { LinkToRecipe } from '../components/LinkToRecipe';
+import { AcronymToggle } from '../components/AcronymToggle';
 
 const recipe: Recipe = {
     title: 'The Fluffiest Pumpkin Pancakes',
@@ -17,9 +18,12 @@ const recipe: Recipe = {
     },
     servings: '18-24 pancakes',
     Ingredients: [
-        '2 cups flour (whole grain whole wheat, einkorn, or sprouted) (use GF oat flour for GF option)',
         <span>
-            2 cups of plain lowfat kefir (or <Link to={`/recipes/thm-fp/dairy-free-yogurt/`}>dairy free yogurt</Link>)
+            2 cups flour (whole grain whole wheat, einkorn, or sprouted) (use <AcronymToggle>GF</AcronymToggle> oat flour for{' '}
+            <AcronymToggle>GF</AcronymToggle> option)
+        </span>,
+        <span>
+            2 cups of plain lowfat kefir (or <LinkToRecipe recipe='dairy-free-yogurt'>dairy free yogurt</LinkToRecipe>)
         </span>,
         '3/4 cup pumpkin puree',
         '2 tsp of pumpkin pie spice',
@@ -45,8 +49,8 @@ const recipe: Recipe = {
     Notes: (
         <>
             <p>
-                <b>THM Compliance:</b> This recipe is THM compliant because it soaks the flour in a acidic medium overnight, much like using a
-                sourdough starter. If you don’t wish to soak this recipe, you can use a sprouted grain flour or oat flour.
+                <b>THM Compliance:</b> This recipe is THM compliant because it soaks the flour in a acidic medium overnight, much like using
+                a sourdough starter. If you don’t wish to soak this recipe, you can use a sprouted grain flour or oat flour.
             </p>
         </>
     ),

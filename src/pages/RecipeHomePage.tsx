@@ -83,7 +83,7 @@ export function RecipeHomePage() {
                                 </div>
                             )}
 
-                            <div className='row gy-5 mt-0'>
+                            <div className='d-flex flex-column gap-5'>
                                 {matchingRecipes.map((r) => (
                                     <RecipeLink
                                         key={r.title}

@@ -47,7 +47,7 @@ const recipe: Recipe = {
 
     Directions: (
         <>
-            <p>Preheat oven to 350 and grease an 8X8 pan.</p>
+            <p>Preheat oven to 350&deg; F and grease an 8X8 pan.</p>
             <p>
                 <b>Make the base: </b>In a blender, add all base ingredients except the medium apple pieces. Blend well and pour into the
                 pan.
