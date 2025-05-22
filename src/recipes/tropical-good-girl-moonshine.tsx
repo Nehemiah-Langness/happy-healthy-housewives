@@ -5,7 +5,7 @@ const recipe: Recipe = {
     tags: ['Drinks and Sippers', 'THM FP', 'Keto Friendly', 'DF', 'GF'],
     dateAdded: new Date('2025-05-15'),
     brief: `The perfect drink for hot summer days! Filled with superfood hydration, Brianna's take on the classic GGMS is sure to rock your world!`,
-    image: 'tropical-ggms.jpg',
+    image: 'tropical-good-girl-moonshine.jpg',
     file: 'TropicalGoodGirlMoonshine.pdf',
     quote: {
         person: 'Brianna',
@@ -40,6 +40,7 @@ const recipe: Recipe = {
             <p>Sip on all day and enjoy!</p>
         </>
     ),
+    redirects: ['tropical-ggms'],
 };
 
 export default recipe;

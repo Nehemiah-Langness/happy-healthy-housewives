@@ -8,17 +8,18 @@ import brisChickenTendies from './bris-chicken-tendies';
 import brownieBatterFruitDip from './brownie-batter-fruit-dip';
 import cappuccinoFudge from './cappuccino-fudge';
 import cauliflowerChickenTenders from './cauliflower-chicken-tenders';
-import chaiTeaLatteSipper from './chai-tea-latte-sipper';
 import chocolateAvocadoBalls from './chocolate-avocado-balls';
+import chocolateGlazedDonuts from './chocolate-glazed-donuts';
 import cinnamonCrunchLoaf from './cinnamon-crunch-loaf';
 import cookieDoughFrosting from './cookie-dough-frosting';
 import crunchwrap from './crunchwrap';
 import dairyFreeYogurt from './dairy-free-yogurt';
 import easyBalsamicGlaze from './easy-balsamic-glaze';
-import fpChocolateGlazedDonuts from './fp-chocolate-glazed-donuts';
 import honeyMustard from './honey-mustard';
+import icedChaiTeaLatteSipper from './iced-chai-tea-latte-sipper';
 import magicBars from './magic-bars';
 import mamasSuperFoodYogurt from './mamas-super-food-yogurt';
+import mandysFamousSalsa from './mandys-famous-salsa';
 import mochaIceboxIceCream from './mocha-icebox-ice-cream';
 import nehemiahsKettleCorn from './nehemiahs-kettle-corn';
 import nuttyRaspberryChocolate from './nutty-raspberry-chocolate';
@@ -41,12 +42,11 @@ import superfoodChili from './superfood-chili';
 import superfoodOatmeal from './superfood-oatmeal';
 import sweetAndSpicySauce from './sweet-and-spicy-sauce';
 import sweetieLentilSoup from './sweetie-lentil-soup';
-import template from './template';
 import theFluffiestPumpkinPancakes from './the-fluffiest-pumpkin-pancakes';
 import trimMamaBaileys from './trim-mama-baileys';
-import trimMamaritas from './trim-mamaritas';
+import trimMamarita from './trim-mamarita';
 import trimSangarita from './trim-sangarita';
-import tropicalGgms from './tropical-ggms';
+import tropicalGoodGirlMoonshine from './tropical-good-girl-moonshine';
 import twiceBakedCheesyPotatoes from './twice-baked-cheesy-potatoes';
 import vanillaIceboxIceCream from './vanilla-icebox-ice-cream';
 import yuletideMulledWine from './yuletide-mulled-wine';
@@ -62,17 +62,18 @@ export const recipes = {
     ['brownie-batter-fruit-dip']: brownieBatterFruitDip,
     ['cappuccino-fudge']: cappuccinoFudge,
     ['cauliflower-chicken-tenders']: cauliflowerChickenTenders,
-    ['chai-tea-latte-sipper']: chaiTeaLatteSipper,
     ['chocolate-avocado-balls']: chocolateAvocadoBalls,
+    ['chocolate-glazed-donuts']: chocolateGlazedDonuts,
     ['cinnamon-crunch-loaf']: cinnamonCrunchLoaf,
     ['cookie-dough-frosting']: cookieDoughFrosting,
     ['crunchwrap']: crunchwrap,
     ['dairy-free-yogurt']: dairyFreeYogurt,
     ['easy-balsamic-glaze']: easyBalsamicGlaze,
-    ['fp-chocolate-glazed-donuts']: fpChocolateGlazedDonuts,
     ['honey-mustard']: honeyMustard,
+    ['iced-chai-tea-latte-sipper']: icedChaiTeaLatteSipper,
     ['magic-bars']: magicBars,
     ['mamas-super-food-yogurt']: mamasSuperFoodYogurt,
+    ['mandys-famous-salsa']: mandysFamousSalsa,
     ['mocha-icebox-ice-cream']: mochaIceboxIceCream,
     ['nehemiahs-kettle-corn']: nehemiahsKettleCorn,
     ['nutty-raspberry-chocolate']: nuttyRaspberryChocolate,
@@ -95,12 +96,11 @@ export const recipes = {
     ['superfood-oatmeal']: superfoodOatmeal,
     ['sweet-and-spicy-sauce']: sweetAndSpicySauce,
     ['sweetie-lentil-soup']: sweetieLentilSoup,
-    ['template']: template,
     ['the-fluffiest-pumpkin-pancakes']: theFluffiestPumpkinPancakes,
     ['trim-mama-baileys']: trimMamaBaileys,
-    ['trim-mamaritas']: trimMamaritas,
+    ['trim-mamarita']: trimMamarita,
     ['trim-sangarita']: trimSangarita,
-    ['tropical-ggms']: tropicalGgms,
+    ['tropical-good-girl-moonshine']: tropicalGoodGirlMoonshine,
     ['twice-baked-cheesy-potatoes']: twiceBakedCheesyPotatoes,
     ['vanilla-icebox-ice-cream']: vanillaIceboxIceCream,
     ['yuletide-mulled-wine']: yuletideMulledWine,

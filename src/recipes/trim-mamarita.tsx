@@ -6,7 +6,7 @@ const recipe: Recipe = {
     tags: ['Drinks and Sippers', 'THM FP', 'Keto Friendly', 'DF', 'GF'],
     dateAdded: new Date('2025-05-15'),
     brief: `Summer time means having a cocktail in your hand and your toes in the sand! Who says that drink can't trim you down?`,
-    image: 'trim-mamaritas.webp',
+    image: 'trim-mamarita.webp',
     file: 'TrimMamarita.pdf',
     quote: {
         person: 'Mandy',

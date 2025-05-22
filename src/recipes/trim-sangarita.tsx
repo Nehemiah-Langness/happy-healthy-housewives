@@ -22,7 +22,7 @@ const recipe: Recipe = {
     },
     Ingredients: [
         <span>
-            2 servings of <LinkToRecipe recipe='trim-mamaritas'>Trim Mamarita‘s</LinkToRecipe>
+            2 servings of <LinkToRecipe recipe='trim-mamarita'>Trim Mamarita‘s</LinkToRecipe>
         </span>,
         '1 bottle of dry red wine',
         <>3 TBS of <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure), or more if you like it sweeter</>,

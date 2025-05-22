@@ -7,7 +7,7 @@ const recipe: Recipe = {
     tags: ['THM FP', 'Keto Friendly', 'DF', 'GF'],
     dateAdded: new Date('2025-05-15'),
     brief: `Hold the phone, chocolate glazed donuts that are both low carb and low fat? Try this recipe and you'll believe anything is possible!`,
-    image: 'fp-chocolate-glazed-donuts.jpg',
+    image: 'chocolate-glazed-donuts.jpg',
     file: 'ChocolateGlazedDonuts.pdf',
     quote: {
         person: 'Mandy',
@@ -74,6 +74,7 @@ const recipe: Recipe = {
             </p>
         </>
     ),
+    redirects: ['fp-chocolate-glazed-donuts'],
 };
 
 export default recipe;

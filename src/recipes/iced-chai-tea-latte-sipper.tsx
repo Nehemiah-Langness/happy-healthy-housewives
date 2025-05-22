@@ -6,7 +6,7 @@ const recipe: Recipe = {
     tags: ['Drinks and Sippers', 'THM FP', 'Keto Friendly', 'GF', 'DF'],
     dateAdded: new Date('2025-05-17'),
     brief: `Feel bougie as you sip on this delicious (and slightly caffeinated) chai tea latte while reading your favorite classic novel.`,
-    image: 'chai-tea-latte-sipper.jpg',
+    image: 'iced-chai-tea-latte-sipper.jpg',
     file: 'IcedChaiTeaLatteSipper.pdf',
     quote: {
         person: 'Brianna',
@@ -41,6 +41,7 @@ const recipe: Recipe = {
             <p>Unsweetened vanilla almond milk is particularly delicious with this.</p>
         </>
     ),
+    redirects: ['chai-tea-latte-sipper'],
 };
 
 export default recipe;

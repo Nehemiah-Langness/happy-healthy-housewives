@@ -21,7 +21,7 @@ const pathToVariable = (filename) => {
             withFileTypes: true,
         })
     )
-        .filter((x) => x.isFile() && x.name !== 'index.ts')
+        .filter((x) => x.isFile() && x.name !== 'index.ts' && x.name !== 'template.tsx')
         .map((x) => ({
             variable: pathToVariable(x.name),
             path: x.name.replace('.tsx', ''),
