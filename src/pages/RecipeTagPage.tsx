@@ -27,7 +27,7 @@ export function RecipeTagPage() {
                     <RecipesIntro />
 
                     {taggedRecipes.map((r) => (
-                        <RecipeLink key={r.title} to={`/recipes/${tag ?? ''}/${r.slug}`} recipe={r} />
+                        <RecipeLink key={r.title} recipe={r} />
                     ))}
                 </div>
             </div>

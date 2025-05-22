@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import { RecipeLink, RecipeLinkImage } from '../components/RecipeLink';
+import { RecipeLink } from '../components/RecipeLink';
+import { RecipeLinkImage } from '../components/RecipeLinkImage';
 import { tags } from '../services/tags';
 import { RecipesIntro } from '../components/RecipesIntro';
 import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
@@ -72,7 +73,6 @@ export function RecipeHomePage() {
                                     {matchingRecipes.map((r) => (
                                         <RecipeLink
                                             key={r.title}
-                                            to={`/recipes/${r.tags[0].toLowerCase().replace(/ /g, '-')}/${r.slug}`}
                                             recipe={r}
                                         />
                                     ))}

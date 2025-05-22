@@ -1,7 +1,7 @@
 export function AllergyDisclaimer() {
     return (
         <>
-            <div className='fst-italic text-center mx-auto' style={{ fontSize: '0.8rem' }}>
+            <div className='fst-italic text-center mx-auto d-print-none' style={{ fontSize: '0.8rem' }}>
                 Please read our{' '}
                 <a href='#' className='text-decoration-none fw-bold' data-bs-toggle='modal' data-bs-target='#allergen-disclaimer'>
                     allergen disclaimer
@@ -35,6 +35,11 @@ export function AllergyDisclaimer() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div style={{ fontSize: '0.8rem' }} className='text-start d-none d-print-block ff-link'>
+                <b>Allergen Disclaimer:</b> Although we try our best to make certain the foods we claim are allergen free are accurate, we
+                are not medical professionals. Before making a recipe, please research your allergen in relation to the ingredients we
+                recommend.
             </div>
         </>
     );

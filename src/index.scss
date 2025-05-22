@@ -29,6 +29,10 @@ body {
     font-style: normal;
 }
 
+.ff-link {
+    font-family: var(--bs-body-font-family);
+}
+
 .ff-title {
     font-family: 'Playwrite US Modern', cursive;
     font-optical-sizing: auto;
@@ -95,4 +99,24 @@ body {
 
 .modal-header {
     background: var(--bs-light);
+}
+
+@media print {
+    .print-overflow-visible {
+        overflow: visible !important;
+    } 
+
+    .badge.bg-primary {
+        background: var(--bs-white) !important;
+        color: var(--bs-dark) !important;
+        padding: 0px !important;
+        font-size: 1rem !important;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }

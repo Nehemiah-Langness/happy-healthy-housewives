@@ -84,7 +84,7 @@ function Layout() {
     }, [pathname]);
 
     return (
-        <div className='flex-grow-1 d-flex flex-column overflow-hidden'>
+        <div className='flex-grow-1 d-flex flex-column overflow-hidden print-overflow-visible'>
             <nav className='navbar navbar-expand-lg bg-light'>
                 <div className='container'>
                     <Link to='/' className='navbar-brand'>
@@ -95,7 +95,7 @@ function Layout() {
                         </div>
                     </Link>
                     <button
-                        className='navbar-toggler'
+                        className='navbar-toggler d-print-none'
                         type='button'
                         data-bs-toggle='collapse'
                         data-bs-target='#navbarSupportedContent'
@@ -106,7 +106,7 @@ function Layout() {
                         <span className='navbar-toggler-icon'></span>
                     </button>
                     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-                        <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
+                        <ul className='navbar-nav ms-auto mb-2 mb-lg-0 d-print-none'>
                             <li className='nav-item'>
                                 <Link to='/' className={'nav-link ' + (pathname === `/` ? 'active' : '')} aria-current='page'>
                                     Home
@@ -125,18 +125,28 @@ function Layout() {
                     </div>
                 </div>
             </nav>
-            <div className='flex-grow-1 overflow-auto d-flex flex-column' ref={bodyRef}>
+            <div className='flex-grow-1 overflow-auto d-flex flex-column print-overflow-visible' ref={bodyRef}>
                 <Outlet />
                 <footer className='container pt-5 pb-1'>
                     <div className='d-flex justify-content-center flex-column'>
                         <span className='ff-title text-center'>Follow us on Instagram and Facebook</span>
-                        <div className='d-flex gap-4 justify-content-center align-items-center'>
+                        <div className='d-flex gap-4 justify-content-center align-items-center d-print-none'>
                             <a style={{ fontSize: '2.2rem' }} href='https://www.instagram.com/happyhealthyhousewives/'>
                                 <FontAwesomeIcon icon={faInstagramSquare} />
                             </a>
                             <a style={{ fontSize: '2rem' }} href='https://www.facebook.com/happyhealthyhousewives/'>
                                 <FontAwesomeIcon icon={faFacebook} />
                             </a>
+                        </div>
+                        <div className='gap-1 flex-column justify-content-center align-items-center d-none d-print-flex'>
+                            <div className='d-flex align-items-center gap-1 ff-link' style={{fontSize: '0.8rem'}}>
+                                <FontAwesomeIcon style={{ fontSize: '1.1rem' }} icon={faInstagramSquare} />
+                                https://www.instagram.com/happyhealthyhousewives/
+                            </div>
+                            <div className='d-flex align-items-center gap-1 ff-link' style={{fontSize: '0.8rem'}}>
+                                <FontAwesomeIcon style={{ fontSize: '1rem' }} icon={faFacebook} />
+                                https://www.facebook.com/happyhealthyhousewives/
+                            </div>
                         </div>
                     </div>
                     <div className='text-center mt-3'>

@@ -20,11 +20,7 @@ export function HomePage() {
                 <div className='d-flex flex-column gap-4'>
                     <div className='dancing-script text-center border-bottom border-info border-2 display-4'>What's New</div>
                     {recipesFavorites.map((recipe) => (
-                        <RecipeLink
-                            key={recipe.slug}
-                            to={`/recipes/${recipe.tags[0].toLowerCase().replace(/ /g, '-')}/${recipe.slug}`}
-                            recipe={recipe}
-                        />
+                        <RecipeLink key={recipe.slug} recipe={recipe} />
                     ))}
                 </div>
             </div>

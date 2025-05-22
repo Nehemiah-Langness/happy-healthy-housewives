@@ -6,7 +6,7 @@ export function IngredientList({
     IngredientNotes?: React.ReactNode;
 }) {
     return (
-        <div className='d-flex flex-column gap-1 mb-2'>
+        <div className='d-flex flex-column gap-1 mb-2' style={{breakInside: 'avoid'}}>
             <span id={title} className='ff-title fw-bold'>
                 {title}:
             </span>

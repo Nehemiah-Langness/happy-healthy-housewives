@@ -10,7 +10,7 @@ const recipe: Recipe = {
     quote: {
         person: '',
         Quote: [
-            ``,
+            <></>,
         ],
     },
     servings: '',

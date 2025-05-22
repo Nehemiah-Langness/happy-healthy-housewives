@@ -14,6 +14,7 @@ import cookieDoughFrosting from './cookie-dough-frosting';
 import crunchwrap from './crunchwrap';
 import dairyFreeYogurt from './dairy-free-yogurt';
 import easyBalsamicGlaze from './easy-balsamic-glaze';
+import fpChocolateGlazedDonuts from './fp-chocolate-glazed-donuts';
 import honeyMustard from './honey-mustard';
 import magicBars from './magic-bars';
 import mamaritas from './mamaritas';
@@ -61,6 +62,7 @@ export const recipes = {
     ['crunchwrap']: crunchwrap,
     ['dairy-free-yogurt']: dairyFreeYogurt,
     ['easy-balsamic-glaze']: easyBalsamicGlaze,
+    ['fp-chocolate-glazed-donuts']: fpChocolateGlazedDonuts,
     ['honey-mustard']: honeyMustard,
     ['magic-bars']: magicBars,
     ['mamaritas']: mamaritas,

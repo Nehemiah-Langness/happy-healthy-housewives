@@ -1,11 +1,11 @@
 import { Link, useParams } from 'react-router';
-import { RecipeLinkImage } from '../components/RecipeLink';
+import { RecipeLinkImage } from '../components/RecipeLinkImage';
 import { recipes } from '../recipes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { tagMap } from '../services/tag-map';
 import { IngredientList } from '../components/IngredientList';
 import { baseUrl } from '../base-url';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faFilePdf, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { RecipeHeader } from '../components/RecipeHeader';
 import { MessageUsButton } from '../components/MessageUsButton';
 
@@ -43,7 +43,7 @@ export function RecipePage() {
             <div className='d-flex gap-5 flex-column flex-lg-row'>
                 <RecipeLinkImage image={matchingRecipe.image} wide />
                 <div className='d-flex flex-column gap-4'>
-                    <div className='dancing-script text-center border-bottom border-info border-2' style={{ fontSize: '4rem' }}>
+                    <div className='dancing-script text-center border-bottom border-info border-2 display-4'>
                         {matchingRecipe.title}
                     </div>
                     {(Array.isArray(matchingRecipe.quote) ? matchingRecipe.quote : [matchingRecipe.quote]).map((quote, index) => (
@@ -57,7 +57,7 @@ export function RecipePage() {
                         </figure>
                     ))}
 
-                    <div className='d-flex gap-3 flex-wrap align-items-center'>
+                    <div className='d-flex gap-3 flex-wrap align-items-baseline'>
                         <RecipeHeader>Tags:</RecipeHeader>
                         {matchingRecipe.tags
                             .map((x) => ({
@@ -65,7 +65,8 @@ export function RecipePage() {
                                 label: tagMap[x],
                             }))
                             .map((t) => (
-                                <Link key={t.tag}
+                                <Link
+                                    key={t.tag}
                                     className='badge bg-primary text-decoration-none'
                                     to={`/recipes/${t.tag.toLowerCase().replace(/ /g, '-')}`}
                                 >
@@ -76,19 +77,27 @@ export function RecipePage() {
                 </div>
             </div>
 
-            {matchingRecipe.file && (
-                <div style={{ marginTop: '-1.75rem' }}>
-                    <a
-                        className='btn btn-outline-danger btn-sm border-0'
-                        target='_blank'
-                        href={`${baseUrl}/recipe-files/${matchingRecipe.file}`}
-                    >
+            <div className='d-print-none' style={{ marginTop: '-1.75rem' }}>
+                <div className='d-flex gap-1'>
+                    <button type='button' className='btn btn-outline-primary btn-sm border-0' onClick={() => print()}>
                         <div className='d-flex align-items-center gap-2'>
-                            <FontAwesomeIcon style={{ fontSize: '1.2em' }} icon={faFilePdf} /> Download Recipe
+                            <FontAwesomeIcon style={{ fontSize: '1.2em' }} icon={faPrint} /> Print Recipe
                         </div>
-                    </a>
+                    </button>
+                    {matchingRecipe.file && (
+                        <a
+                            className='btn btn-outline-danger btn-sm border-0'
+                            target='_blank'
+                            href={`${baseUrl}/recipe-files/${matchingRecipe.file}`}
+                        >
+                            <div className='d-flex align-items-center gap-2'>
+                                <FontAwesomeIcon style={{ fontSize: '1.2em' }} icon={faFilePdf} /> Download Recipe
+                            </div>
+                        </a>
+                    )}
                 </div>
-            )}
+                <small className='text-muted ps-2'>*You can select "Save to a PDF" in your print settings to save this recipe as a PDF</small>
+            </div>
 
             {!!matchingRecipe.servings && (
                 <div className='d-flex gap-1 align-items-baseline'>

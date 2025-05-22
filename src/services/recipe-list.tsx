@@ -12,7 +12,7 @@ export let recipeList: ReturnType<typeof getRecipeList> = [];
 function getRecipeList() {
     return Object.entries(recipes).map(([key, value]) =>
         Object.assign(value, {
-            slug: key,
+            slug: key as keyof typeof recipes,
             search: [
                 value.title,
                 value.titleAlt,
