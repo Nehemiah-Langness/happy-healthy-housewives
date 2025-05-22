@@ -17,7 +17,28 @@ export function RecipeHomePage() {
             .toLowerCase()
             .split(' ')
             .filter((x) => x);
-        return recipeList.filter((recipe) => terms.every((term) => recipe.search.some((s) => s.includes(term))));
+
+        if (!terms.length) return recipeList;
+        return recipeList
+            .map((recipe) => {
+                let score = 0;
+
+                for (let index = 0; index < recipe.search.length; index++) {
+                    const search = recipe.search[index];
+                    const matches = terms.filter((term) => search.includes(term)).length;
+                    score += Math.pow(2, recipe.search.length - index) * matches;
+                }
+
+                console.log(recipe, score);
+
+                return {
+                    recipe: recipe,
+                    score,
+                };
+            })
+            .filter((result) => result.score > 0)
+            .sort((a, b) => -Math.sign(a.score - b.score))
+            .map((r) => r.recipe);
     }, [filter]);
 
     const matchingTags = useMemo(() => {
@@ -71,10 +92,7 @@ export function RecipeHomePage() {
                             {!!matchingRecipes.length && (
                                 <div className='d-flex flex-column gap-5'>
                                     {matchingRecipes.map((r) => (
-                                        <RecipeLink
-                                            key={r.title}
-                                            recipe={r}
-                                        />
+                                        <RecipeLink key={r.title} recipe={r} />
                                     ))}
                                 </div>
                             )}
