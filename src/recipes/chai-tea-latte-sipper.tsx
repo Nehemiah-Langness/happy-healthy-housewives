@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -10,7 +11,10 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            "When I first started THM, I found myself missing the sweet treat type coffee I'd save up my money to go purchase at large chains that shall not be named.",
+            <>
+                When I first started <AffiliateLink>THM</AffiliateLink>, I found myself missing the sweet treat type coffee I'd save up my
+                money to go purchase at large chains that shall not be named.
+            </>,
             'I was determined to stay on plan, and decided that I should no longer be deprived of my sweet treats! This sipper is a product of my determination to enjoy my beautiful coffee.',
         ],
     },
@@ -19,7 +23,7 @@ const recipe: Recipe = {
         '1 cup cold coffee',
         '2 cups of your favorite chai tea, brewed',
         'Ice',
-        '1 -2 doonks (1/32 tsp) pure stevia',
+        '1-2 doonks (1/32 tsp) pure stevia',
         'pinch of mineral salt',
         '1/4 cup unsweetened nut milk',
     ],

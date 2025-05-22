@@ -12,6 +12,7 @@ import { RecipeTagPage } from './pages/RecipeTagPage';
 import { RecipePage } from './pages/RecipePage';
 import { AllergyDisclaimer } from './components/AllergyDisclaimer';
 import { AcronymKey } from './components/AcronymKey';
+import { AffiliateModal } from './components/AffiliateModal';
 
 function Redirect({ to, replace }: { to: string; replace?: undefined } | { to?: undefined; replace: (current: string) => string }) {
     const navigate = useNavigate();
@@ -148,6 +149,7 @@ function Layout() {
                         </span>
                     </div>
                 </footer>
+                <AffiliateModal />
             </div>
         </div>
     );

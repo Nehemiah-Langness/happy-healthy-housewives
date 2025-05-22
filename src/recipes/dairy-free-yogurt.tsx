@@ -1,4 +1,5 @@
 import { AcronymToggle } from '../components/AcronymToggle';
+import { AffiliateLink } from '../components/AffiliateLink';
 import { RecipeHeader } from '../components/RecipeHeader';
 import type { Recipe } from '../types/recipe';
 
@@ -8,22 +9,22 @@ const recipe: Recipe = {
     dateAdded: new Date('2025-05-15'),
     brief: `Making your own dairy free yogurt is considerably cheaper than buying from the store (and even more delicious!)`,
     image: 'dairy-free-yogurt.jpg',
-    file: 'AlmondMilkYogurt.pdf',
+    file: 'DairyFreeYogurt.pdf',
     quote: {
         person: '',
         Quote: [
-            <span>
+            <>
                 I created this recipe a few months ago when I noticed a lack in our community! I was tired of paying the prices for store
                 bought <AcronymToggle>DF</AcronymToggle> yogurt that was filled with not ideal fillers. My search online showed me tons of
                 recipes where creators used corn starch to help thicken their yogurt. Here’s the thing: a dairy free milk won’t thicken on
                 its own. You have to use something, but that something doesn’t need to hurt your healthy body! So, here is my creation (that
                 I’m proud to say has been asked for by many). The thickeners in this recipe will bless your body rather than cause damage,
                 and that’s what the <b>Trim Healthy Mama</b> lifestyle is all about!
-            </span>,
-            <span>
+            </>,
+            <>
                 Also, I say here that I make my own almond milk. My version is an <AcronymToggle>ultra FP</AcronymToggle>, coming in at less
                 than <b>1g of fat per cup</b>. It’s really simple and I suggest you give it a try!
-            </span>,
+            </>,
         ],
     },
     servings: '8 servings',
@@ -32,7 +33,7 @@ const recipe: Recipe = {
         '5 tsp gluccie (Glucomannan powder), *optional, see notes',
         '5 tsp baobob, *optional, see notes',
         '1 tsp raw local honey (this provides food for the cultures to feed on)',
-        <span>
+        <>
             Vegan yogurt cultures (I bought the brand{' '}
             <a
                 href='https://www.amazon.com/Cultures-Health-Starter-delicious-nutrient-dense/dp/B012PNMB7O/ref=sxts_sxwds-bia-wc-rsf-lq2a1_0?crid=1CY5LI6NNJOL9&cv_ct_cx=cultures+for+health+vegan+yogurt+starter&dchild=1&keywords=cultures+for+health+vegan+yogurt+starter&pd_rd_i=B012PNMB7O&pd_rd_r=055f4872-5c92-487e-869c-7868862ca2eb&pd_rd_w=XmhJh&pd_rd_wg=PG9nr&pf_rd_p=26b0e770-de1c-4342-bf97-c57fd874dbaf&pf_rd_r=BWSEK54A4PZ75DNWH15S&psc=1&qid=1621375592&sprefix=cultures+for+health+vegan+yogurt%2Caps%2C200&sr=1-1-49946e88-733b-44df-869b-c05699555c56'
@@ -42,7 +43,7 @@ const recipe: Recipe = {
                 Cultures For Health
             </a>
             )
-        </span>,
+        </>,
     ],
     IngredientNotes: (
         <div className='mt-5'>
@@ -53,16 +54,16 @@ const recipe: Recipe = {
                 <p>Drain and rinse the almonds then place into a blender with 8 cups of water.</p>
                 <p>Pulverize the almonds, then strain into the pot through a milk bag.</p>
                 <p>
-                    (or if you’re making this to drink, pour back into blender with a pinch of salt, dash of vanilla extract, 1 doonk THM
-                    Stevia (or sweetener equivalent), and 1/2 tsp of gluccie or xanthem gum)
+                    (or if you’re making this to drink, pour back into blender with a pinch of salt, dash of vanilla extract, 1 doonk{' '}
+                    <AffiliateLink>THM Stevia</AffiliateLink> (or sweetener equivalent), and 1/2 tsp of gluccie or xanthem gum)
                 </p>
                 <b>Cashew Milk</b>
                 <p>About 2g of fat per cup</p>
                 <p>Place 1/4 cup of raw cashews into a blender with 8 cups of water.</p>
                 <p> Pulverize the cashews, then pour into a pot. </p>
                 <p>
-                    (or if you’re making this to drink, pour back into blender with a pinch of salt, dash of vanilla extract, 1 doonk THM
-                    Stevia (or sweetener equivalent), and 1/2 tsp of gluccie or xanthem gum)
+                    (or if you’re making this to drink, pour back into blender with a pinch of salt, dash of vanilla extract, 1 doonk{' '}
+                    <AffiliateLink>THM Stevia</AffiliateLink> (or sweetener equivalent), and 1/2 tsp of gluccie or xanthem gum)
                 </p>
             </div>
         </div>

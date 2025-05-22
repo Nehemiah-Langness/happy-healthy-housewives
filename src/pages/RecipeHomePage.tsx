@@ -16,23 +16,7 @@ export function RecipeHomePage() {
             .toLowerCase()
             .split(' ')
             .filter((x) => x);
-        return recipeList.filter((recipe) =>
-            terms.every(
-                (term) =>
-                    recipe.title.toLowerCase().includes(term) ||
-                    recipe.brief.toLowerCase().includes(term) ||
-                    (Array.isArray(recipe.quote) ? recipe.quote : [recipe.quote]).some(
-                        (quote) =>
-                            quote.person.toLowerCase().includes(term) ||
-                            (typeof quote.Quote === 'string'
-                                ? [quote.Quote]
-                                : Array.isArray(quote.Quote)
-                                ? (quote.Quote.filter((x) => typeof x === 'string') as string[])
-                                : []
-                            ).some((q) => q.toLowerCase().includes(term))
-                    )
-            )
-        );
+        return recipeList.filter((recipe) => terms.every((term) => recipe.search.some((s) => s.includes(term))));
     }, [filter]);
 
     const matchingTags = useMemo(() => {
@@ -53,6 +37,7 @@ export function RecipeHomePage() {
                             <FontAwesomeIcon icon={faSearch} />
                         </span>
                         <input
+                            autoFocus
                             placeholder='Search Our Recipes'
                             type='text'
                             className='form-control'
@@ -66,10 +51,9 @@ export function RecipeHomePage() {
                         )}
                     </div>
                     <datalist id='recipe-names'>
-                        {recipeList
-                            .map((r) => (
-                                <option key={r.slug} value={r.title} />
-                            ))}
+                        {recipeList.map((r) => (
+                            <option key={r.slug} value={r.title} />
+                        ))}
                     </datalist>
                     <RecipesIntro />
 
@@ -83,15 +67,24 @@ export function RecipeHomePage() {
                                 </div>
                             )}
 
-                            <div className='d-flex flex-column gap-5'>
-                                {matchingRecipes.map((r) => (
-                                    <RecipeLink
-                                        key={r.title}
-                                        to={`/recipes/${r.tags[0].toLowerCase().replace(/ /g, '-')}/${r.slug}`}
-                                        recipe={r}
-                                    />
-                                ))}
-                            </div>
+                            {!!matchingRecipes.length && (
+                                <div className='d-flex flex-column gap-5'>
+                                    {matchingRecipes.map((r) => (
+                                        <RecipeLink
+                                            key={r.title}
+                                            to={`/recipes/${r.tags[0].toLowerCase().replace(/ /g, '-')}/${r.slug}`}
+                                            recipe={r}
+                                        />
+                                    ))}
+                                </div>
+                            )}
+
+                            {!matchingTags.length && !matchingRecipes.length && (
+                                <div className='d-flex flex-column align-items-center justify-content-center bg-light py-5 px-2 gap-1'>
+                                    <div className='ff-title fs-5'>No recipes match your search</div>
+                                    <div>Please clear your search and try different search terms.</div>
+                                </div>
+                            )}
                         </>
                     ) : (
                         <div className='row gy-5 mt-0'>

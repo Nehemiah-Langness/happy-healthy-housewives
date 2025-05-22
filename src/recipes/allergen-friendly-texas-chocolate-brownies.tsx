@@ -1,6 +1,8 @@
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 import { LinkToRecipe } from '../components/LinkToRecipe';
+import { ExternalLink } from '../components/ExternalLink';
+import { AffiliateLink } from '../components/AffiliateLink';
 
 const recipe: Recipe = {
     title: 'Allergen Friendly Texas Chocolate Brownies',
@@ -28,13 +30,11 @@ const recipe: Recipe = {
         <IngredientList
             title='Brownies'
             Ingredients={[
-                <span>
-                    1 cup THM Baking Blend or{' '}
-                    <a href='https://www.briana-thomas.com/brianas-baking-mix/' target='_blank' rel='noreferrer'>
-                        Briana Thomas Baking Mix
-                    </a>{' '}
-                    (for Nut Free)
-                </span>,
+                <>
+                    1 cup <AffiliateLink>THM Baking Blend</AffiliateLink> or{' '}
+                    <ExternalLink to='https://www.briana-thomas.com/brianas-baking-mix/'>Briana Thomas Baking Mix</ExternalLink> (for Nut
+                    Free)
+                </>,
                 '1/2 cup Erythritol',
                 '1/2 cup cocoa powder (Dutch pressed is best)',
                 '1.5 tsp baking powder',
@@ -42,9 +42,9 @@ const recipe: Recipe = {
                 '1.5 cup unsweetened milk of choice (see notes)',
                 '1/2 tsp apple cider vinegar or white vinegar',
                 '1/2 tsp vanilla extract',
-                <span>
+                <>
                     2 Tbsp yogurt (my <LinkToRecipe recipe='dairy-free-yogurt'>Dairy Free Yogurt</LinkToRecipe> works great!)
-                </span>,
+                </>,
                 '1/4 cup measured, then melted coconut oil',
             ]}
         />,
@@ -55,7 +55,7 @@ const recipe: Recipe = {
                 '2 Tbsp extra virgin coconut oil',
                 '1/4 cup + 2 Tbsps unsweetened milk of choice (see notes)',
                 '2 pinches mineral salt',
-                '2 Tbsp THM Gentle Sweet',
+                <>2 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink></>,
                 '2 doonks stevia',
                 '1/8 tsp caramel extract',
                 '1/3 cup chopped Pecans (optional, but is more authentic for a Texas Chocolate cake)',

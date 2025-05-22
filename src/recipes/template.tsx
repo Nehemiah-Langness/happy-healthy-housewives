@@ -16,7 +16,7 @@ const recipe: Recipe = {
     servings: '',
     servingSize: '',
     Ingredients: [
-        '',
+        <></>,
     ],
     IngredientNotes: (
         <>

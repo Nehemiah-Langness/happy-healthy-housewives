@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -20,7 +21,9 @@ const recipe: Recipe = {
     Ingredients: [
         '2/3 cup popcorn',
         '1/2 Tbsp butter (or coconut oil) to not burn things',
-        '1/4 cup THM Gentle Sweet',
+        <>
+            1/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+        </>,
         'Mineral salt for flavor',
     ],
 

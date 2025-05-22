@@ -1,6 +1,6 @@
-import { Link } from 'react-router';
 import type { Recipe } from '../types/recipe';
 import { IngredientList } from '../components/IngredientList';
+import { LinkToRecipe } from '../components/LinkToRecipe';
 
 const recipe: Recipe = {
     title: 'Orange Sourdough Sweet Loaf',
@@ -23,36 +23,38 @@ const recipe: Recipe = {
         {
             person: 'Mandy',
             Quote: [
-                <span>
+                <>
                     If you’d like to try the <b>Dairy Free option</b>, feel free to check out my{' '}
-                    <Link to='/recipes/thm-fp/dairy-free-yogurt'>Almond Milk Yogurt</Link> recipe!
-                </span>,
+                    <LinkToRecipe recipe='dairy-free-yogurt'>Almond Milk Yogurt</LinkToRecipe> recipe!
+                </>,
             ],
         },
     ],
     servingSize: '2 Slices',
-    Ingredients: [<IngredientList title='Loaf' 
-        Ingredients={[
-            '1/2 cup of inactive starter',
-            '2 1/2 cups of white whole wheat flour',
-            '1 cup of unsweetened nut milk',
-            '2 tsp Baking Powder',
-            '1/4 tsp Baking Soda',
-            <span>3/4 cup of 0% Greek Yogurt (or almond yogurt for a <b>DF</b> option)</span>,
-            '1 tsp Orange Extract',
-            '2 egg whites or 1/4 cup of liquid egg whites',
-            '1/2 cup Gentle Sweet (or Truvia)',
-            '1/4 tsp of Salt',
-            'Zest of 1 small orange'
-        ]}
-    />, <IngredientList 
-        title='Glaze'
-        Ingredients={[
-            '3 Tbs Gentle Sweet (or Truvia)',
-            'Juice of the zested orange',
-            '2 tsp unsweetened nut milk'
-        ]}
-    />],
+    Ingredients: [
+        <IngredientList
+            title='Loaf'
+            Ingredients={[
+                '1/2 cup of inactive starter',
+                '2 1/2 cups of white whole wheat flour',
+                '1 cup of unsweetened nut milk',
+                '2 tsp Baking Powder',
+                '1/4 tsp Baking Soda',
+                <>
+                    3/4 cup of 0% Greek Yogurt (or almond yogurt for a <b>DF</b> option)
+                </>,
+                '1 tsp Orange Extract',
+                '2 egg whites or 1/4 cup of liquid egg whites',
+                '1/2 cup Gentle Sweet (or Truvia)',
+                '1/4 tsp of Salt',
+                'Zest of 1 small orange',
+            ]}
+        />,
+        <IngredientList
+            title='Glaze'
+            Ingredients={['3 Tbs Gentle Sweet (or Truvia)', 'Juice of the zested orange', '2 tsp unsweetened nut milk']}
+        />,
+    ],
 
     Directions: (
         <>

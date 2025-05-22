@@ -1,5 +1,6 @@
-import { Link } from 'react-router';
 import type { Recipe } from '../types/recipe';
+import { LinkToRecipe } from '../components/LinkToRecipe';
+import { AffiliateLink } from '../components/AffiliateLink';
 
 const recipe: Recipe = {
     title: 'Trim Sangarita',
@@ -11,20 +12,20 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Oh Mama’s, I am so excited to bring you this summer cocktail that you can share with your friends! 
+            <>Oh Mama’s, I am so excited to bring you this summer cocktail that you can share with your friends! 
             This wonderful drink is great for your taste buds AND your blood sugar!  A few years back, before 
             I started Trim Healthy Mama, my Mom and I were obsessed with this cocktail found at our favorite 
             restaurant, the Sangarita! We recreated an off-plan version, but I really wanted to find a way to 
-            make this THM compliant.`,
+            make this <AffiliateLink>THM</AffiliateLink> compliant.</>,
             `It’s summery, on the sweeter side, and the perfect drink to make for a gathering. I hope you enjoy!`,
         ],
     },
     Ingredients: [
         <span>
-            2 servings of <Link to='/recipes/drinks-and-sippers/mamaritas'>Trim Mamarita‘s</Link>
+            2 servings of <LinkToRecipe recipe='mamaritas'>Trim Mamarita‘s</LinkToRecipe>
         </span>,
         '1 bottle of dry red wine',
-        '3 TBS of THM Super Sweet (or Pyure), or more if you like it sweeter',
+        <>3 TBS of <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure), or more if you like it sweeter</>,
         '2 tsp of pineapple extract',
         '1 tsp of coconut extract',
         '1 tsp of cherry extract',

@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 
@@ -25,11 +26,11 @@ const recipe: Recipe = {
                 '2 cups Old Fashioned Oats',
                 '1/2 cup unsweetened nut milk',
                 '1/2 cup egg whites',
-                '3/4 cup THM Gentle Sweet(or Truvia)',
+                <>3/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)</>,
                 '1 tsp cinnamon',
                 '1 tsp baking soda',
                 '1 Tbsp coconut oil',
-                '4 Tbsp Whey Protein or THM Creamy Dreamy Hemp Protein',
+                <>4 Tbsp Whey Protein or <AffiliateLink>THM Creamy Dreamy Hemp Protein</AffiliateLink></>,
                 '1 tsp of vanilla or caramel extract',
                 '1/2 medium apple, diced',
             ]}
@@ -38,8 +39,8 @@ const recipe: Recipe = {
             title='Topping'
             Ingredients={[
                 '1 Tbsp coconut oil, melted',
-                '2 Tbsp THM Baking Blend(or oat flour)',
-                '2 Tbsp THM Gentle Sweet (or Truvia)',
+                <>2 Tbsp <AffiliateLink>THM Baking Blend</AffiliateLink> (or oat flour)</>,
+                <>2 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)</>,
                 '1/2 tsp cinnamon',
             ]}
         />,

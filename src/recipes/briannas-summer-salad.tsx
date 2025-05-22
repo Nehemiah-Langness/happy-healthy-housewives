@@ -1,5 +1,5 @@
-import { Link } from 'react-router';
 import type { Recipe } from '../types/recipe';
+import { LinkToRecipe } from '../components/LinkToRecipe';
 
 const recipe: Recipe = {
     title: "Brianna's Summer Salad",
@@ -23,7 +23,7 @@ const recipe: Recipe = {
         '2 Tbsp goat cheese',
         '3-4 chopped strawberries (or other fruit as pictured for XO)',
         <span>
-            1 Tbsp <Link to='/recipes/thm-fp/easy-balsamic-glaze/'></Link> (or sugar free balsamic vinegar if you like it to be less sweet){' '}
+            1 Tbsp <LinkToRecipe recipe='easy-balsamic-glaze'>Easy Balsamic Glaze</LinkToRecipe> (or sugar free balsamic vinegar if you like it to be less sweet){' '}
         </span>,
     ],
     Directions: (

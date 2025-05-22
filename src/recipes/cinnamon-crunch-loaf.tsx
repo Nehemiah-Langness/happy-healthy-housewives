@@ -1,4 +1,6 @@
 import { AcronymToggle } from '../components/AcronymToggle';
+import { AffiliateLink } from '../components/AffiliateLink';
+import { ExternalLink } from '../components/ExternalLink';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 
@@ -16,11 +18,11 @@ const recipe: Recipe = {
             (and sometimes on Bagel Tuesday)! I enjoy my sprouted grain bagels, but looking over at the big crunchy deliciousness 
             was making me weak in the knees. So, as is the case whenever I get a temptation, into the kitchen I went for some mad 
             experimenting!`,
-            <span>
+            <>
                 This time worked out better than ever! All the deliciousness without the junk. I even like to whip up a batch of{' '}
                 <a href='#wmdl-sfcbc'>Wonderfully Made and Dearly Loved‘s Sugar Free Cinnamon Baking Chips</a> (recipe linked below) to
                 avoid any needless fillers.
-            </span>,
+            </>,
             `Nothing but slimming goodness here!`,
         ],
     },
@@ -29,7 +31,7 @@ const recipe: Recipe = {
         <IngredientList
             title='Topping'
             Ingredients={[
-                '1/4 cup THM Gentle Sweet',
+                <>1/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink></>,
                 '1/4 tsp black strap molasses',
                 '1/8 tsp mineral salt',
                 '3 Tbsp unsweetened almond milk',
@@ -41,18 +43,15 @@ const recipe: Recipe = {
         <IngredientList
             title='Bread'
             Ingredients={[
-                '2 cups THM Baking Blend',
-                '1/2 cup THM Super Sweet',
+                <>2 cups <AffiliateLink>THM Baking Blend</AffiliateLink></>,
+                <>1/2 cup <AffiliateLink>THM Super Sweet</AffiliateLink></>,
                 '2 tsp baking powder',
-                '1 doonk of THM Pure Stevia',
-                <span>
-                    1/3 cup THM Unflavored Whey Protein (or Collagen for <AcronymToggle>DF</AcronymToggle>)
-                </span>,
+                <>1 doonk of <AffiliateLink>THM Pure Stevia</AffiliateLink></>,
+                <>
+                    1/3 cup <AffiliateLink>THM Unflavored Whey Protein</AffiliateLink> (or Collagen for <AcronymToggle>DF</AcronymToggle>)
+                </>,
                 <span id='wmdl-sfcbc'>
-                    3/4 – 1 cup{' '}
-                    <a href='https://wonderfullymadeanddearlyloved.com/sugar-free-cinnamon-baking-chips-dairy-free-thms/'>
-                        Cinnamon Baking Chips
-                    </a>
+                    3/4 – 1 cup <ExternalLink to='https://wonderfullymadeanddearlyloved.com/sugar-free-cinnamon-baking-chips-dairy-free-thms/'>Cinnamon Baking Chips</ExternalLink>
                 </span>,
                 '4 large eggs',
                 '1 cup unsweetened almond milk',

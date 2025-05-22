@@ -1,6 +1,7 @@
 import type { Recipe } from '../types/recipe';
 import { LinkToRecipe } from '../components/LinkToRecipe';
 import { AcronymToggle } from '../components/AcronymToggle';
+import { AffiliateLink } from '../components/AffiliateLink';
 
 const recipe: Recipe = {
     title: 'The Fluffiest Pumpkin Pancakes',
@@ -28,7 +29,7 @@ const recipe: Recipe = {
         '3/4 cup pumpkin puree',
         '2 tsp of pumpkin pie spice',
         '1 tsp vanilla extract',
-        '2 tsp THM Super Sweet (or Pyure)',
+        <>2 tsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)</>,
         '1 egg',
         '2 Tbsp unsalted butter',
         '2 tsp baking powder',
@@ -49,7 +50,7 @@ const recipe: Recipe = {
     Notes: (
         <>
             <p>
-                <b>THM Compliance:</b> This recipe is THM compliant because it soaks the flour in a acidic medium overnight, much like using
+                <b>THM Compliance:</b> This recipe is <AffiliateLink>THM</AffiliateLink> compliant because it soaks the flour in a acidic medium overnight, much like using
                 a sourdough starter. If you don’t wish to soak this recipe, you can use a sprouted grain flour or oat flour.
             </p>
         </>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
+import { AffiliateLink } from '../components/AffiliateLink';
 
 const recipe: Recipe = {
     title: 'Superfood Oatmeal',
@@ -23,17 +24,23 @@ const recipe: Recipe = {
     Ingredients: [
         '1/8 – 1/4 c. old fashioned oats',
         '1/8 – 1/4 c. quick cook steel cut oats',
-        '1 doonk THM Pure Stevia',
+        <>
+            1 doonk <AffiliateLink>THM Pure Stevia</AffiliateLink>
+        </>,
         '1/2 – 1 tsp. ground flaxseed',
         '1 – 2 tsp. whole husk psyllium flakes',
         '1 tsp. baobab powder',
-        '1 tsp. THM Creamy Dreamy Hemp Protein (optional)',
+        <>
+            1 tsp. <AffiliateLink>THM Creamy Dreamy Hemp Protein</AffiliateLink> (optional)
+        </>,
         '1/4 c. frozen cauliflower rice',
         '1/4 c. egg whites (boxed is best)',
         '1 1/4 – 2 1/2 c. water',
         '1/2 – 1 tsp. gelatin',
         'Sprinkle of mineral salt',
-        'Sprinkle of THM Gentle Sweet',
+        <>
+            Sprinkle of <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+        </>,
     ],
     IngredientNotes: (
         <IngredientList
@@ -62,7 +69,7 @@ const recipe: Recipe = {
             </p>
             <p>Add in cauliflower rice, egg whites, and water. Stir until well combined.</p>
             <p>Place on stovetop on medium heat. Once boiling, add in the gelatin and stir well.</p>
-            <p>Pour into a bowl and top with any optional toppings, sprinkle of mineral salt, and THM Gentle Sweet.</p>
+            <p>Pour into a bowl and top with any optional toppings, sprinkle of mineral salt, and <AffiliateLink>THM Gentle Sweet</AffiliateLink>.</p>
         </>
     ),
     Notes: (

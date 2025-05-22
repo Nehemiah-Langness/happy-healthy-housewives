@@ -4,6 +4,9 @@ export interface Recipe {
     /** The name of the recipe */
     title: string;
 
+    /** An alternate name of the recipe for increased searchability */
+    titleAlt?: string;
+
     /** The short description of the recipe to show on links to the recipe */
     brief: string;
 

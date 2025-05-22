@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -9,9 +10,9 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Ok, this is another viral TikTok recipe that came my way and I just had to THM it. Baked “oatmeal” is very popular because it 
+            <>Ok, this is another viral TikTok recipe that came my way and I just had to <AffiliateLink>THM</AffiliateLink> it. Baked “oatmeal” is very popular because it 
             essentially becomes breakfast cake! Who wouldn’t love that? This is a brownie version and it is so beautifully decadent you 
-            won’t believe it’s an E meal!`,
+            won’t believe it’s an E meal!</>,
         ],
     },
     servings: 'Multiple',
@@ -21,7 +22,7 @@ const recipe: Recipe = {
         '1 cup of nut milk',
         '1/2 cup egg whites',
         '1/2 cup cocoa',
-        '3/4 cup THM Gentle Sweet(or Truvia)',
+        <>3/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)</>,
         '2 TBS coconut oil',
         '1 tsp vanilla extract',
         '1 tsp baking soda',

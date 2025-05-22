@@ -1,3 +1,5 @@
+import { AffiliateLink } from '../components/AffiliateLink';
+import { ExternalLink } from '../components/ExternalLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -9,29 +11,27 @@ const recipe: Recipe = {
     quote: {
         person: 'Mandy',
         Quote: [
-            <span>
+            <>
                 This is a recipe that my family is particularly excited about. We had a slice of cappuccino fudge years ago and I’ve been
-                dying to make a <b>THM</b> version! Finally, I pulled it off; plus, it’s dairy free! I hope you love this as much as my
-                sister and I do.
-            </span>,
+                dying to make a <AffiliateLink>THM</AffiliateLink> version! Finally, I pulled it off; plus, it’s dairy free! I hope you love
+                this as much as my sister and I do.
+            </>,
         ],
     },
     servings: '8 Servings',
     Ingredients: [
-        '4oz food grade cocoa butter',
+        '4 oz food grade cocoa butter',
         '4 oz coconut manna (or coconut butter)',
-        '4 Tbsp THM Gentle Sweet',
+        <>
+            4 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+        </>,
         '1 tsp vanilla extract',
-        <span>
+        <>
             Batch of{' '}
-            <a
-                href='https://mymontanakitchen.com/2-ingredient-dairy-free-sweetened-condensed-milk-thm-s-sugar-free-low-carb/'
-                target='_blank'
-                rel='noreferrer'
-            >
+            <ExternalLink to='https://mymontanakitchen.com/2-ingredient-dairy-free-sweetened-condensed-milk-thm-s-sugar-free-low-carb/'>
                 My Montana Kitchen’s sweetened condensed milk
-            </a>
-        </span>,
+            </ExternalLink>
+        </>,
         '1 1/2 Tbsp instant coffee',
     ],
     Directions: (

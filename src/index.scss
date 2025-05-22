@@ -36,7 +36,7 @@ body {
     font-style: normal;
 }
 
-.dancing-script {
+.dancing-script, .modal-title {
     font-family: 'Dancing Script', cursive;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -91,4 +91,8 @@ body {
             width: 16rem;
         }
     }
+}
+
+.modal-header {
+    background: var(--bs-light);
 }

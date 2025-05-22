@@ -1,6 +1,7 @@
 import { AcronymToggle } from '../components/AcronymToggle';
 import type { Recipe } from '../types/recipe';
 import { LinkToRecipe } from '../components/LinkToRecipe';
+import { AffiliateLink } from '../components/AffiliateLink';
 
 const recipe: Recipe = {
     title: 'Sweet and Spicy Sauce',
@@ -33,7 +34,7 @@ const recipe: Recipe = {
         </span>,
         '1/4 cup Hot Sauce',
         <span>
-            1 1/2 tsp of <b>THM Super Sweet</b> (or <b>Pyure</b>)
+            1 1/2 tsp of <AffiliateLink>THM Super Sweet</AffiliateLink> (or <b>Pyure</b>)
         </span>,
         '1/2 tsp of Vanilla extract.',
         '1 pinch mineral salt.',

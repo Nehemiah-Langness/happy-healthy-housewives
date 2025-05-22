@@ -1,3 +1,5 @@
+import { AcronymToggle } from '../components/AcronymToggle';
+import { AffiliateLink } from '../components/AffiliateLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -21,10 +23,12 @@ const recipe: Recipe = {
     },
     servings: 'Multiple Servings',
     Ingredients: [
-        '1/3 cup of THM Gentle Sweet (or Truvia)',
+        <>
+            1/3 cup of <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
+        </>,
         '1/4 tsp instant espresso powder',
         '1/2 Tbsp cocoa powder',
-        '1 cup of heavy cream (see note for DF version)',
+        <>1 cup of heavy cream (see note for <AcronymToggle>DF</AcronymToggle> version)</>,
         '1/2 tsp almond extract',
         '1/4 tsp vanilla extract',
         '3/4 cup Irish Whiskey',

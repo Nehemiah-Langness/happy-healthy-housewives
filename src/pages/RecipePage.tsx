@@ -65,7 +65,7 @@ export function RecipePage() {
                                 label: tagMap[x],
                             }))
                             .map((t) => (
-                                <Link
+                                <Link key={t.tag}
                                     className='badge bg-primary text-decoration-none'
                                     to={`/recipes/${t.tag.toLowerCase().replace(/ /g, '-')}`}
                                 >

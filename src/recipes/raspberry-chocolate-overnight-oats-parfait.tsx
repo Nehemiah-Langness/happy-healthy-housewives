@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 
@@ -31,7 +32,7 @@ const recipe: Recipe = {
             Ingredients={[
                 '1/2 cup low fat cottage cheese (or DF yogurt)',
                 '1 Tbsp Cocoa',
-                '3 tsp THM Super Sweet',
+                <>3 tsp <AffiliateLink>THM Super Sweet</AffiliateLink></>,
                 'A splash of nut milk (optional if not blending)',
             ]}
         />,

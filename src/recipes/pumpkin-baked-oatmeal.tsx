@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 
@@ -26,9 +27,13 @@ const recipe: Recipe = {
                 '1/2 cup egg whites',
                 '2 tsp Pumpkin Pie Spice (equal parts clove, cinnamon, nutmeg, and ginger)',
                 '1 tsp baking soda',
-                '3/4 cup THM Gentle Sweet (or Truvia)',
+                <>
+                    3/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
+                </>,
                 '2 TBS coconut oil (melted)',
-                '4 TBS whey or THM Creamy Dreamy protein',
+                <>
+                    4 TBS whey or <AffiliateLink>THM Creamy Dreamy protein</AffiliateLink>
+                </>,
                 'pinch of mineral salt',
             ]}
         />,
@@ -36,7 +41,7 @@ const recipe: Recipe = {
             title='Frosting'
             Ingredients={[
                 '5 wedges of LLCC cheese, room temp (or 5 Tbsps of DF cream cheese)',
-                '1 Tbsp THM Super Sweet (or Pyure)',
+                <>1 Tbsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)</>,
                 '2 Tbsp unsweetened nut milk',
             ]}
         />,

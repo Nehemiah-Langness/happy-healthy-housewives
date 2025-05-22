@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -9,7 +10,9 @@ const recipe: Recipe = {
     file: 'YuletideMulledWine.pdf',
     quote: {
         person: 'Brianna',
-        Quote: [`Many families have the tradition of curling up around the fire and sipping on something warm. This Mulled Wine is a spicy, warm, festive drink perfect for the adults! It won’t spike your blood sugar, but sure is sweet and filled with holiday cheer`],
+        Quote: [
+            `Many families have the tradition of curling up around the fire and sipping on something warm. This Mulled Wine is a spicy, warm, festive drink perfect for the adults! It won’t spike your blood sugar, but sure is sweet and filled with holiday cheer`,
+        ],
     },
     servings: 'Multiple Servings',
     Ingredients: [
@@ -17,7 +20,9 @@ const recipe: Recipe = {
         '3-4 Cinnamon sticks',
         '1/2 tsp of ground nutmeg',
         '1/4 tsp of ground clove',
-        '1/4-1/2 cup of THM Gentle Sweet',
+        <>
+            1/4-1/2 cup of <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+        </>,
     ],
     Directions: (
         <>
@@ -28,7 +33,10 @@ const recipe: Recipe = {
     ),
     Notes: (
         <>
-            <p>If you are wanting to serve this to a large group of people, such as for a party, I would suggest doubling or tripling this recipe.</p>
+            <p>
+                If you are wanting to serve this to a large group of people, such as for a party, I would suggest doubling or tripling this
+                recipe.
+            </p>
         </>
     ),
 };

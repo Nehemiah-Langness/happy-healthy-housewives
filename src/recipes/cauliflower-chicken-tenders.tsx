@@ -18,15 +18,15 @@ const recipe: Recipe = {
             with the healthier versions of my childhood favorite. Maybe they work if you can use parmesan, but I am currently 
             rocking a dairy free stage in my life. Turns out, the answer came from the simplest of places: cauliflower.`,
             `Now you can enjoy this truly guilt free treat while getting in a serving of veggies! Best of both worlds!`,
-            <span>
+            <>
                 TIP: try these out with Bri’s <LinkToRecipe recipe='sweet-and-spicy-sauce'>Sweet and Spicy Sauce</LinkToRecipe> or{' '}
                 <LinkToRecipe recipe='honey-mustard'>“Honey” Mustard</LinkToRecipe>. Then you can truly relive your childhood!
-            </span>,
+            </>,
         ],
     },
     servings: '4 servings',
     Ingredients: [
-        '32oz frozen cauliflower -dehydrated and ground into flour',
+        '32 oz frozen cauliflower -dehydrated and ground into flour',
         '1/4 tsp baking powder',
         '1/4 c almond flour',
         '1/2 cup coconut flour',

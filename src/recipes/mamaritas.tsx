@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { Recipe } from '../types/recipe';
-import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { ExternalLink } from '../components/ExternalLink';
 
 const recipe: Recipe = {
     title: 'Trim Mamarita',
@@ -19,11 +18,8 @@ const recipe: Recipe = {
             <span>
                 Tequila is the best “on-plan” alcohol for the <b>Trim Healthy Mama Lifestyle</b>. The sugars used to make tequila are called
                 “agavins”, which have been shown in{' '}
-                <a href='https://pubmed.ncbi.nlm.nih.gov/25367106/' target='_blank' rel='noreferrer'>
-                    <FontAwesomeIcon icon={faExternalLink} /> clinical trials
-                </a>{' '}
-                to not raise your blood sugar. It’s also a pro-biotic and a pre-biotic, meaning it provides the nutrients for the probiotics
-                to grow!
+                <ExternalLink to='https://pubmed.ncbi.nlm.nih.gov/25367106/'>clinical trials</ExternalLink> to not raise your blood sugar.
+                It’s also a pro-biotic and a pre-biotic, meaning it provides the nutrients for the probiotics to grow!
             </span>,
             `There are many other health benefits to tequila, but I don’t think I need to give you any reason to love this drink!`,
         ],
@@ -36,11 +32,6 @@ const recipe: Recipe = {
         '1-2 doonks (1/32 tsp) pure stevia',
         '1 cup ice cubes (or 1/2 cup water for on the rocks)',
     ],
-    IngredientNotes: (
-        <>
-            <b></b>
-        </>
-    ),
     Directions: (
         <>
             <p>In a large wine glass, combine Tequila, lime juice, orange bitters, and Stevia.</p>

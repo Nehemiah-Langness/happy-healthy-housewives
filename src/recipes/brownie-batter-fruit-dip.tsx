@@ -1,3 +1,4 @@
+import { AffiliateLink } from '../components/AffiliateLink';
 import { LinkToRecipe } from '../components/LinkToRecipe';
 import type { Recipe } from '../types/recipe';
 
@@ -16,11 +17,13 @@ const recipe: Recipe = {
     },
     servings: 'Single Serving',
     Ingredients: [
-        <span>
+        <>
             1/2 cup of low-fat Greek yogurt (or a <LinkToRecipe recipe='dairy-free-yogurt'>dairy free yogurt</LinkToRecipe>)
-        </span>,
+        </>,
         '1/2 Tbsp of Cocoa Powder',
-        '1 tsp THM Super Sweet (or more to taste)',
+        <>
+            1 tsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or more to taste)
+        </>,
         '1/4 tsp vanilla extract',
         '1/4 tsp Cake Batter extract (optional, but gives a much better taste)',
         '1 pinch mineral salt',
