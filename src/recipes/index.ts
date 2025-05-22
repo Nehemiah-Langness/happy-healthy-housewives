@@ -10,6 +10,7 @@ import cappuccinoFudge from './cappuccino-fudge';
 import cauliflowerChickenTenders from './cauliflower-chicken-tenders';
 import chocolateAvocadoBalls from './chocolate-avocado-balls';
 import chocolateGlazedDonuts from './chocolate-glazed-donuts';
+import chocolatePeppermintChipCookies from './chocolate-peppermint-chip-cookies';
 import cinnamonCrunchLoaf from './cinnamon-crunch-loaf';
 import cookieDoughFrosting from './cookie-dough-frosting';
 import crunchwrap from './crunchwrap';
@@ -18,14 +19,17 @@ import easyBalsamicGlaze from './easy-balsamic-glaze';
 import honeyMustard from './honey-mustard';
 import icedChaiTeaLatteSipper from './iced-chai-tea-latte-sipper';
 import magicBars from './magic-bars';
+import mamasShepardsPie from './mamas-shepards-pie';
 import mamasSuperFoodYogurt from './mamas-super-food-yogurt';
 import mandysFamousSalsa from './mandys-famous-salsa';
 import mochaIceboxIceCream from './mocha-icebox-ice-cream';
 import nehemiahsKettleCorn from './nehemiahs-kettle-corn';
+import noWaitSourdoughPizza from './no-wait-sourdough-pizza';
 import nuttyRaspberryChocolate from './nutty-raspberry-chocolate';
 import orangeSourdoughSweetLoaf from './orange-sourdough-sweet-loaf';
 import peachesNCreamOatmeal from './peaches-n-cream-oatmeal';
 import pinaColadaCakeRoll from './pina-colada-cake-roll';
+import pretzelMess from './pretzel-mess';
 import pumpkinBakedOatmeal from './pumpkin-baked-oatmeal';
 import pumpkinCheesecakeSwirl from './pumpkin-cheesecake-swirl';
 import pumpkinSpiceFrappa from './pumpkin-spice-frappa';
@@ -49,6 +53,7 @@ import trimSangarita from './trim-sangarita';
 import tropicalGoodGirlMoonshine from './tropical-good-girl-moonshine';
 import twiceBakedCheesyPotatoes from './twice-baked-cheesy-potatoes';
 import vanillaIceboxIceCream from './vanilla-icebox-ice-cream';
+import walnutSnowballs from './walnut-snowballs';
 import yuletideMulledWine from './yuletide-mulled-wine';
 
 export const recipes = {
@@ -64,6 +69,7 @@ export const recipes = {
     ['cauliflower-chicken-tenders']: cauliflowerChickenTenders,
     ['chocolate-avocado-balls']: chocolateAvocadoBalls,
     ['chocolate-glazed-donuts']: chocolateGlazedDonuts,
+    ['chocolate-peppermint-chip-cookies']: chocolatePeppermintChipCookies,
     ['cinnamon-crunch-loaf']: cinnamonCrunchLoaf,
     ['cookie-dough-frosting']: cookieDoughFrosting,
     ['crunchwrap']: crunchwrap,
@@ -72,14 +78,17 @@ export const recipes = {
     ['honey-mustard']: honeyMustard,
     ['iced-chai-tea-latte-sipper']: icedChaiTeaLatteSipper,
     ['magic-bars']: magicBars,
+    ['mamas-shepards-pie']: mamasShepardsPie,
     ['mamas-super-food-yogurt']: mamasSuperFoodYogurt,
     ['mandys-famous-salsa']: mandysFamousSalsa,
     ['mocha-icebox-ice-cream']: mochaIceboxIceCream,
     ['nehemiahs-kettle-corn']: nehemiahsKettleCorn,
+    ['no-wait-sourdough-pizza']: noWaitSourdoughPizza,
     ['nutty-raspberry-chocolate']: nuttyRaspberryChocolate,
     ['orange-sourdough-sweet-loaf']: orangeSourdoughSweetLoaf,
     ['peaches-n-cream-oatmeal']: peachesNCreamOatmeal,
     ['pina-colada-cake-roll']: pinaColadaCakeRoll,
+    ['pretzel-mess']: pretzelMess,
     ['pumpkin-baked-oatmeal']: pumpkinBakedOatmeal,
     ['pumpkin-cheesecake-swirl']: pumpkinCheesecakeSwirl,
     ['pumpkin-spice-frappa']: pumpkinSpiceFrappa,
@@ -103,5 +112,6 @@ export const recipes = {
     ['tropical-good-girl-moonshine']: tropicalGoodGirlMoonshine,
     ['twice-baked-cheesy-potatoes']: twiceBakedCheesyPotatoes,
     ['vanilla-icebox-ice-cream']: vanillaIceboxIceCream,
+    ['walnut-snowballs']: walnutSnowballs,
     ['yuletide-mulled-wine']: yuletideMulledWine,
 };

@@ -10,7 +10,9 @@
         "postbuild": "copy .\\dist\\index.html .\\dist\\404.html",
         "lint": "eslint .",
         "preview": "vite preview",
-        "refresh": "node refresh-recipes.js"
+        "refresh": "node refresh-recipes.js",
+        "new": "node new-recipe.js",
+        "postnew": "npm run refresh"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.7.2",
