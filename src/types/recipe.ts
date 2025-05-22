@@ -42,6 +42,9 @@ export interface Recipe {
 
     /** Any additional content to add to the end of the recipe */
     Notes?: React.ReactNode;
+
+    /** Recipe URLS that should redirect to this recipe */
+    redirects?: string[];
 }
 
 type Quote = {

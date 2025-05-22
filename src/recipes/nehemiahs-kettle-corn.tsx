@@ -7,7 +7,7 @@ const recipe: Recipe = {
     dateAdded: new Date('2025-05-15'),
     brief: `Get ready to cuddle with your fam and watch Halloween movies with this delicious Kettle corn! 
             Created by Bri's husband, you'll start cracking up just from reading the instructions!`,
-    image: 'nehemiahs-kettle-corn-2.jpg',
+    image: 'nehemiahs-kettle-corn.jpg',
     file: 'NehemiahsKettleCorn.pdf',
     quote: {
         person: 'Brianna',
@@ -47,6 +47,10 @@ const recipe: Recipe = {
             <p>(We decided to post this recipe without editing what Nehemiah wrote. We thought it was much better this way!)</p>
         </>
     ),
+
+    redirects: [
+        'nehemiahs-kettle-corn-2'
+    ]
 };
 
 export default recipe;

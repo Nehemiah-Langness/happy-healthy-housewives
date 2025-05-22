@@ -48,6 +48,9 @@ const recipe: Recipe = {
             <p>Serve warm and enjoy!</p>
         </>
     ),
+    redirects: [
+        'twice-baked-cheesy-potatoes-thm-e'
+    ]
 };
 
 export default recipe;

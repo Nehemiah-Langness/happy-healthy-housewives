@@ -99,6 +99,9 @@ const recipe: Recipe = {
             </p>
         </>
     ),
+    redirects: [
+        'piña-colada-cake-roll'
+    ]
 };
 
 export default recipe;

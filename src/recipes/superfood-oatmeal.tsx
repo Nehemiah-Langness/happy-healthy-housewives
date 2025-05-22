@@ -1,7 +1,7 @@
-import { Link } from 'react-router';
 import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 import { AffiliateLink } from '../components/AffiliateLink';
+import { LinkToRecipe } from '../components/LinkToRecipe';
 
 const recipe: Recipe = {
     title: 'Superfood Oatmeal',
@@ -46,19 +46,19 @@ const recipe: Recipe = {
         <IngredientList
             title='Optional Flavors and Toppings'
             Ingredients={[
-                <span>
+                <>
                     <b>Peanut Butter Banana:</b> Add 2 Tbsp. Peanut Flour to pot, top bowl with 1/2 chopped banana + drizzle of Peanut
                     Butter.
-                </span>,
-                <Link to='/recipes/thm-e/apple-pie-oatmeal'>Apple Pie</Link>,
-                <Link to='/recipes/thm-e/peaches-n-cream-oatmeal'>Peaches and Cream</Link>,
-                <span>
+                </>,
+                <LinkToRecipe recipe='apple-pie-oatmeal'>Apple Pie</LinkToRecipe>,
+                <LinkToRecipe recipe='peaches-n-cream-oatmeal'>Peaches and Cream</LinkToRecipe>,
+                <>
                     <b>Blueberry:</b> pour 1/4 c. frozen Wild Blueberries in the bottom of your bowl, top with the oatmeal.
-                </span>,
-                <span>
+                </>,
+                <>
                     <b>Strawberries and Cream:</b> Top with sliced frozen strawberries + splash of Vanilla NutPods. Place a plate on top of
                     oatmeal bowl for 5 minutes to melt the strawberries.
-                </span>,
+                </>,
             ]}
         />
     ),
@@ -69,7 +69,10 @@ const recipe: Recipe = {
             </p>
             <p>Add in cauliflower rice, egg whites, and water. Stir until well combined.</p>
             <p>Place on stovetop on medium heat. Once boiling, add in the gelatin and stir well.</p>
-            <p>Pour into a bowl and top with any optional toppings, sprinkle of mineral salt, and <AffiliateLink>THM Gentle Sweet</AffiliateLink>.</p>
+            <p>
+                Pour into a bowl and top with any optional toppings, sprinkle of mineral salt, and{' '}
+                <AffiliateLink>THM Gentle Sweet</AffiliateLink>.
+            </p>
         </>
     ),
     Notes: (

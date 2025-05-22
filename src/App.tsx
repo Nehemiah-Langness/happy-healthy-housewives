@@ -13,6 +13,7 @@ import { RecipePage } from './pages/RecipePage';
 import { AllergyDisclaimer } from './components/AllergyDisclaimer';
 import { AcronymKey } from './components/AcronymKey';
 import { AffiliateModal } from './components/AffiliateModal';
+import { recipeList } from './services/recipe-list';
 
 function Redirect({ to, replace }: { to: string; replace?: undefined } | { to?: undefined; replace: (current: string) => string }) {
     const navigate = useNavigate();
@@ -62,6 +63,19 @@ function App() {
 
                         <Route path=':tag'>
                             <Route index element={<RecipeTagPage />} />
+
+                            {recipeList.map((recipe) =>
+                                recipe.redirects?.map((redirect) => (
+                                    <Route
+                                        key={`${recipe.slug}_${redirect}`}
+                                        path={`${redirect}`}
+                                        element={
+                                            <Redirect replace={(path) => path.toLowerCase().replace(`/${redirect}`, `/${recipe.slug}`)} />
+                                        }
+                                    />
+                                ))
+                            )}
+
                             <Route path=':recipe' element={<RecipePage />} />
                         </Route>
                     </Route>
@@ -139,11 +153,11 @@ function Layout() {
                             </a>
                         </div>
                         <div className='gap-1 flex-column justify-content-center align-items-center d-none d-print-flex'>
-                            <div className='d-flex align-items-center gap-1 ff-link' style={{fontSize: '0.8rem'}}>
+                            <div className='d-flex align-items-center gap-1 ff-link' style={{ fontSize: '0.8rem' }}>
                                 <FontAwesomeIcon style={{ fontSize: '1.1rem' }} icon={faInstagramSquare} />
                                 https://www.instagram.com/happyhealthyhousewives/
                             </div>
-                            <div className='d-flex align-items-center gap-1 ff-link' style={{fontSize: '0.8rem'}}>
+                            <div className='d-flex align-items-center gap-1 ff-link' style={{ fontSize: '0.8rem' }}>
                                 <FontAwesomeIcon style={{ fontSize: '1rem' }} icon={faFacebook} />
                                 https://www.facebook.com/happyhealthyhousewives/
                             </div>

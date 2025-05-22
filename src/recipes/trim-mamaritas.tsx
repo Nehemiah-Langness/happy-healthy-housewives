@@ -6,7 +6,7 @@ const recipe: Recipe = {
     tags: ['Drinks and Sippers', 'THM FP', 'Keto Friendly', 'DF', 'GF'],
     dateAdded: new Date('2025-05-15'),
     brief: `Summer time means having a cocktail in your hand and your toes in the sand! Who says that drink can't trim you down?`,
-    image: 'mamaritas.webp',
+    image: 'trim-mamaritas.webp',
     file: 'TrimMamarita.pdf',
     quote: {
         person: 'Mandy',
@@ -49,6 +49,7 @@ const recipe: Recipe = {
             <p>If you’re making this on the rocks, taste and see if it’s too strong. If so, just add more water!</p>
         </>
     ),
+    redirects: ['mamaritas'],
 };
 
 export default recipe;
