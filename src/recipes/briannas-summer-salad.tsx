@@ -1,5 +1,6 @@
 import type { Recipe } from '../types/recipe';
 import { LinkToRecipe } from '../components/LinkToRecipe';
+import { AcronymToggle } from '../components/AcronymToggle';
 
 const recipe: Recipe = {
     title: "Brianna's Summer Salad",
@@ -21,10 +22,13 @@ const recipe: Recipe = {
         '1/4 tsp of garlic powder',
         '1 to 2 cups of romaine lettuce or salad mix',
         '2 Tbsp goat cheese',
-        '3-4 chopped strawberries (or other fruit as pictured for XO)',
-        <span>
-            1 Tbsp <LinkToRecipe recipe='easy-balsamic-glaze'>Easy Balsamic Glaze</LinkToRecipe> (or sugar free balsamic vinegar if you like it to be less sweet){' '}
-        </span>,
+        <>
+            3-4 chopped strawberries (or other fruit as pictured for <AcronymToggle>XO</AcronymToggle>)
+        </>,
+        <>
+            1 Tbsp <LinkToRecipe recipe='easy-balsamic-glaze'>Easy Balsamic Glaze</LinkToRecipe> (or sugar free balsamic vinegar if you like
+            it to be less sweet){' '}
+        </>,
     ],
     Directions: (
         <>

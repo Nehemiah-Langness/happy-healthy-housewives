@@ -1,5 +1,6 @@
 import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -44,7 +45,9 @@ const recipe: Recipe = {
                 <>1.5 cups water</>,
                 <>1/2 tsp maple extract</>,
                 <>1/2 tsp butter extract</>,
-                <>10 raisins (optional, but so yummy!)</>,
+                <>
+                    10 raisins <Optional reason='Optional, but so yummy!' />
+                </>,
             ]}
         />,
     ],

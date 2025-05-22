@@ -28,7 +28,7 @@ function getRecipeList() {
                 ),
             ]
                 .filter((x) => x)
-                .map((x) => x?.toLocaleLowerCase()) as string[],
+                .map((x) => x?.toLocaleLowerCase().replace(/['".-]/g, '')) as string[],
         })
     );
 }

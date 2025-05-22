@@ -15,6 +15,7 @@ export function RecipeHomePage() {
     const matchingRecipes = useMemo(() => {
         const terms = filter
             .toLowerCase()
+            .replace(/['".-]/g, '')
             .split(' ')
             .filter((x) => x);
 

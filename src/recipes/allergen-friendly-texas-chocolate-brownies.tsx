@@ -3,6 +3,7 @@ import type { Recipe } from '../types/recipe';
 import { LinkToRecipe } from '../components/LinkToRecipe';
 import { ExternalLink } from '../components/ExternalLink';
 import { AffiliateLink } from '../components/AffiliateLink';
+import { Optional } from '../components/Optional';
 
 const recipe: Recipe = {
     title: 'Allergen Friendly Texas Chocolate Brownies',
@@ -39,7 +40,7 @@ const recipe: Recipe = {
                 '1/2 cup cocoa powder (Dutch pressed is best)',
                 '1.5 tsp baking powder',
                 '1/4 tsp mineral salt',
-                '1.5 cup unsweetened milk of choice (see notes)',
+                <>1 1/2 cup unsweetened milk of choice <Optional reason='See Notes' /></>,
                 '1/2 tsp apple cider vinegar or white vinegar',
                 '1/2 tsp vanilla extract',
                 <>
@@ -51,14 +52,18 @@ const recipe: Recipe = {
         <IngredientList
             title='Topping'
             Ingredients={[
-                '1 oz unsweetened baking chocolate',
-                '2 Tbsp extra virgin coconut oil',
-                '1/4 cup + 2 Tbsps unsweetened milk of choice (see notes)',
-                '2 pinches mineral salt',
-                <>2 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink></>,
-                '2 doonks stevia',
-                '1/8 tsp caramel extract',
-                '1/3 cup chopped Pecans (optional, but is more authentic for a Texas Chocolate cake)',
+                <>1 oz unsweetened baking chocolate</>,
+                <>2 Tbsp extra virgin coconut oil</>,
+                <>1/4 cup + 2 Tbsps unsweetened milk of choice <Optional reason='See Notes' /></>,
+                <>2 pinches mineral salt</>,
+                <>
+                    2 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+                </>,
+                <>2 doonks stevia</>,
+                <>1/8 tsp caramel extract</>,
+                <>
+                    1/3 cup chopped Pecans <Optional reason='Optional, but is more authentic for a Texas Chocolate cake' />
+                </>,
             ]}
         />,
     ],

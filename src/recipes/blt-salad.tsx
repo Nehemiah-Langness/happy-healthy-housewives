@@ -1,3 +1,4 @@
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -22,7 +23,7 @@ const recipe: Recipe = {
         '1 Tbsp mayonnaise',
         '1/2 tsp mineral salt',
         '1/2 tsp black pepper',
-        'Optional: a sprinkle of shredded cheddar',
+        <>A sprinkle of shredded cheddar <Optional/></>,
     ],
     Directions: (
         <>
