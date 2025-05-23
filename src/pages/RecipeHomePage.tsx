@@ -25,9 +25,9 @@ export function RecipeHomePage() {
                 let score = 0;
 
                 for (let index = 0; index < recipe.search.length; index++) {
-                    const search = recipe.search[index];
-                    const matches = terms.filter((term) => search.includes(term)).length;
-                    score += Math.pow(2, recipe.search.length - index) * matches;
+                    const search = recipe.search[index].split(' ');
+                    const matches = terms.map((term) => search.filter((s) => s === term).length).reduce((c, n) => c + n, 0);
+                    score += Math.pow(2, 4 - index) * matches;
                 }
 
                 return {
@@ -73,7 +73,7 @@ export function RecipeHomePage() {
                             .replace(/['".-]/g, '')
                             .indexOf(currentTerms);
                         if (hasMatch < 0) return '';
-                        
+
                         const newString = x.substring(
                             hasMatch +
                                 words
@@ -83,7 +83,6 @@ export function RecipeHomePage() {
                         );
 
                         if (newString[0] !== ' ') return '';
-                        console.log(`"${newString}"`);
                         return newString.split(' ').filter((x) => x)[0];
                     }
                 })
