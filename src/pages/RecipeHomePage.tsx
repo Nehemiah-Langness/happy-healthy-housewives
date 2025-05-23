@@ -4,7 +4,7 @@ import { RecipeLinkImage } from '../components/RecipeLinkImage';
 import { tags } from '../services/tags';
 import { RecipesIntro } from '../components/RecipesIntro';
 import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
-import { memo, useMemo, useState } from 'react';
+import { memo, useEffect, useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { recipeList } from '../services/recipe-list';
@@ -50,12 +50,47 @@ export function RecipeHomePage() {
         return tags.filter((tag) => terms.every((term) => tag.label.toLowerCase().includes(term) || tag.tag.toLowerCase().includes(term)));
     }, [filter]);
 
+    const suggestions = useMemo(() => {
+        const words = filter.split(' ');
+        const lastWord = words[words.length - 1];
+        if (!lastWord) return [];
+
+        const filterTerm = lastWord.toLowerCase().replace(/['".-]/g, '');
+        return [
+            ...recipeList
+                .flatMap((x) =>
+                    (x.titleAlt || x.title).split(' ').map((y) => ({
+                        search: y.toLowerCase().replace(/['".-]/g, ''),
+                        text: y,
+                    }))
+                )
+                .filter((x) => x.search.startsWith(filterTerm) && x.text !== lastWord)
+                .reduce((c, n) => {
+                    c.add(n.text);
+                    return c;
+                }, new Set<string>())
+                .values(),
+        ].sort();
+    }, [filter]);
+
+    const [suggestionIndex, setSuggestionIndex] = useState(0);
+    useEffect(() => {
+        setSuggestionIndex(0);
+    }, [suggestions]);
+
+    useEffect(() => {
+        document.querySelector(`#suggestion-${suggestionIndex}`)?.scrollIntoView({
+            block: 'nearest',
+            inline: 'nearest',
+        });
+    }, [suggestionIndex]);
+
     return (
         <div className='d-flex flex-column gap-5'>
             <RecipeHeaderImage />
             <div className='container d-flex flex-column gap-5'>
                 <div className='d-flex flex-column gap-4'>
-                    <div className='input-group '>
+                    <div className='input-group position-relative'>
                         <span className='input-group-text'>
                             <FontAwesomeIcon icon={faSearch} />
                         </span>
@@ -66,7 +101,46 @@ export function RecipeHomePage() {
                             className='form-control'
                             value={filter}
                             onChange={(e) => setFilter(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (e.code === 'Tab' || e.code === 'Enter') {
+                                    if (suggestions[suggestionIndex]) {
+                                        e.preventDefault();
+                                        setFilter((f) => f.split(' ').slice(0, -1).concat(suggestions[suggestionIndex]).join(' '));
+                                    }
+                                }
+                                if (e.code === 'ArrowUp') {
+                                    e.preventDefault();
+                                    setSuggestionIndex((x) => Math.max(0, x - 1));
+                                }
+                                if (e.code === 'ArrowDown') {
+                                    e.preventDefault();
+                                    setSuggestionIndex((x) => Math.min(suggestions.length - 1, x + 1));
+                                }
+                            }}
                         />
+                        {!!suggestions.length && (
+                            <div
+                                className='position-absolute top-100 border shadow-sm'
+                                style={{ left: '3rem', right: '3rem', zIndex: 5, overflowY: 'auto', maxHeight: '12rem' }}
+                            >
+                                <div className='list-group list-group-flush'>
+                                    {suggestions.map((x, i) => (
+                                        <div
+                                            id={`suggestion-${i}`}
+                                            key={`${x}-${i}`}
+                                            className={`list-group-item ${i === suggestionIndex ? 'active' : ''}`}
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                setFilter((f) => f.split(' ').slice(0, -1).concat(x).join(' '));
+                                            }}
+                                        >
+                                            {x}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                         {filter && (
                             <button type='button' className='btn btn-link' onClick={() => setFilter('')}>
                                 <FontAwesomeIcon icon={faTimes} />
