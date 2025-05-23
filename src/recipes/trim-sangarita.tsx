@@ -40,6 +40,7 @@ const recipe: Recipe = {
             <p>This recipe may only make a half pitcher, double if you need a larger pitcher.</p>
         </>
     ),
+    similar: ['trim-mamarita']
 };
 
 export default recipe;

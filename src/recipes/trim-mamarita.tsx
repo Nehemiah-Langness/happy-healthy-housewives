@@ -50,6 +50,7 @@ const recipe: Recipe = {
         </>
     ),
     redirects: ['mamaritas'],
+    similar: ['trim-sangarita']
 };
 
 export default recipe;

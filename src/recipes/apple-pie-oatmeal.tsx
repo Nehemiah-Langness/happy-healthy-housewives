@@ -63,6 +63,7 @@ const recipe: Recipe = {
             <p>Pour oatmeal into a bowl and top with the apple topping. Enjoy!</p>
         </>
     ),
+    similar: ['peaches-n-cream-oatmeal', 'superfood-oatmeal'],
 };
 
 export default recipe;

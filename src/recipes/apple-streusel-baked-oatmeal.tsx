@@ -63,6 +63,7 @@ const recipe: Recipe = {
             <p>Cool and store in an airtight container in the fridge!</p>
         </>
     ),
+    similar: ['pumpkin-baked-oatmeal']
 };
 
 export default recipe;

@@ -34,4 +34,3 @@ function getRecipeList() {
 }
 
 recipeList = getRecipeList();
-console.log(recipeList);

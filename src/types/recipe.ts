@@ -1,3 +1,4 @@
+import type { recipes } from '../recipes';
 import type { tagMap } from '../services/tag-map';
 
 export interface Recipe {
@@ -45,6 +46,9 @@ export interface Recipe {
 
     /** Recipe URLS that should redirect to this recipe */
     redirects?: string[];
+
+    /** Similar Recipes */
+    similar?: (keyof typeof recipes)[];
 }
 
 type Quote = {

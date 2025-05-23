@@ -48,6 +48,7 @@ const recipe: Recipe = {
             <p>Pour into a glass and enjoy!</p>
         </>
     ),
+    similar: ['pumpkin-spice-coffee', 'pumpkin-spice-syrup']
 };
 
 export default recipe;

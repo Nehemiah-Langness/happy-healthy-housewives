@@ -83,6 +83,7 @@ const recipe: Recipe = {
             </p>
         </>
     ),
+    similar: ['apple-pie-oatmeal', 'peaches-n-cream-oatmeal'],
 };
 
 export default recipe;

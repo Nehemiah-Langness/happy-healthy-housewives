@@ -4,12 +4,22 @@ import { recipeLink } from '../services/recipe-link';
 import type { Recipe } from '../types/recipe';
 import { RecipeLinkImage } from './RecipeLinkImage';
 
-export function RecipeLink({ recipe }: { recipe: Recipe & { slug: keyof typeof recipes } }) {
+export function RecipeLink({
+    recipe,
+    preview,
+    className,
+}: {
+    recipe: Recipe & { slug: keyof typeof recipes };
+    preview?: boolean;
+    className?: string;
+}) {
     return (
         <Link
             to={recipeLink(recipe.slug)}
             style={{ cursor: 'pointer' }}
-            className='rounded-3 overflow-hidden text-decoration-none d-flex flex-column flex-lg-row recipe-link gap-2 position-relative'
+            className={`rounded-3 overflow-hidden text-decoration-none d-flex flex-column flex-lg-row recipe-link gap-2 position-relative ${
+                preview ? 'link-preview' : ''
+            } ${className}`}
         >
             <div className='link-slide'>Read Recipe</div>
             <RecipeLinkImage image={recipe.image} />

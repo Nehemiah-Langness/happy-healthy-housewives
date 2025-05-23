@@ -41,7 +41,9 @@ const recipe: Recipe = {
             title='Frosting'
             Ingredients={[
                 '5 wedges of LLCC cheese, room temp (or 5 Tbsps of DF cream cheese)',
-                <>1 Tbsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)</>,
+                <>
+                    1 Tbsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)
+                </>,
                 '2 Tbsp unsweetened nut milk',
             ]}
         />,
@@ -59,6 +61,7 @@ const recipe: Recipe = {
             <p>Place in fridge for 20 minutes, slice and enjoy or store!</p>
         </>
     ),
+    similar: ['apple-streusel-baked-oatmeal'],
 };
 
 export default recipe;

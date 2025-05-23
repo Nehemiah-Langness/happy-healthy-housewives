@@ -37,7 +37,10 @@ const recipe: Recipe = {
             ) <Footnote />
             see notes for <AcronymToggle>DF</AcronymToggle> option
         </>,
-        <>1/2 tsp of Pumpkin Spice mix (see notes for alternative)<Footnote count={2}/></>,
+        <>
+            1/2 tsp of Pumpkin Spice mix (see notes for alternative)
+            <Footnote count={2} />
+        </>,
         <>1/4 tsp of mineral salt</>,
     ],
     IngredientNotes: (
@@ -69,6 +72,7 @@ const recipe: Recipe = {
             </p>
         </>
     ),
+    similar: ['pumpkin-spice-coffee', 'pumpkin-spice-frappa'],
 };
 
 export default recipe;
