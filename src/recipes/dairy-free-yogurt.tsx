@@ -11,7 +11,7 @@ const recipe: Recipe = {
     image: 'dairy-free-yogurt.jpg',
     file: 'DairyFreeYogurt.pdf',
     quote: {
-        person: '',
+        person: 'Mandy',
         Quote: [
             <>
                 I created this recipe a few months ago when I noticed a lack in our community! I was tired of paying the prices for store
