@@ -6,15 +6,16 @@ const recipe: Recipe = {
     title: 'Peppermint Mocha Creamer',
     tags: ['THM S', 'THM FP'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Peppermint Mocha Creamer`,
+    brief: `It's that time of year again when coffee shops are filled with sugar laden Peppermint Mochas. Whip this up at home and save your waistline (and your budget)!`,
     image: 'peppermint-mocha-creamer.jpg',
     file: 'PeppermintMochaCreamer.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                The holiday season is here, and with it comes those wonderful holiday flavors! You all already know I'm a huge coffee nut I
+                used to be that girl in love with the specialty holiday drinks! So here is my version of a Peppermint Mocha Creamer that is
+                totally supporting of your goals and health!
             </>,
         ],
     },

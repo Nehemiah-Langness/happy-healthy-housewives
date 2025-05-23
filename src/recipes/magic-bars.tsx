@@ -22,7 +22,7 @@ const recipe: Recipe = {
         <>
             1 recipe of{' '}
             <ExternalLink to='https://abetteryouwithcoachbecky.com/graham-cracker-crumbs/'>
-                Coach Betty’s Graham Cracker Crumbs
+                Coach Betty's Graham Cracker Crumbs
             </ExternalLink>{' '}
             (unbaked)
         </>,
@@ -51,7 +51,7 @@ const recipe: Recipe = {
             <p>
                 For a <AcronymToggle>DF</AcronymToggle> version, use{' '}
                 <ExternalLink to='https://mymontanakitchen.com/2-ingredient-dairy-free-sweetened-condensed-milk-thm-s-sugar-free-low-carb/'>
-                    MyMontanaKitchen’s Dairy Free Sweetened Condensed Milk
+                    MyMontanaKitchen's Dairy Free Sweetened Condensed Milk
                 </ExternalLink>
             </p>
         </>

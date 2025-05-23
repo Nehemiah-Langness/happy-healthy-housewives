@@ -11,11 +11,11 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                This has easily become one of my family’s favorite meals. With all the goodness jam packed, I can rest assured knowing my
+                This has easily become one of my family's favorite meals. With all the goodness jam packed, I can rest assured knowing my
                 family is getting their nutrition in!
             </>,
             <>
-                In each bowl, you’re getting cauliflower, mushrooms, baobab, and gelatin. All amazing immune boosters (making this a great
+                In each bowl, you're getting cauliflower, mushrooms, baobab, and gelatin. All amazing immune boosters (making this a great
                 dish for Flu season!).
             </>,
             <>

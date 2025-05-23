@@ -30,8 +30,10 @@ const recipe: Recipe = {
     ],
     IngredientNotes: (
         <>
-            <b>Note:</b> using the “dairy free” option for this recipe drastically reduces the protein content. Please consider adding a
-            protein powder in the yogurt or in a drink to compensate.
+            <i>
+                <b>Note:</b> using the “dairy free” option for this recipe drastically reduces the protein content. Please consider adding a
+                protein powder in the yogurt or in a drink to compensate.
+            </i>
         </>
     ),
     Directions: (

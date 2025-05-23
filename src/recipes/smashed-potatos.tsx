@@ -9,7 +9,7 @@ const recipe: Recipe = {
     quote: {
         person: 'Mandy',
         Quote: [
-            `Anyone else out there a french fry addict? This is the one food that I just can’t resist when going out to eat. I’ve 
+            `Anyone else out there a french fry addict? This is the one food that I just can't resist when going out to eat. I've 
             tried for years to make delicious air fried french fries at home but they never tasted as good as fast food. Then, a 
             family friend introduced me to the world of smashed potatoes.`,
             `These little crispy discs are honestly addicting. You can try whatever seasonings you want on these guys and dip in 

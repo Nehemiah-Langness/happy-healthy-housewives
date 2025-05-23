@@ -86,7 +86,7 @@ const recipe: Recipe = {
     Notes: (
         <>
             <p>
-                I have made this with almond milk, cashew milk, coconut milk, and flax milk (if you’re nut free) and all have turned out
+                I have made this with almond milk, cashew milk, coconut milk, and flax milk (if you're nut free) and all have turned out
                 fantastic. Oat milk and rice milk are considered Not On Plan because of the high sugars from the carbohydrates.
             </p>
             <p>Whatever you decide to use for your family, make sure it has no added sugar.</p>

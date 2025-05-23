@@ -39,7 +39,7 @@ const recipe: Recipe = {
     Directions: (
         <>
             <p>
-                Mix flour and kefir together (the mixture should be somewhat runny and if it isn’t you can add some unsweetened nut milk or
+                Mix flour and kefir together (the mixture should be somewhat runny and if it isn't you can add some unsweetened nut milk or
                 water to loosen it). Let the mixture sit on the counter for 7-8 hours.
             </p>
             <p>Preheat griddle to 300&deg; F. Mix all remaining ingredients with the kefir and flour mixture.</p>
@@ -51,7 +51,7 @@ const recipe: Recipe = {
         <>
             <p>
                 <b>THM Compliance:</b> This recipe is <AffiliateLink>THM</AffiliateLink> compliant because it soaks the flour in a acidic medium overnight, much like using
-                a sourdough starter. If you don’t wish to soak this recipe, you can use a sprouted grain flour or oat flour.
+                a sourdough starter. If you don't wish to soak this recipe, you can use a sprouted grain flour or oat flour.
             </p>
         </>
     ),

@@ -13,7 +13,7 @@ const recipe: Recipe = {
         Quote: [
             <>
                 Have you ever been to a restaurant and had that ooey gooey, sweet, Balsamic added to your dish? Well, unfortunately, we love
-                it so much because it’s laden with sugar! Not to worry, I got you covered with something just as delicious. Introducing this
+                it so much because it's laden with sugar! Not to worry, I got you covered with something just as delicious. Introducing this
                 super easy Balsamic Glaze!
             </>,
         ],

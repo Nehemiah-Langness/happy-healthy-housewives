@@ -11,7 +11,7 @@ const recipe: Recipe = {
         person: 'Brianna',
         Quote: [
             `When I started my Trim Healthy journey, I really loved finding my former favorites and recreating them in a healthier (and cheaper) way! This crunchwrap 
-            was one of the very first recipes I attempted, and I’m quite proud with the turn out! No need to hit up that drive thru!`,
+            was one of the very first recipes I attempted, and I'm quite proud with the turn out! No need to hit up that drive thru!`,
         ],
     },
     servings: 'Single Serving',
@@ -29,8 +29,8 @@ const recipe: Recipe = {
                 option, skip cheese frying step)
             </p>
             <p>
-                In a low carb tortilla, layer your crunchwrap. Beef, cheese, or baked tostada, and then your toppings as you’d like. Be sure
-                not to overfill, or you’ll have a hard time folding.
+                In a low carb tortilla, layer your crunchwrap. Beef, cheese, or baked tostada, and then your toppings as you'd like. Be sure
+                not to overfill, or you'll have a hard time folding.
             </p>
             <p>
                 Take another low carb tortilla and cut a small circle out of it. Place in the middle of your unfolded crunch wrap, then

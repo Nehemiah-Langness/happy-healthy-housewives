@@ -14,7 +14,7 @@ const recipe: Recipe = {
         Quote: [
             <>I love the taste of sourdough baked goods. Unfortunately, sourdough has not been loving me back!</>,
             <>After many failed attempts at using the natural yeast to give rise to my breads, I decided to find ways to achieve the wonderful taste without the extra hassle. Enter in another of my No Wait Sourdough Recipes!</>,
-            <>Imagine a life where you don’t have to plan your pizza nights, you can decide you want pizza and have it at your finger tips in less than an hour! </>,
+            <>Imagine a life where you don't have to plan your pizza nights, you can decide you want pizza and have it at your finger tips in less than an hour! </>,
         ],
     },
     servings: '2-4 Servings',

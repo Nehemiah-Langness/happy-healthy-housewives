@@ -14,12 +14,12 @@ const recipe: Recipe = {
             `I love the taste of a good fried chicken tender. As a toddler, I begged my mom for “chicken and ketchup” everyday! 
             I even had a special song and dance to express my pure love (okay, a bit of an exaggeration but I really did sing and 
             dance for this. Anything to get a taste of the good stuff!)`,
-            `After the complete overhaul of my nasty diet (see blog posts if you’re wanting more detail!), I was never satisfied 
+            `After the complete overhaul of my nasty diet (see blog posts if you're wanting more detail!), I was never satisfied 
             with the healthier versions of my childhood favorite. Maybe they work if you can use parmesan, but I am currently 
             rocking a dairy free stage in my life. Turns out, the answer came from the simplest of places: cauliflower.`,
             `Now you can enjoy this truly guilt free treat while getting in a serving of veggies! Best of both worlds!`,
             <>
-                TIP: try these out with Bri’s <LinkToRecipe recipe='sweet-and-spicy-sauce'>Sweet and Spicy Sauce</LinkToRecipe> or{' '}
+                TIP: try these out with Bri's <LinkToRecipe recipe='sweet-and-spicy-sauce'>Sweet and Spicy Sauce</LinkToRecipe> or{' '}
                 <LinkToRecipe recipe='honey-mustard'>“Honey” Mustard</LinkToRecipe>. Then you can truly relive your childhood!
             </>,
         ],
@@ -44,7 +44,7 @@ const recipe: Recipe = {
                 PLAN AHEAD. Spread the frozen cauliflower on a parchment lined baking sheet in a single layer. Place in oven at 200F until
                 dehydrated. Remove from oven and allow to cool. Place in food processor and grind until a fine powder.{' '}
             </p>
-            <p>Set oven to 430F. Preheat a baking sheet in the oven with 1 Tbsp coconut oil. Leave in the oven while you work.</p>
+            <p>Set oven to 430&deg; F. Preheat a baking sheet in the oven with 1 Tbsp coconut oil. Leave in the oven while you work.</p>
             <p>
                 To the cauliflower powder, add baking powder, almond flour, coconut flour, salt, paprika, onion powder, and garlic powder.
                 Mix until well combined.

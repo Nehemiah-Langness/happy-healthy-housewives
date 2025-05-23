@@ -10,14 +10,14 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Do you love trail mix but don’t love all the sugary items that are often added to it? This recipe is all thing indulgent, sweet, and salty! You’ll never feel the need to buy a trail mix again when you can just easily mix up your own!`,
+            `Do you love trail mix but don't love all the sugary items that are often added to it? This recipe is all thing indulgent, sweet, and salty! You'll never feel the need to buy a trail mix again when you can just easily mix up your own!`,
         ],
     },
     servings: '',
     servingSize: '',
     Ingredients: [
         <>1 container of mixed nuts</>,
-        <>1 package of Lily’s Salted Caramel Chips</>,
+        <>1 package of Lily's Salted Caramel Chips</>,
         <>1 bag of no sugar added Dried Blueberries (or other no sugar added Dried berry of choice)</>,
     ],
     Directions: (

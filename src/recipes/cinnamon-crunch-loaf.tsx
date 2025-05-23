@@ -14,7 +14,7 @@ const recipe: Recipe = {
     quote: {
         person: 'Mandy',
         Quote: [
-            `My husband loves the Cinnamon Crunch Bagel from a special bagel place. It’s his special birthday treat every year 
+            `My husband loves the Cinnamon Crunch Bagel from a special bagel place. It's his special birthday treat every year 
             (and sometimes on Bagel Tuesday)! I enjoy my sprouted grain bagels, but looking over at the big crunchy deliciousness 
             was making me weak in the knees. So, as is the case whenever I get a temptation, into the kitchen I went for some mad 
             experimenting!`,
@@ -51,7 +51,7 @@ const recipe: Recipe = {
                     1/3 cup <AffiliateLink>THM Unflavored Whey Protein</AffiliateLink> (or Collagen for <AcronymToggle>DF</AcronymToggle>)
                 </>,
                 <span id='wmdl-sfcbc'>
-                    3/4 – 1 cup <ExternalLink to='https://wonderfullymadeanddearlyloved.com/sugar-free-cinnamon-baking-chips-dairy-free-thms/'>Cinnamon Baking Chips</ExternalLink>
+                    3/4 &ndash; 1 cup <ExternalLink to='https://wonderfullymadeanddearlyloved.com/sugar-free-cinnamon-baking-chips-dairy-free-thms/'>Cinnamon Baking Chips</ExternalLink>
                 </span>,
                 '4 large eggs',
                 '1 cup unsweetened almond milk',

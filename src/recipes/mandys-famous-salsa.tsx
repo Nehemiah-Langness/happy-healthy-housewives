@@ -13,10 +13,10 @@ const recipe: Recipe = {
         Quote: [
             <>
                 Okay, maybe famous is an overstatement. But in my family, its a pretty big deal! As a child, I was the salsa maker for our
-                household. What used to be my mother’s recipe quickly became my masterpiece. Now that I’ve moved away, all my family members
+                household. What used to be my mother's recipe quickly became my masterpiece. Now that I've moved away, all my family members
                 are still asking for the recipe!
             </>,
-            <>This is a very smooth salsa. If you’d like a chunky consistency, you can dice all the ingredients and mix together.</>,
+            <>This is a very smooth salsa. If you'd like a chunky consistency, you can dice all the ingredients and mix together.</>,
             <>
                 P.S. This recipe pairs great with a <LinkToRecipe recipe='trim-mamarita'>Trim Mamarita</LinkToRecipe>!
             </>,

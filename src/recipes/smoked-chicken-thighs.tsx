@@ -11,13 +11,13 @@ const recipe: Recipe = {
         {
             person: 'Brianna',
             Quote: [
-                `Have you ever made smoked meats before? Neither had we, but we are seriously obsessed with this smoked chicken!  Chicken is notoriously the easiest meat to smoke. It’s relatively a short amount of time, and it’s moist and delicious. I promise you won’t be disappointed! `,
+                `Have you ever made smoked meats before? Neither had we, but we are seriously obsessed with this smoked chicken!  Chicken is notoriously the easiest meat to smoke. It's relatively a short amount of time, and it's moist and delicious. I promise you won't be disappointed! `,
             ],
         },
         {
             person: 'Mandy',
             Quote: [
-                `My husband and I don’t have a grill, so we constantly invite ourselves to my sister’s house so they can serve us this meal! It is my absolute favorite way to have chicken!`,
+                `My husband and I don't have a grill, so we constantly invite ourselves to my sister's house so they can serve us this meal! It is my absolute favorite way to have chicken!`,
             ],
         },
     ],

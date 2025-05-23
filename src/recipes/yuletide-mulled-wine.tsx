@@ -11,7 +11,7 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Many families have the tradition of curling up around the fire and sipping on something warm. This Mulled Wine is a spicy, warm, festive drink perfect for the adults! It won’t spike your blood sugar, but sure is sweet and filled with holiday cheer`,
+            `Many families have the tradition of curling up around the fire and sipping on something warm. This Mulled Wine is a spicy, warm, festive drink perfect for the adults! It won't spike your blood sugar, but sure is sweet and filled with holiday cheer`,
         ],
     },
     servings: 'Multiple Servings',

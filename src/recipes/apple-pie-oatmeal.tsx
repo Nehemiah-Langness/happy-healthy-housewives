@@ -7,15 +7,17 @@ const recipe: Recipe = {
     title: 'Apple Pie Oatmeal',
     tags: ['THM E'],
     dateAdded: new Date('2025-05-15'),
-    brief: `Apple Pie Oatmeal`,
+    brief: `Fall flavors aren't just about Pumpkin! If you're an apple nut, you have to try Mandy's Apple Pie Oatmeal`,
     image: 'apple-pie-oatmeal.jpg',
     file: 'ApplePieOatmeal.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Mandy',
         Quote: [
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                I love eating a hot breakfast every morning and oatmeal not only satisfies but fuels your body in the best ways. Some people
+                think Fall is all about the pumpkin, but I'm all about the apples. Apple cider? Amazing. Baked apples? Even better. Cinnamon
+                apples on top of my favorite breakfast? Heaven. If you're an apple nut like me, try it out! You'll be nourishing your body
+                in the best way to start your day.
             </>,
         ],
     },

@@ -13,7 +13,7 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `As a child I was a huge honey mustard nut. I loved it so much I couldn’t stand to have it run out and would “make my own” by just mixing pure honey and mustard!`,
+            `As a child I was a huge honey mustard nut. I loved it so much I couldn't stand to have it run out and would “make my own” by just mixing pure honey and mustard!`,
             <>
                 This is a much more blood sugar friendly version, and most importantly, can be paired with all fuels! Enjoy this drizzled on
                 a salad, dunking your <LinkToRecipe recipe='bris-chicken-tendies'>Chicken Tendies</LinkToRecipe>, or even on your{' '}

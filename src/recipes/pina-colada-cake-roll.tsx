@@ -15,12 +15,12 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                Cake rolls are my absolute favorite dessert to make. They’re beautiful and impress everyone who sees them! So when I saw
+                Cake rolls are my absolute favorite dessert to make. They're beautiful and impress everyone who sees them! So when I saw
                 this concept on a baking TV show, I went straight to my computer to create this recipe for all you mamas (and papas) out
                 there.
             </>,
             <>
-                If you’ve never made a cake roll before, don’t let yourself be intimidated. They look complicated but they’re truly easy and
+                If you've never made a cake roll before, don't let yourself be intimidated. They look complicated but they're truly easy and
                 simple! Make this for your next function and impress everyone with your mad baking skills!
             </>,
         ],

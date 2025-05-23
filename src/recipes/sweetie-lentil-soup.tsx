@@ -11,12 +11,12 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <span>
-                If you’ve been listening to the <b>Trim Healthy Mama Podcast</b>, you’ll know how amazing lentils are for the body. For you
-                new peeps, lentils are a methylation superfood! They are chock full of bioavailable folates which support your body’s detox
+                If you've been listening to the <b>Trim Healthy Mama Podcast</b>, you'll know how amazing lentils are for the body. For you
+                new peeps, lentils are a methylation superfood! They are chock full of bioavailable folates which support your body's detox
                 system.
             </span>,
             `This soup has been my obsession since my mother-in-law whipped this together a few months ago. I cook up a batch weekly to have 
-        on hand for lunches or snacks! It’s the perfect thing for these cold days after fake Spring.`,
+        on hand for lunches or snacks! It's the perfect thing for these cold days after fake Spring.`,
         ],
     },
     servings: '6-8 servings',

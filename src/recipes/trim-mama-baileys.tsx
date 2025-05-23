@@ -12,13 +12,13 @@ const recipe: Recipe = {
     quote: {
         person: 'Mandy',
         Quote: [
-            `As St. Patrick’s Day approaches, I’m embracing all things in my Irish Heritage. Celtic Christian music has been on repeat and we may or may 
-            not have had corned beef multiple weeks in a row. The one thing I was missing out on was a delicious afternoon cuppa with some Bailey’s.  
-            Fun fact, Bailey’s Coffee was the first drink I had on my 21st birthday!`,
+            `As St. Patrick's Day approaches, I'm embracing all things in my Irish Heritage. Celtic Christian music has been on repeat and we may or may 
+            not have had corned beef multiple weeks in a row. The one thing I was missing out on was a delicious afternoon cuppa with some Bailey's.  
+            Fun fact, Bailey's Coffee was the first drink I had on my 21st birthday!`,
             `So, like many times before, I went into my kitchen and began experimenting to make a healthier version of my favorite treat. You bet I 
-            danced when I finally found the magical mix! If you feel like you’ve been missing out, or even if you’ve been splurging on the store bought 
+            danced when I finally found the magical mix! If you feel like you've been missing out, or even if you've been splurging on the store bought 
             sugar filled version, this is for you. Simple to whip up and delicious all the time.`,
-            `Besides, who doesn’t love a good Irish coffee?`,
+            `Besides, who doesn't love a good Irish coffee?`,
         ],
     },
     servings: 'Multiple Servings',

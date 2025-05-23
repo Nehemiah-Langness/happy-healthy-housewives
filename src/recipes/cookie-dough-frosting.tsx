@@ -11,10 +11,10 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Ok… It’s probably just this pregnancy, but making a Cookie Dough Frosting that is on plan had 
-            been all I could think about for weeks! I’m so proud of this recipe. This frosting is fluffy, 
+            `Ok… It's probably just this pregnancy, but making a Cookie Dough Frosting that is on plan had 
+            been all I could think about for weeks! I'm so proud of this recipe. This frosting is fluffy, 
             indulgent, and tastes JUST like chocolate chip cookie dough! It will make an excellent middle 
-            layer filling for cake, and is an amazing topping for your S cupcakes. BUT we won’t judge if you 
+            layer filling for cake, and is an amazing topping for your S cupcakes. BUT we won't judge if you 
             just want to eat it out of the bowl!`,
         ],
     },

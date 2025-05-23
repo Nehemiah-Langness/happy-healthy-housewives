@@ -14,8 +14,8 @@ const recipe: Recipe = {
         Quote: [
             <>
                 Our wonderful Mother spent a few weeks with us after we had Baby #2. She quickly threw this yogurt snack together one day to
-                provide me with all the health boosts and things to promote milk supply. Y’all, I ended up asking her to make me this every
-                single day. My toddler and I are obsessed with it! I had her write down the recipe before she left and now I’m sharing it
+                provide me with all the health boosts and things to promote milk supply. Y'all, I ended up asking her to make me this every
+                single day. My toddler and I are obsessed with it! I had her write down the recipe before she left and now I'm sharing it
                 with all of you! Great for your taste buds AND your health, you have got to try this!
             </>,
         ],

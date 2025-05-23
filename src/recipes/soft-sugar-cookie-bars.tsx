@@ -20,14 +20,14 @@ const recipe: Recipe = {
                 dairy free, sugar free, <AffiliateLink>Trim Healthy Mama</AffiliateLink> adaptation!
             </>,
             <>
-                I was introduced to the concept of cookies baked as bars by <b>JoyFilled Eats</b>. Guys, it’s life changing to not have to
-                cut them out and ice them individually. Just bake, spread, and go! If you’d like to put in the extra work to turn these into
+                I was introduced to the concept of cookies baked as bars by <b>JoyFilled Eats</b>. Guys, it's life changing to not have to
+                cut them out and ice them individually. Just bake, spread, and go! If you'd like to put in the extra work to turn these into
                 cookies, feel free. Just make sure to cut back on the baking time!
             </>,
             <>
                 <b>
-                    P.S., I have made this using the dairy free subs multiple times and it’s worked out fantastic. Just make sure you keep
-                    the butter as cold as possible, since it’s very unstable and will melt easily.
+                    P.S., I have made this using the dairy free subs multiple times and it's worked out fantastic. Just make sure you keep
+                    the butter as cold as possible, since it's very unstable and will melt easily.
                 </b>
             </>,
         ],

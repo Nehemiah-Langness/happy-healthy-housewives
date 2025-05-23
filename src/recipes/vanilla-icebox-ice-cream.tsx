@@ -12,9 +12,9 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                I am so excited to share this recipe! I’ve been wanting to make my own ice cream since I’m currently rocking the Dairy Free
+                I am so excited to share this recipe! I've been wanting to make my own ice cream since I'm currently rocking the Dairy Free
                 lifestyle. Let me tell ya, dairy free and sugar free ice cream is expensive and filled with fillers that upset my stomach.
-                So, after much trial and error, I made my own. Plus, it’s a Trim Healthy Mama Fuel Pull and can be paired with any meal!
+                So, after much trial and error, I made my own. Plus, it's a Trim Healthy Mama Fuel Pull and can be paired with any meal!
             </>,
             <>I hope this recipe blesses your movie watching nights!</>,
             <>

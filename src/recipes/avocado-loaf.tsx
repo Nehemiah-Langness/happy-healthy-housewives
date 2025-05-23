@@ -1,3 +1,4 @@
+import { AcronymToggle } from '../components/AcronymToggle';
 import { AffiliateLink } from '../components/AffiliateLink';
 import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
@@ -6,15 +7,19 @@ const recipe: Recipe = {
     title: 'Avocado Loaf',
     tags: ['THM S'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Avocado Loaf`,
+    brief: `Celebrate this St. Patrick's Day with something a little extra green. The secret ingredient to this lucky dish? Avocado!`,
     image: 'avocado-loaf.jpg',
     file: 'AvocadoLoaf.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                I'm a little embarrassed to say, but I actually found the non <AffiliateLink>THM</AffiliateLink> version of this recipe on
+                TikTok. But as soon as the nice gentleman said he was making an avocado loaf, I knew I had to give this a try and THMify it!
+            </>,
+            <>
+                This is a sweeter loaf, perfect for any <AcronymToggle>S</AcronymToggle> breakfast! And even if you don't find the bright green color enticing, I think you
+                and your children will find this pleasantly delicious!
             </>,
         ],
     },

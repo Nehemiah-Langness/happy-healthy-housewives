@@ -56,7 +56,7 @@ const recipe: Recipe = {
             </p>
             <p>
                 <b>Baking option: </b>
-                Preheat oven to 375. Grease a large cookie sheet and place all tenders on the sheet. Spray the tops of the tenders with your
+                Preheat oven to 375&deg;. Grease a large cookie sheet and place all tenders on the sheet. Spray the tops of the tenders with your
                 cooking oil. Cook in oven for 15-20 minutes.
             </p>
         </>

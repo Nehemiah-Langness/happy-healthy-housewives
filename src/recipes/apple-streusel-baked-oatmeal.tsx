@@ -12,9 +12,9 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `This one is for all you pumpkin haters (don’t worry, I won’t tell anyone!) Apple is another Fall staple 
+            `This one is for all you pumpkin haters (don't worry, I won't tell anyone!) Apple is another Fall staple 
             that was begging to be turned into a delicious baked oatmeal. This baked oatmeal has all the sweetness of apple 
-            and the specialness of coffee cake, without all the unwanted additives! You’ll feel like you’re sitting at a coffee house when you take a bite!`,
+            and the specialness of coffee cake, without all the unwanted additives! You'll feel like you're sitting at a coffee house when you take a bite!`,
         ],
     },
     servings: '8 Servings',
@@ -48,7 +48,7 @@ const recipe: Recipe = {
 
     Directions: (
         <>
-            <p>Preheat oven to 350&deg; F and grease an 8X8 pan.</p>
+            <p>Preheat oven to 350&deg; F and grease an 8x8 pan.</p>
             <p>
                 <b>Make the base: </b>In a blender, add all base ingredients except the medium apple pieces. Blend well and pour into the
                 pan.

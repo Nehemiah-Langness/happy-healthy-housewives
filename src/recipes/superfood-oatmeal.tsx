@@ -14,30 +14,30 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             `If you follow me on any of our social accounts, you know I have a passion for oatmeal. I enjoy a bowl almost every morning!`,
-            `Whenever I enjoy something frequently, I like to boost the nutrition up the whazoo. That’s how I’ve made this recipe! Over 
-            months of experimenting with different superfoods, I’ve landed on a winning combination.`,
+            `Whenever I enjoy something frequently, I like to boost the nutrition up the whazoo. That's how I've made this recipe! Over 
+            months of experimenting with different superfoods, I've landed on a winning combination.`,
             `The best thing about this recipe is you can modify it however you like! I added some recommendations for flavorings, but 
             feel free to own it!`,
         ],
     },
     servings: 'Single Serving',
     Ingredients: [
-        '1/8 – 1/4 c. old fashioned oats',
-        '1/8 – 1/4 c. quick cook steel cut oats',
+        <>1/8 &ndash; 1/4 c. old fashioned oats</>,
+        <>1/8 &ndash; 1/4 c. quick cook steel cut oats</>,
         <>
             1 doonk <AffiliateLink>THM Pure Stevia</AffiliateLink>
         </>,
-        '1/2 – 1 tsp. ground flaxseed',
-        '1 – 2 tsp. whole husk psyllium flakes',
-        '1 tsp. baobab powder',
+        <>1/2 &ndash; 1 tsp. ground flaxseed</>,
+        <>1 &ndash; 2 tsp. whole husk psyllium flakes</>,
+        <>1 tsp. baobab powder</>,
         <>
             1 tsp. <AffiliateLink>THM Creamy Dreamy Hemp Protein</AffiliateLink> (optional)
         </>,
-        '1/4 c. frozen cauliflower rice',
-        '1/4 c. egg whites (boxed is best)',
-        '1 1/4 – 2 1/2 c. water',
-        '1/2 – 1 tsp. gelatin',
-        'Sprinkle of mineral salt',
+        <>1/4 c. frozen cauliflower rice</>,
+        <>1/4 c. egg whites (boxed is best)</>,
+        <>1 1/4 &ndash; 2 1/2 c. water</>,
+        <>1/2 &ndash; 1 tsp. gelatin</>,
+        <>Sprinkle of mineral salt</>,
         <>
             Sprinkle of <AffiliateLink>THM Gentle Sweet</AffiliateLink>
         </>,

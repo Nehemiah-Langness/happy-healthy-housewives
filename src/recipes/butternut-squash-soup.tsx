@@ -7,15 +7,19 @@ const recipe: Recipe = {
     title: 'Butternut Squash Soup',
     tags: ['THM E'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Butternut Squash Soup`,
+    brief: `Bri's Butternut Squash Soup has all the flavors of Fall we love while also nourishing and fueling your body. Just what you need on those chilly nights!`,
     image: 'butternut-squash-soup.jpg',
     file: 'ButternutSquashSoup.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                Nothing screams a cozy fall evening like a delicious Butternut Squash Soup, and this one is packed full of nutrition for the
+                whole family!
+            </>,
+            <>
+                Butternut Squash is very high in potassium, and loaded with antioxidants! The additions of Duo Greens, Baobab, and Gelatin
+                make this a powerhouse for your immune system and your overall health!
             </>,
         ],
     },
@@ -27,16 +31,24 @@ const recipe: Recipe = {
         <>2 stalks of celery, diced</>,
         <>1 Tbsp of butter (or coconut oil)</>,
         <>5 cups of bone broth</>,
-        <>1 tsp of <AffiliateLink>THM Super Sweet</AffiliateLink></>,
+        <>
+            1 tsp of <AffiliateLink>THM Super Sweet</AffiliateLink>
+        </>,
         <>1 tsp of garlic powder</>,
         <>1 tsp onion powder</>,
         <>1 tsp mineral salt</>,
         <>1 tsp black pepper</>,
         <>1/4 tsp cayenne pepper</>,
-        <>1 tsp <AffiliateLink>THM Duo Greens Powder</AffiliateLink> <Optional/></>,
-        <>2 tsp Baobab powder <Optional/></>,
+        <>
+            1 tsp <AffiliateLink>THM Duo Greens Powder</AffiliateLink> <Optional />
+        </>,
+        <>
+            2 tsp Baobab powder <Optional />
+        </>,
         <>1 tsp Just Gelatin</>,
-        <>1 scoop Whey Protein (or <AffiliateLink>THM Creamy Dreamy</AffiliateLink> protein for <AcronymToggle>DF</AcronymToggle>)</>,
+        <>
+            1 scoop Whey Protein (or <AffiliateLink>THM Creamy Dreamy</AffiliateLink> protein for <AcronymToggle>DF</AcronymToggle>)
+        </>,
     ],
     Directions: (
         <>

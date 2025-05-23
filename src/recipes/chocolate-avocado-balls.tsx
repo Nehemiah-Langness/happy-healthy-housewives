@@ -14,7 +14,7 @@ const recipe: Recipe = {
             `This recipe I owe to my sweet mother-in-law. This past holiday season she wanted to make a yummy dessert for me to enjoy 
             that was dairy free and sugar free! She melted down on-plan chocolate chips and mixed with an avocado, then formed them into 
             balls! I was (and still am) obsessed.`,
-            `I tweaked this recipe a tad to make it more affordable, but it’s still just as easy!`,
+            `I tweaked this recipe a tad to make it more affordable, but it's still just as easy!`,
             <b>Pro-tip, you can sub out the vanilla extract for any flavoring or alcohol of choice!</b>,
         ],
     },
@@ -35,7 +35,7 @@ const recipe: Recipe = {
             <p>In a separate bowl, mash the avocado until smooth and creamy.</p>
             <p>Combine the chocolate mixture and the avocado until well combined.</p>
             <p>Roll the mixture into small, bite sized balls in the palm of your hand and lay out on a plate. Cool in fridge overnight.</p>
-            <p>When ready to serve, roll the balls in whatever topping you’d enjoy!</p>
+            <p>When ready to serve, roll the balls in whatever topping you'd enjoy!</p>
         </>
     ),
     Notes: (

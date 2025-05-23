@@ -17,7 +17,7 @@ const recipe: Recipe = {
                 without (there is a good DF/SF store bought option, but it is way too expensive!) until I created my Icebox Ice Cream
                 recipe.
             </>,
-            <>Now I’m having a blast trying out a whole list of new flavors! Of course, I had to nail down my favorite first!</>,
+            <>Now I'm having a blast trying out a whole list of new flavors! Of course, I had to nail down my favorite first!</>,
             <>This recipe is Dairy Free, instant. and filled with wonderful chocolate and coffee flavor!</>,
             <>
                 <b>

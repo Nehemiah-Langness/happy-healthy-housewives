@@ -14,10 +14,10 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                Crazy enough, I’ve never been on the pumpkin spice train. Probably because I spent many years selling pumpkin rolls with my
-                mom as a mission trip fundraiser! But, this year, that’s all I want! This is a great, super slimming, afternoon snack.
+                Crazy enough, I've never been on the pumpkin spice train. Probably because I spent many years selling pumpkin rolls with my
+                mom as a mission trip fundraiser! But, this year, that's all I want! This is a great, super slimming, afternoon snack.
                 Glucomannan is an amazing super food that can help balance you blood sugar and heal your gut! So make yourself a nice big
-                glass (or two if you’re like me!) and enjoy this wonderful afternoon treat!
+                glass (or two if you're like me!) and enjoy this wonderful afternoon treat!
             </>,
         ],
     },

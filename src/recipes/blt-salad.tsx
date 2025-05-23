@@ -11,7 +11,7 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Do you love BLT’s but want to avoid off plan items or a crossover? This salad will fulfill all your BLT flavor desires! I don’t 
+            `Do you love BLT's but want to avoid off plan items or a crossover? This salad will fulfill all your BLT flavor desires! I don't 
             even miss the classic sandwich style BLT, and neither will you!`,
         ],
     },

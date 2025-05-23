@@ -6,18 +6,10 @@ const recipe: Recipe = {
     title: 'Grilled Burritos',
     tags: ['THM E', 'THM S', 'THM XO'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Grilled Burritos`,
+    brief: `Taco Tuesday is a thing of the past! It's time to change it up with this new take on a favorite. Pair with a Trim Mamarita to really feel like a treat!`,
     image: 'grilled-burritos.jpg',
     file: 'GrilledBurritos.pdf',
-    quote: {
-        person: 'Nehemiah',
-        Quote: [
-            <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
-            </>,
-        ],
-    },
+    quote: [],
     servings: '6 burritos',
     Ingredients: [
         <>1 pound of ground beef</>,

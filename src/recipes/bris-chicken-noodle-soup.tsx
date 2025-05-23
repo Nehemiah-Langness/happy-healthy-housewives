@@ -7,15 +7,17 @@ const recipe: Recipe = {
     title: "Bri's Chicken Noodle Soup",
     tags: ['THM S', 'THM XO'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Bri's Chicken Noodle Soup`,
+    brief: `Winter is the time for all things cold and flu. Try Bri's hearty soup to get you ready to shovel through the next storm!`,
     image: 'bris-chicken-noodle-soup.jpg',
     file: 'BrisChickenNoodleSoup.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                Growing up, my Mom would make a delicious chicken noodle soup with her homemade bone broth and a soup mix packet. I for one
+                LOVED that soup mix packet. After being on Trim Healthy Mama for a while, I longed for a chicken noodle soup that tasted
+                like that soup packet. So, I created this one! To me, this is all chicken noodle soup should be. I hope you and your family
+                enjoy it.
             </>,
         ],
     },

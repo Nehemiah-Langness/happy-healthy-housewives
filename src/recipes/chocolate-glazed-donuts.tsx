@@ -13,14 +13,14 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                My husband loves donuts from a certain famous chain restaurant. There’s a few times a year that he demands it. I wanted to
+                My husband loves donuts from a certain famous chain restaurant. There's a few times a year that he demands it. I wanted to
                 enjoy these times him, but wanted to find a way to stay “on plan”. So, I set out to create my own recipe!
             </>,
             <>
-                Now, I’m not saying these are a “copycat” recipe. Nothing I make will ever taste like store-bought terrible for you donuts.
+                Now, I'm not saying these are a “copycat” recipe. Nothing I make will ever taste like store-bought terrible for you donuts.
                 These work well for me and I love that I can have them with any meal.
             </>,
-            <>When I sit down to enjoy these with a cup of coffee, it’s hard to believe that I’m making great choices for my health!</>,
+            <>When I sit down to enjoy these with a cup of coffee, it's hard to believe that I'm making great choices for my health!</>,
         ],
     },
     servings: 'Approximately 6 donuts',
@@ -38,7 +38,7 @@ const recipe: Recipe = {
                 </>,
                 <>2 tsp baking powder</>,
                 <>4 pinch mineral salt</>,
-                <>1/2 – 1 cup water</>,
+                <>1/2 &ndash; 1 cup water</>,
             ]}
         />,
         <IngredientList

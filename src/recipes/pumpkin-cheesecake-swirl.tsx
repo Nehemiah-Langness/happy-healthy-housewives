@@ -14,8 +14,8 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                I love making Pumpkin Rolls with delicious cream cheese frosting. It’s actually a specialty of mine to show up with a
-                Pumpkin Roll for the holidays! Sometimes, though, you just don’t have the time (or you want something a little different).
+                I love making Pumpkin Rolls with delicious cream cheese frosting. It's actually a specialty of mine to show up with a
+                Pumpkin Roll for the holidays! Sometimes, though, you just don't have the time (or you want something a little different).
             </>,
             <>
                 Here is my new favorite creation: <b>Pumpkin Cheesecake Swirl</b>! All the wonderful flavors of a pumpkin roll in a whole
@@ -87,7 +87,7 @@ const recipe: Recipe = {
     ),
     Notes: (
         <>
-            <p>You can use any <AcronymToggle>DF</AcronymToggle> sub for the cream cheese. I particularly like the Kite Hill brand, as their ingredients are the best you’ll find.</p>
+            <p>You can use any <AcronymToggle>DF</AcronymToggle> sub for the cream cheese. I particularly like the Kite Hill brand, as their ingredients are the best you'll find.</p>
             <p>I had to split this recipe between two pie dishes, as mine are rather small. If your pie dish is larger, you can use just one!</p>
         </>
     ),

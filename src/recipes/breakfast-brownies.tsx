@@ -11,8 +11,8 @@ const recipe: Recipe = {
         person: 'Brianna',
         Quote: [
             <>Ok, this is another viral TikTok recipe that came my way and I just had to <AffiliateLink>THM</AffiliateLink> it. Baked “oatmeal” is very popular because it 
-            essentially becomes breakfast cake! Who wouldn’t love that? This is a brownie version and it is so beautifully decadent you 
-            won’t believe it’s an E meal!</>,
+            essentially becomes breakfast cake! Who wouldn't love that? This is a brownie version and it is so beautifully decadent you 
+            won't believe it's an E meal!</>,
         ],
     },
     servings: 'Multiple',

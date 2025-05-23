@@ -1,5 +1,6 @@
 import { AcronymToggle } from '../components/AcronymToggle';
 import { AffiliateLink } from '../components/AffiliateLink';
+import { Footnote } from '../components/Footnote';
 import { IngredientList } from '../components/IngredientList';
 import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
@@ -8,18 +9,10 @@ const recipe: Recipe = {
     title: "Ma's Sweet Morning Quinoa",
     tags: ['THM E'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Ma's Sweet Morning Quinoa`,
+    brief: `Start your morning off with a deliciously sweet complete protein that will fuel your body for whatever you have planned!`,
     image: 'mas-sweet-morning-quinoa.jpg',
     file: 'MasSweetMorningQuinoa.pdf',
-    quote: {
-        person: 'Nehemiah',
-        Quote: [
-            <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
-            </>,
-        ],
-    },
+    quote: [],
     servings: 'Single Serving',
     Ingredients: [
         <IngredientList
@@ -28,8 +21,8 @@ const recipe: Recipe = {
                 <>1/4 cup of quinoa</>,
                 <>1 pinch of sea salt</>,
                 <>
-                    1/4 cup of fresh or frozen cranberries and 1/4 cup of frozen blueberries *(or 1/2 cup of mixed frozen berries.) Add
-                    during the last 5 minutes not in the beginning.
+                    1/4 cup of fresh or frozen cranberries and 1/4 cup of frozen blueberries <Footnote />
+                    (or 1/2 cup of mixed frozen berries.) Add during the last 5 minutes not in the beginning.
                 </>,
             ]}
         />,

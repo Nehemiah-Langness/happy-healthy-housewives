@@ -1,6 +1,7 @@
 import { AcronymToggle } from '../components/AcronymToggle';
 import { AffiliateLink } from '../components/AffiliateLink';
 import { ExternalLink } from '../components/ExternalLink';
+import { Footnote } from '../components/Footnote';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -14,7 +15,7 @@ const recipe: Recipe = {
         person: 'Brianna',
         Quote: [
             <>
-                Y’all… Fall has officially arrived and all the stores have put out their sugary pumpkin spice treats. If you’re anything
+                Y'all… Fall has officially arrived and all the stores have put out their sugary pumpkin spice treats. If you're anything
                 like me, you love all things pumpkin and pumpkin spice! When I began Trim Healthy Mama a few years back, I knew I needed to
                 recreate my favorites in a more blood sugar friendly way. No more missing out on holiday treats! This Pumpkin Spice Syrup is
                 sure to jazz up your morning or afternoon cup of joe! Coffee shops? Who needs them!
@@ -31,11 +32,12 @@ const recipe: Recipe = {
         <>
             1/3 cup of on plan sweetened condensed milk (I love{' '}
             <ExternalLink to='https://mymontanakitchen.com/3-ingredient-sweetened-condensed-milk-thm-s-low-carb-sugar-free/'>
-                My Montana Kitchen‘s recipe
+                My Montana Kitchen's recipe
             </ExternalLink>
-            ) *see notes for <AcronymToggle>DF</AcronymToggle> option
+            ) <Footnote />
+            see notes for <AcronymToggle>DF</AcronymToggle> option
         </>,
-        <>1/2 tsp of Pumpkin Spice mix (see notes for alternative)</>,
+        <>1/2 tsp of Pumpkin Spice mix (see notes for alternative)<Footnote count={2}/></>,
         <>1/4 tsp of mineral salt</>,
     ],
     IngredientNotes: (
@@ -54,14 +56,16 @@ const recipe: Recipe = {
     ),
     Notes: (
         <>
-            <p>Pumpkin Spice is just an equal mixture of clove, cinnamon, ginger, and nutmeg.</p>
-            <p>It’s easy to whip up your own to measure out this whole season, or you can buy some from the super-market!</p>
             <p>
-                If you need a <AcronymToggle>DF</AcronymToggle> version, My Montana Kitchen also has a{' '}
+                <Footnote /> If you need a <AcronymToggle>DF</AcronymToggle> version, My Montana Kitchen also has a{' '}
                 <ExternalLink to='https://mymontanakitchen.com/2-ingredient-dairy-free-sweetened-condensed-milk-thm-s-sugar-free-low-carb/'>
                     Dairy Free Sweetened Condensed Milk
                 </ExternalLink>
                 .
+            </p>
+            <p>
+                <Footnote count={2} /> Pumpkin Spice is just an equal mixture of clove, cinnamon, ginger, and nutmeg. It's easy to whip up
+                your own to measure out this whole season, or you can buy some from the super-market!
             </p>
         </>
     ),

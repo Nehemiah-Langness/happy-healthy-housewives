@@ -13,7 +13,7 @@ const recipe: Recipe = {
         person: 'Brianna',
         Quote: [
             `My husband is wonderfully creative in the kitchen! A couple of years  ago, he gifted this recipe to my Mom. 
-            A true blue trim and healthy “kettle corn”. I think you’ll see his silly personality shine through this 
+            A true blue trim and healthy “kettle corn”. I think you'll see his silly personality shine through this 
             recipe, and we both hope you enjoy it! `,
         ],
     },
@@ -31,7 +31,7 @@ const recipe: Recipe = {
         <>
             <p>
                 In a big pot, drop the butter (or coconut oil) on the bottom and set the burner on medium-high. Drop a kernel in the middle,
-                should you desire, so you know when it’s hot enough to pop the corn.
+                should you desire, so you know when it's hot enough to pop the corn.
             </p>
             <p>
                 When it is hot, pour kernels and sweetener in the pot and shake to mix. (Pro tip: A lid keeps hot popped kernels in the pot

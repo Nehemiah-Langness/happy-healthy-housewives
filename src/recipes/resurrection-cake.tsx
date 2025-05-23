@@ -33,15 +33,15 @@ const recipe: Recipe = {
             title='Chocolate cake (Sin Layer)'
             Ingredients={[
                 <>
-                    There are so many amazing on plan chocolate cakes, I didn’t dare try to make my own! You can use any on plan chocolate
+                    There are so many amazing on plan chocolate cakes, I didn't dare try to make my own! You can use any on plan chocolate
                     cake recipe. Pictured is the brownie layer from the <AffiliateLink>THF Brownie Cheesecake</AffiliateLink>, but there are
                     plenty of options to choose from! Some would be: The <b>Chocolate Mint Cupcakes</b> from <b>THF</b> (minus the mint),
                     The <AffiliateLink>THM Trimtastic Cake</AffiliateLink>, <AffiliateLink>THM Cry No More Brownies</AffiliateLink>, and
-                    many more! Pick your family’s favorite!
+                    many more! Pick your family's favorite!
                 </>,
             ]}
         />,
-        <IngredientList title='Strawberry Jelly (Christ’s Blood Layer)' 
+        <IngredientList title="Strawberry Jelly (Christ's Blood Layer)" 
             Ingredients={[
                 <>2 cups frozen strawberries</>,
                 <>2 tsp lemon juice</>,

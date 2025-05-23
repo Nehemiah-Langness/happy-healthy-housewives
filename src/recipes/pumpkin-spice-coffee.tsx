@@ -4,20 +4,20 @@ const recipe: Recipe = {
     title: 'Pumpkin Spice Coffee',
     tags: ['THM FP'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Pumpkin Spice Coffee`,
+    brief: `Fall is here and so are the long lines for a PSL. Whip it up at home with Bri's Fall coffee recipe!`,
     image: 'pumpkin-spice-coffee.jpg',
     file: 'PumpkinSpiceCoffee.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                Where are my pumpkin spice coffee fanatics? There's nothing I love more than curling up with a warm cup of Pumpkin Spice
+                flavored coffee on a crisp fall morning or afternoon. It feels so special! Unfortunately, getting that big ol' sugary treat
+                at your local coffee shop can spike your blood sugar. Here is my budget and THM friendly version for you to enjoy!
             </>,
         ],
     },
     servings: 'One 12 Cup Pot',
-    servingSize: '',
     Ingredients: [<>12 TBS of coffee grounds</>, <>2 TBS of Pumpkin Pie Spice </>],
     Directions: (
         <>

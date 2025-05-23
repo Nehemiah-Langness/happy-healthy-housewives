@@ -12,8 +12,8 @@ const recipe: Recipe = {
         person: 'Mandy',
         Quote: [
             <>
-                This is a recipe that my family is particularly excited about. We had a slice of cappuccino fudge years ago and I’ve been
-                dying to make a <AffiliateLink>THM</AffiliateLink> version! Finally, I pulled it off; plus, it’s dairy free! I hope you love
+                This is a recipe that my family is particularly excited about. We had a slice of cappuccino fudge years ago and I've been
+                dying to make a <AffiliateLink>THM</AffiliateLink> version! Finally, I pulled it off; plus, it's dairy free! I hope you love
                 this as much as my sister and I do.
             </>,
         ],
@@ -29,14 +29,14 @@ const recipe: Recipe = {
         <>
             Batch of{' '}
             <ExternalLink to='https://mymontanakitchen.com/2-ingredient-dairy-free-sweetened-condensed-milk-thm-s-sugar-free-low-carb/'>
-                My Montana Kitchen’s sweetened condensed milk
+                My Montana Kitchen's sweetened condensed milk
             </ExternalLink>
         </>,
         '1 1/2 Tbsp instant coffee',
     ],
     Directions: (
         <>
-            <p>First, make a batch of My Montana Kitchen’s sweetened condensed milk. Set aside to cool.</p>
+            <p>First, make a batch of My Montana Kitchen's sweetened condensed milk. Set aside to cool.</p>
             <p>
                 In a double boiler, melt cocoa butter, coconut manna, sweetener, and vanilla extract. Once the Gentle Sweet is dissolved,
                 add to the sweetened condensed milk.

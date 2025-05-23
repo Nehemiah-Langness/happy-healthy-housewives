@@ -32,7 +32,7 @@ const recipe: Recipe = {
         <>2/3 cup of Cocoa Powder</>,
         <>1/2 teaspoon of baking soda</>,
         <>1/4 tsp Salt</>,
-        <>1 bag of Lily’s peppermint chips</>,
+        <>1 bag of Lily's peppermint chips</>,
     ],
     Directions: (
         <>

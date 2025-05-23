@@ -52,7 +52,7 @@ const recipe: Recipe = {
             <p>Place all base ingredients in a blender and blend together.</p>
             <p>Pour into a greased 8x8 baking dish and bake for 20-30 minutes.</p>
             <p>
-                In a small bowl combine all frosting ingredients (if you’re having trouble combining it, try microwaving in short
+                In a small bowl combine all frosting ingredients (if you're having trouble combining it, try microwaving in short
                 increments!)
             </p>
             <p>When oatmeal is completely cool, frost the top.</p>

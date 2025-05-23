@@ -17,11 +17,11 @@ const recipe: Recipe = {
                 I made everyone try a piece when I arrived.
             </>,
             <>
-                I’ve been dreaming of this chocolate ever since, but none of the stores in my area carry this flavor. So, just like any
+                I've been dreaming of this chocolate ever since, but none of the stores in my area carry this flavor. So, just like any
                 other need i find, I went into the kitchen to make my own version.
             </>,
             <>
-                I’m so proud to say it is just as delicious as the first time I tried it. And, just like I made all of my family try it, I
+                I'm so proud to say it is just as delicious as the first time I tried it. And, just like I made all of my family try it, I
                 want you all to try it too!
             </>,
             <>

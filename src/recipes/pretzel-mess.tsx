@@ -12,7 +12,7 @@ const recipe: Recipe = {
         Quote: [
             <>
                 Oh boy, this recipe did not turn out how I planned but I am not mad about it! While trying to recreate these cute little
-                pretzel treats my mother in law makes I found myself.. well.. making a mess. That didn’t stop my family from digging in!
+                pretzel treats my mother in law makes I found myself.. well.. making a mess. That didn't stop my family from digging in!
                 This recipe is all things salty, sweet, and good. Who needs sugar filled treat mixes?
             </>,
         ],
@@ -40,7 +40,7 @@ const recipe: Recipe = {
     ),
     Notes: (
         <>
-            <p>If you’d like to make this dairy free, use this white chocolate recipe: <ExternalLink to='https://www.lowcarbsosimple.com/the-ultimate-dairy-free-sugar-free-white-chocolate/'>The Ultimate Diary Free/Sugar Free White Chocolate</ExternalLink></p>
+            <p>If you'd like to make this dairy free, use this white chocolate recipe: <ExternalLink to='https://www.lowcarbsosimple.com/the-ultimate-dairy-free-sugar-free-white-chocolate/'>The Ultimate Diary Free/Sugar Free White Chocolate</ExternalLink></p>
         </>
     ),
 };

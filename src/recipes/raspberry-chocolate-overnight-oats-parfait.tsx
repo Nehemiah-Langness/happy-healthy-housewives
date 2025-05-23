@@ -11,9 +11,9 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            `Mornings are a busy time in our house. I’ve learned quickly that having a breakfast ready to go in the morning is essential! 
+            `Mornings are a busy time in our house. I've learned quickly that having a breakfast ready to go in the morning is essential! 
             With all the candy and love in the air this time of year, I found myself really wanting a good raspberry chocolate something!`,
-            `This is decadent, delicious, and packed with protein and healthy carbs. You’ll think you’re having dessert for breakfast!`,
+            `This is decadent, delicious, and packed with protein and healthy carbs. You'll think you're having dessert for breakfast!`,
         ],
     },
     servings: 'Single Serving',

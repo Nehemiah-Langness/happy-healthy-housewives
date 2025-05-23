@@ -12,12 +12,12 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            <>Oh Mama’s, I am so excited to bring you this summer cocktail that you can share with your friends! 
+            <>Oh Mama's, I am so excited to bring you this summer cocktail that you can share with your friends! 
             This wonderful drink is great for your taste buds AND your blood sugar!  A few years back, before 
             I started Trim Healthy Mama, my Mom and I were obsessed with this cocktail found at our favorite 
             restaurant, the Sangarita! We recreated an off-plan version, but I really wanted to find a way to 
             make this <AffiliateLink>THM</AffiliateLink> compliant.</>,
-            `It’s summery, on the sweeter side, and the perfect drink to make for a gathering. I hope you enjoy!`,
+            `It's summery, on the sweeter side, and the perfect drink to make for a gathering. I hope you enjoy!`,
         ],
     },
     Ingredients: [

@@ -12,7 +12,7 @@ const recipe: Recipe = {
         Quote: [
             <span>
                 Good Girl Moonshine is probably my favorite sipper from the <b>Trim Healthy Mama</b> cookbooks. You can make it different
-                every day, it’s great for your skin, and aids in digestion. This variation was created out of a need for an extra boost in
+                every day, it's great for your skin, and aids in digestion. This variation was created out of a need for an extra boost in
                 hydration! Coconut water is extremely hydrating, and the tropical theme of this variation followed. Sip on this{' '}
                 <b>Tropical GGMS</b> this summer and be transported straight to the beach!
             </span>,

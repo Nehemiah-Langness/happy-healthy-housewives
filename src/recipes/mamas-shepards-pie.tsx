@@ -14,9 +14,9 @@ const recipe: Recipe = {
             person: 'Brianna',
             Quote: [
                 <>
-                    My mom’s shepherd’s pie was one of my favorite meals growing up! I looked forward to it anytime she made it for dinner.
+                    My mom's shepherd's pie was one of my favorite meals growing up! I looked forward to it anytime she made it for dinner.
                     With just a few simple tweaks, this dish can morph to be the healthy dish you need! Whether you need a hefty crossover
-                    or a delicious S meal, Mama’s Shepherd Pie is sure not to disappoint!
+                    or a delicious S meal, Mama's Shepherd Pie is sure not to disappoint!
                 </>,
             ],
         },
@@ -24,8 +24,8 @@ const recipe: Recipe = {
             person: 'Mandy',
             Quote: [
                 <>
-                    Don’t snub your nose at the idea of leaving off the cheese to make this <AcronymToggle>DF</AcronymToggle>. I assure you,
-                    it’s just as delicious!
+                    Don't snub your nose at the idea of leaving off the cheese to make this <AcronymToggle>DF</AcronymToggle>. I assure you,
+                    it's just as delicious!
                 </>,
             ],
         },
@@ -38,7 +38,7 @@ const recipe: Recipe = {
                 <>1 lb ground beef or lamb</>,
                 <>1 minced garlic clove</>,
                 <>1 medium onion chopped</>,
-                <>2 cups frozen peas and carrot mixture (can use greenbeans if you don’t like peas)</>,
+                <>2 cups frozen peas and carrot mixture (can use greenbeans if you don't like peas)</>,
                 <>1/2 cup frozen corn</>,
                 <>2 Tbsp. Baobab</>,
                 <>1 Tbsp. parsley</>,

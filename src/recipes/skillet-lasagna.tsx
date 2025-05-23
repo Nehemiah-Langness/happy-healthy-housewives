@@ -21,10 +21,10 @@ const recipe: Recipe = {
             <>Enjoy this one pot delicious dish that you and yours are sure to love!</>,
         ],
     },
-    servings: '4 – 6 servings',
+    servings: '4 - 6 servings',
     Ingredients: [
         <>1 lb ground beef</>,
-        <>6 – 8 oz ground mushrooms (optional, but adds some great hidden veggies)</>,
+        <>6 &ndash; 8 oz ground mushrooms (optional, but adds some great hidden veggies)</>,
         <>1 yellow onion, diced</>,
         <>1 Tbsp chopped garlic</>,
         <>14 oz can of diced tomatoes</>,

@@ -5,15 +5,21 @@ const recipe: Recipe = {
     title: 'Fried Fish',
     tags: ['THM XO'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Fried Fish`,
+    brief: `Toddlers, kids, teens, adults, who doesn't love a good piece of fried fish? Whip this up for your family and feel good about this healthier version of a deep fried favorite.`,
     image: 'fried-fish.jpg',
     file: 'FriedFish.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
+            <>Fried fish is one of those comfort foods we can all enjoy. It takes us back to times of fish fry's and family.</>,
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                My mom loves fried fish, my husband loves fried fish, I love fried fish. After a rough day with my son, and fish on the menu
+                for dinner, I felt the need for some comfort food. Not wanting to go off plan, I did some research on my trusty sourdough
+                and this recipe was born!
+            </>,
+            <>
+                It is simple, quick, easy, and takes no ferment time since it only uses discard! I hope it blesses your family as it has
+                blessed mine!
             </>,
         ],
     },

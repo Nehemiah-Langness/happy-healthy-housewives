@@ -19,9 +19,9 @@ const recipe: Recipe = {
                 Tequila is the best “on-plan” alcohol for the <b>Trim Healthy Mama Lifestyle</b>. The sugars used to make tequila are called
                 “agavins”, which have been shown in{' '}
                 <ExternalLink to='https://pubmed.ncbi.nlm.nih.gov/25367106/'>clinical trials</ExternalLink> to not raise your blood sugar.
-                It’s also a pro-biotic and a pre-biotic, meaning it provides the nutrients for the probiotics to grow!
+                It's also a pro-biotic and a pre-biotic, meaning it provides the nutrients for the probiotics to grow!
             </span>,
-            `There are many other health benefits to tequila, but I don’t think I need to give you any reason to love this drink!`,
+            `There are many other health benefits to tequila, but I don't think I need to give you any reason to love this drink!`,
         ],
     },
     servings: 'Single Serving',
@@ -46,7 +46,7 @@ const recipe: Recipe = {
                 You can rub a lime over the lip of your glasses and roll through Erythritol to enjoy a “sugared” rim, or mineral salt for a
                 salted rim.
             </p>
-            <p>If you’re making this on the rocks, taste and see if it’s too strong. If so, just add more water!</p>
+            <p>If you're making this on the rocks, taste and see if it's too strong. If so, just add more water!</p>
         </>
     ),
     redirects: ['mamaritas'],

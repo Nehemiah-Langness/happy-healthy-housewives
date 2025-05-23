@@ -13,10 +13,10 @@ const recipe: Recipe = {
         {
             person: 'Brianna',
             Quote: [
-                `My husband’s Grandmother was coming to stay with us for a weekend, and I wanted to appease her tastes and stay on plan! 
+                `My husband's Grandmother was coming to stay with us for a weekend, and I wanted to appease her tastes and stay on plan! 
             I asked my mother-in-law what she enjoyed for breakfast, and she replied: “sweet breads”. Yikes! In my opinion, sweet 
             breads are one of the hardest on plan items to make that also have the approval of those who are off plan. I was pretty 
-            determined to make a crowd pleaser, and thus this sourdough orange sweet loaf was born! I’m happy to report she raved about 
+            determined to make a crowd pleaser, and thus this sourdough orange sweet loaf was born! I'm happy to report she raved about 
             it at breakfast. She could have just been being polite, but I truly think this recipe is dynamite.`,
             ],
         },
@@ -24,7 +24,7 @@ const recipe: Recipe = {
             person: 'Mandy',
             Quote: [
                 <>
-                    If you’d like to try the <b>Dairy Free option</b>, feel free to check out my{' '}
+                    If you'd like to try the <b>Dairy Free option</b>, feel free to check out my{' '}
                     <LinkToRecipe recipe='dairy-free-yogurt'>Almond Milk Yogurt</LinkToRecipe> recipe!
                 </>,
             ],

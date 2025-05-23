@@ -4,15 +4,16 @@ const recipe: Recipe = {
     title: 'Buffalo Chicken Salad',
     tags: ['THM S'],
     dateAdded: new Date('2025-05-22'),
-    brief: `Buffalo Chicken Salad`,
+    brief: `Spicy chicken honestly doesn't get any better than this chicken salad. This is sure to be a crowd favorite at your next pot luck!`,
     image: 'buffalo-chicken-salad.jpg',
     file: 'BuffaloChickenSalad.pdf',
     quote: {
-        person: 'Nehemiah',
+        person: 'Brianna',
         Quote: [
+            <>Do you love all things buffalo? This chicken salad is for you!</>,
             <>
-                This Recipe was missing, so I pieced it together from the website files, but Mandy and Brianna need to put in a nice quote
-                here. Until then, enjoy this nice quote from me.
+                I recently fell in love with buffalo flavorings. Spicy and rich, what's not to love? One day I was craving some good buffalo
+                flavors, and decided to whip this up. I thought it was delicious, and I hope you do too!
             </>,
         ],
     },
@@ -37,4 +38,3 @@ const recipe: Recipe = {
 };
 
 export default recipe;
-
