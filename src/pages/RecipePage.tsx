@@ -139,7 +139,7 @@ export function RecipePage() {
                     <div className='d-flex gap-3'>
                         <button
                             type='button'
-                            className='btn btn-outline-primary border-0'
+                            className='btn btn-link text-decoration-none border-0'
                             onClick={(e) => {
                                 carouselPage(e.target as HTMLButtonElement)?.previous();
                             }}
@@ -154,7 +154,7 @@ export function RecipePage() {
                         </div>
                         <button
                             type='button'
-                            className='btn btn-outline-primary border-0'
+                            className='btn btn-link text-decoration-none border-0'
                             onClick={(e) => {
                                 carouselPage(e.target as HTMLButtonElement)?.next();
                             }}
