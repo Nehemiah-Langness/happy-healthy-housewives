@@ -30,8 +30,6 @@ export function RecipeHomePage() {
                     score += Math.pow(2, recipe.search.length - index) * matches;
                 }
 
-                console.log(recipe, score);
-
                 return {
                     recipe: recipe,
                     score,
@@ -52,19 +50,53 @@ export function RecipeHomePage() {
 
     const suggestions = useMemo(() => {
         const words = filter.split(' ');
-        const lastWord = words[words.length - 1];
-        if (!lastWord) return [];
+        if (!filter) return [];
 
+        const lastWord = words[words.length - 1];
+        const currentTerms = words
+            .slice(0, -1)
+            .filter((x) => x)
+            .join(' ')
+            .toLowerCase()
+            .replace(/['".-]/g, '');
         const filterTerm = lastWord.toLowerCase().replace(/['".-]/g, '');
         return [
             ...recipeList
+                .map((x) => x.titleAlt || x.title)
+                .sort()
+                .map((x) => {
+                    if (!currentTerms) {
+                        return x;
+                    } else {
+                        const hasMatch = x
+                            .toLowerCase()
+                            .replace(/['".-]/g, '')
+                            .indexOf(currentTerms);
+                        if (hasMatch < 0) return '';
+                        
+                        const newString = x.substring(
+                            hasMatch +
+                                words
+                                    .slice(0, -1)
+                                    .filter((x) => x)
+                                    .join(' ').length
+                        );
+
+                        if (newString[0] !== ' ') return '';
+                        console.log(`"${newString}"`);
+                        return newString.split(' ').filter((x) => x)[0];
+                    }
+                })
+                .filter((x) => x)
                 .flatMap((x) =>
-                    (x.titleAlt || x.title).split(' ').map((y) => ({
+                    x.split(' ').map((y) => ({
                         search: y.toLowerCase().replace(/['".-]/g, ''),
                         text: y,
                     }))
                 )
-                .filter((x) => x.search.startsWith(filterTerm) && x.text !== lastWord)
+                .filter((x) => {
+                    return x.search.startsWith(filterTerm) && x.text !== lastWord;
+                })
                 .reduce((c, n) => {
                     c.add(n.text);
                     return c;
@@ -129,9 +161,10 @@ export function RecipeHomePage() {
                                             id={`suggestion-${i}`}
                                             key={`${x}-${i}`}
                                             className={`list-group-item ${i === suggestionIndex ? 'active' : ''}`}
-                                            onClick={(e) => {
+                                            onMouseDown={(e) => {
                                                 e.preventDefault();
-                                                e.stopPropagation();
+                                            }}
+                                            onClick={() => {
                                                 setFilter((f) => f.split(' ').slice(0, -1).concat(x).join(' '));
                                             }}
                                         >
