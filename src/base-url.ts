@@ -1,1 +1,1 @@
-export const baseUrl = '/happy-healthy-housewives'
+export const baseUrl = ''
