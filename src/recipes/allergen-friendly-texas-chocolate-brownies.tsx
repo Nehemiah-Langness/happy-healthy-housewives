@@ -1,9 +1,9 @@
-import { IngredientList } from '../components/IngredientList';
-import type { Recipe } from '../types/recipe';
-import { LinkToRecipe } from '../components/LinkToRecipe';
-import { ExternalLink } from '../components/ExternalLink';
 import { AffiliateLink } from '../components/AffiliateLink';
+import { ExternalLink } from '../components/ExternalLink';
+import { IngredientList } from '../components/IngredientList';
+import { LinkToRecipe } from '../components/LinkToRecipe';
 import { Optional } from '../components/Optional';
+import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
     title: 'Allergen Friendly Texas Chocolate Brownies',
