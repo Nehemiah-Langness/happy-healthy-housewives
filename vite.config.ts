@@ -9,4 +9,16 @@ export default defineConfig({
         port: 3500,
     },
     base: baseUrl,
+    css: {
+        preprocessorOptions: {
+           scss: {
+             silenceDeprecations: [
+               'import',
+               'mixed-decls',
+               'color-functions',
+               'global-builtin',
+             ],
+           },
+        },
+     },
 });
