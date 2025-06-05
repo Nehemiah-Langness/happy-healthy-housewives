@@ -1,4 +1,5 @@
 import type { Tag } from '../types/tag';
+import type { TagName } from '../types/tag-name';
 import { recipeList } from './recipe-list';
 import { tagMap } from './tag-map';
 
@@ -14,7 +15,7 @@ export const tags = Object.entries(
         )
 )
     .map((x) => ({
-        tag: x[0] as keyof typeof tagMap,
+        tag: x[0] as TagName,
         label: x[1],
         order: Object.keys(tagMap).indexOf(x[0]),
         image:

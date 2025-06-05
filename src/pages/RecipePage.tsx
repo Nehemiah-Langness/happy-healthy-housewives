@@ -11,10 +11,11 @@ import { MessageUsButton } from '../components/MessageUsButton';
 import { RecipeLink } from '../components/RecipeLink';
 import { recipeList } from '../services/recipe-list';
 import { convertRemToPixels } from '../services/rem-to-pixels';
+import type { RecipeName } from '../types/recipe-name';
 
 export function RecipePage() {
     const { recipe } = useParams<{ recipe: string }>();
-    const matchingRecipe = recipes[(recipe ?? '') as keyof typeof recipes];
+    const matchingRecipe = recipes[(recipe ?? '') as RecipeName];
     if (!matchingRecipe) {
         return (
             <div className='flex-grow-1 container d-flex justify-content-center align-items-center'>
@@ -150,7 +151,7 @@ export function RecipePage() {
                             {matchingRecipe.similar
                                 .map((r) => recipeList.find((x) => x.slug === r))
                                 .map((r) => (r ? <RecipeLink key={r.slug} className='mx-2' recipe={r} preview /> : null))}
-                            <div className="buffer flex-shrink-0"></div>
+                            <div className='buffer flex-shrink-0'></div>
                         </div>
                         <button
                             type='button'
@@ -178,15 +179,18 @@ function carouselPage(button: HTMLButtonElement) {
 
     const capPages = Math.floor(carousel.scrollWidth / pageSize);
 
-    const buffer =carousel.querySelector('div.buffer') as HTMLDivElement;
+    const buffer = carousel.querySelector('div.buffer') as HTMLDivElement;
     if (buffer) {
         buffer.style.width = width - pageSize + 'px';
     }
 
-    console.log({
-        capPages,
-        page,
-    },  Math.min(capPages, page + 1) * pageSize);
+    console.log(
+        {
+            capPages,
+            page,
+        },
+        Math.min(capPages, page + 1) * pageSize
+    );
 
     return {
         next: () =>

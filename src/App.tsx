@@ -8,12 +8,14 @@ import { faFacebook, faInstagramSquare } from '@fortawesome/free-brands-svg-icon
 import { HomePage } from './pages/HomePage';
 import { useEffect, useRef } from 'react';
 import { RecipeHomePage } from './pages/RecipeHomePage';
+import { RecipeFinderPage } from './pages/RecipeFinderPage';
 import { RecipeTagPage } from './pages/RecipeTagPage';
 import { RecipePage } from './pages/RecipePage';
 import { AllergyDisclaimer } from './components/AllergyDisclaimer';
 import { AcronymKey } from './components/AcronymKey';
 import { AffiliateModal } from './components/AffiliateModal';
 import { recipeList } from './services/recipe-list';
+import { featureFlags } from './feature-flags';
 
 function Redirect({ to, replace }: { to: string; replace?: undefined } | { to?: undefined; replace: (current: string) => string }) {
     const navigate = useNavigate();
@@ -58,6 +60,11 @@ function App() {
                             />
                         }
                     />
+                    {featureFlags.findByIngredients && (
+                        <Route path='recipe-finder'>
+                            <Route index element={<RecipeFinderPage />} />
+                        </Route>
+                    )}
                     <Route path='recipes'>
                         <Route index element={<RecipeHomePage />} />
 
@@ -135,6 +142,17 @@ function Layout() {
                                     Recipes
                                 </Link>
                             </li>
+                            {featureFlags.findByIngredients && (
+                                <li className='nav-item'>
+                                    <Link
+                                        to='/recipe-finder'
+                                        className={'nav-link ' + (pathname.startsWith('/recipe-finder') ? 'active' : '')}
+                                        aria-current='page'
+                                    >
+                                        Recipe Finder
+                                    </Link>
+                                </li>
+                            )}
                         </ul>
                     </div>
                 </div>

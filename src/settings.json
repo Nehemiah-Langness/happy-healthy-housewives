@@ -1,3 +1,6 @@
 {
-    "howManyRecipesOnHomePage": 3
+    "howManyRecipesOnHomePage": 3,
+    "featureFlags": {
+        "findByIngredients": false
+    }
 }

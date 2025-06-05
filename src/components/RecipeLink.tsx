@@ -1,15 +1,15 @@
 import { Link } from 'react-router';
-import type { recipes } from '../recipes';
 import { recipeLink } from '../services/recipe-link';
 import type { Recipe } from '../types/recipe';
 import { RecipeLinkImage } from './RecipeLinkImage';
+import type { RecipeName } from '../types/recipe-name';
 
 export function RecipeLink({
     recipe,
     preview,
     className,
 }: {
-    recipe: Recipe & { slug: keyof typeof recipes };
+    recipe: Recipe & { slug: RecipeName };
     preview?: boolean;
     className?: string;
 }) {

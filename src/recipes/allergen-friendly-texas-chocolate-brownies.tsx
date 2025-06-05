@@ -27,6 +27,24 @@ const recipe: Recipe = {
             '(PS. Check the notes for tips on making this nut free)',
         ],
     },
+    ingredients: [
+        'THM Baking Blend',
+        'Erythritol',
+        'Cocoa Powder',
+        'Baking Powder',
+        'Mineral Salt',
+        ['Unsweetened Milk', 'Unsweetened Nut Milk', 'Almond Milk', 'Cashew Milk', 'Coconut Milk', 'Flax Milk'],
+        ['Apple Cider Vinegar', 'White Vinegar'],
+        'Vanilla Extract',
+        'Yogurt',
+        'Coconut Oil',
+        'Unsweetened Baking Chocolate',
+        'Extra Virgin Coconut Oil',
+        'THM Gentle Sweet',
+        'Stevia',
+        'Caramel Extract',
+        'Chopped Pecans',
+    ],
     Ingredients: [
         <IngredientList
             title='Brownies'
@@ -38,9 +56,11 @@ const recipe: Recipe = {
                 </>,
                 '1/2 cup Erythritol',
                 '1/2 cup cocoa powder (Dutch pressed is best)',
-                '1.5 tsp baking powder',
+                '1 1/2 tsp baking powder',
                 '1/4 tsp mineral salt',
-                <>1 1/2 cup unsweetened milk of choice <Optional reason='See Notes' /></>,
+                <>
+                    1 1/2 cup unsweetened milk of choice <Optional reason='See Notes' />
+                </>,
                 '1/2 tsp apple cider vinegar or white vinegar',
                 '1/2 tsp vanilla extract',
                 <>
@@ -54,7 +74,9 @@ const recipe: Recipe = {
             Ingredients={[
                 <>1 oz unsweetened baking chocolate</>,
                 <>2 Tbsp extra virgin coconut oil</>,
-                <>1/4 cup + 2 Tbsps unsweetened milk of choice <Optional reason='See Notes' /></>,
+                <>
+                    1/4 cup + 2 Tbsps unsweetened milk of choice <Optional reason='See Notes' />
+                </>,
                 <>2 pinches mineral salt</>,
                 <>
                     2 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink>
@@ -69,7 +91,7 @@ const recipe: Recipe = {
     ],
     Directions: (
         <>
-            <p>Preheat oven to 350&deg; F. Grease an 8×8 baking pan with coconut oil.</p>
+            <p>Preheat oven to 350&deg; F. Grease an 8x8 baking pan with coconut oil.</p>
             <p>
                 <b>Make the Brownies:</b> Whisk together baking blend, erythritol, cocoa, baking powder, and mineral salt in a large bowl.
                 Add milk, vinegar, vanilla, yogurt, and coconut oil and mix until well combined. Pour into baking pan.

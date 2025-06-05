@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router';
 import { recipes } from '../recipes';
 import { renderToString } from 'react-dom/server';
+import type { RecipeName } from '../types/recipe-name';
 
 const renderJsx = (node: React.ReactNode) => {
     const div = document.createElement('div');
@@ -12,7 +13,7 @@ export let recipeList: ReturnType<typeof getRecipeList> = [];
 function getRecipeList() {
     return Object.entries(recipes).map(([key, value]) =>
         Object.assign(value, {
-            slug: key as keyof typeof recipes,
+            slug: key as RecipeName,
             search: [
                 value.title,
                 value.titleAlt,

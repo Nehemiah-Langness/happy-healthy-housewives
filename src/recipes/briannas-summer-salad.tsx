@@ -16,7 +16,7 @@ const recipe: Recipe = {
     },
     servings: 'Single Serving',
     Ingredients: [
-        '1 chicken breast  ',
+        '1 chicken breast',
         '1/4 tsp of mineral salt',
         '1/4 tsp of black pepper',
         '1/4 tsp of garlic powder',

@@ -1,5 +1,6 @@
-import type { recipes } from '../recipes';
-import type { tagMap } from '../services/tag-map';
+import type { Ingredient } from './ingredients';
+import type { RecipeName } from './recipe-name';
+import type { TagName } from './tag-name';
 
 export interface Recipe {
     /** The name of the recipe */
@@ -33,7 +34,7 @@ export interface Recipe {
     Directions: React.ReactNode;
 
     /** Tags to display, such as THM meal type, dietary notes, etc */
-    tags: (keyof typeof tagMap)[];
+    tags: TagName[];
 
     /** The date the recipe was added to the site */
     dateAdded: Date;
@@ -48,7 +49,10 @@ export interface Recipe {
     redirects?: string[];
 
     /** Similar Recipes */
-    similar?: (keyof typeof recipes)[];
+    similar?: RecipeName[];
+
+    /** List of ingredients */
+    ingredients?: (Ingredient | Ingredient[])[];
 }
 
 type Quote = {
