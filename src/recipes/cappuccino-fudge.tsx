@@ -19,6 +19,14 @@ const recipe: Recipe = {
         ],
     },
     servings: '8 Servings',
+    ingredients: [
+        'Cocoa Butter',
+        ['Coconut Manna', 'Coconut Butter'],
+        'THM Gentle Sweet',
+        'Vanilla Extract',
+        ["My Montana Kitchen's Sweetened Condensed Milk", 'Sweetened Condensed Milk'],
+        'Instant Coffee',
+    ],
     Ingredients: [
         '4 oz food grade cocoa butter',
         '4 oz coconut manna (or coconut butter)',

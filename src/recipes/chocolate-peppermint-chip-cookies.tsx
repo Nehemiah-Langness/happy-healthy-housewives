@@ -21,6 +21,17 @@ const recipe: Recipe = {
     },
     servings: '',
     servingSize: '',
+    ingredients: [
+        'Butter',
+        'THM Gentle Sweet',
+        'Eggs',
+        'Vanilla Extract',
+        'Sprouted Flour',
+        'Cocoa Powder',
+        'Baking Soda',
+        ['Salt', 'Mineral Salt'],
+        'Peppermint Chips'
+    ],
     Ingredients: [
         <>1 cup butter, softened (may use a plant based butter option)</>,
         <>

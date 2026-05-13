@@ -27,11 +27,30 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: [
+        'THM Gentle Sweet',
+        'Black Strap Molasses',
+        ['Mineral Salt', 'Salt'],
+        'Unsweetened Almond Milk',
+        'Coconut Oil',
+        'Vanilla Extract',
+        'Cinnamon',
+        'THM Baking Blend',
+        'THM Super Sweet',
+        'Baking Powder',
+        'Stevia',
+        'Whey Protein',
+        'Cinnamon Baking Chips',
+        'Eggs',
+        'Yogurt',
+    ],
     Ingredients: [
         <IngredientList
             title='Topping'
             Ingredients={[
-                <>1/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink></>,
+                <>
+                    1/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+                </>,
                 '1/4 tsp black strap molasses',
                 '1/8 tsp mineral salt',
                 '3 Tbsp unsweetened almond milk',
@@ -43,15 +62,24 @@ const recipe: Recipe = {
         <IngredientList
             title='Bread'
             Ingredients={[
-                <>2 cups <AffiliateLink>THM Baking Blend</AffiliateLink></>,
-                <>1/2 cup <AffiliateLink>THM Super Sweet</AffiliateLink></>,
+                <>
+                    2 cups <AffiliateLink>THM Baking Blend</AffiliateLink>
+                </>,
+                <>
+                    1/2 cup <AffiliateLink>THM Super Sweet</AffiliateLink>
+                </>,
                 '2 tsp baking powder',
-                <>1 doonk of <AffiliateLink>THM Pure Stevia</AffiliateLink></>,
+                <>
+                    1 doonk of <AffiliateLink>THM Pure Stevia</AffiliateLink>
+                </>,
                 <>
                     1/3 cup <AffiliateLink>THM Unflavored Whey Protein</AffiliateLink> (or Collagen for <AcronymToggle>DF</AcronymToggle>)
                 </>,
                 <span id='wmdl-sfcbc'>
-                    3/4 &ndash; 1 cup <ExternalLink to='https://wonderfullymadeanddearlyloved.com/sugar-free-cinnamon-baking-chips-dairy-free-thms/'>Cinnamon Baking Chips</ExternalLink>
+                    3/4 &ndash; 1 cup{' '}
+                    <ExternalLink to='https://wonderfullymadeanddearlyloved.com/sugar-free-cinnamon-baking-chips-dairy-free-thms/'>
+                        Cinnamon Baking Chips
+                    </ExternalLink>
                 </span>,
                 '4 large eggs',
                 '1 cup unsweetened almond milk',

@@ -24,6 +24,17 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Approximately 8 fillets',
+    ingredients: [
+        'Fish Fillets',
+        'Sourdough Discard',
+        'Baking Soda',
+        ['Salt', 'Mineral Salt'],
+        ['Black Pepper', 'Pepper'],
+        'Chili Powder',
+        'Paprika',
+        'Onion Powder',
+        ['Avocado Oil', 'High Heat Oil'],
+    ],
     Ingredients: [
         <>1 bag of white fish fillets, defrosted</>,
         <>1 cup sourdough discard</>,

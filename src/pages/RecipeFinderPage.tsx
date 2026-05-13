@@ -1,43 +1,77 @@
 import { RecipeLink } from '../components/RecipeLink';
 import { RecipesIntro } from '../components/RecipesIntro';
 import { RecipeHeaderImage } from '../components/RecipeHeaderImage';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { recipeList } from '../services/recipe-list';
 import { categories, type Category } from '../types/category';
-import { ingredients } from '../services/ingredient-map';
+import { type Ingredient, ingredients } from '../types/ingredients';
+
+function getFromLocalStorage<T>(key: string) {
+    try {
+        const item = localStorage.getItem(key);
+        return item ? (JSON.parse(item) as T) : null;
+    } catch {
+        return null;
+    }
+}
+
+function useLocalStorage<T>(key: string) {
+    const [state, setState] = useState(getFromLocalStorage<T>(key));
+    useEffect(() => {
+        if (state) {
+            localStorage.setItem(key, JSON.stringify(state));
+        } else {
+            localStorage.setItem(key, '');
+        }
+    }, [state]);
+
+    return [state, setState] as const;
+}
 
 export function RecipeFinderPage() {
-    const [filter] = useState('');
+    const [activeCategory, setActiveCategory] = useState<Category>(categories[0]);
+    const [activeIngredients, setActiveIngredients] = useLocalStorage<Ingredient[]>('ingredients');
 
     const matchingRecipes = useMemo(() => {
-        const terms = filter
-            .toLowerCase()
-            .replace(/['".-]/g, '')
-            .split(' ')
-            .filter((x) => x);
-
-        if (!terms.length) return recipeList;
+        if (!activeIngredients?.length) return [];
         return recipeList
             .map((recipe) => {
-                let score = 0;
-
-                for (let index = 0; index < recipe.search.length; index++) {
-                    const search = recipe.search[index].split(' ');
-                    const matches = terms.map((term) => search.filter((s) => s === term).length).reduce((c, n) => c + n, 0);
-                    score += Math.pow(2, 4 - index) * matches;
+                if (!recipe.ingredients?.length) {
+                    return {
+                        score: 0,
+                        recipe,
+                    };
                 }
+                const totalIngredients = recipe.ingredients.filter((x) =>
+                    typeof x === 'string' ? !x.startsWith('?') : x.some((substitute) => !substitute.startsWith('?'))
+                ).length;
 
+                const matchingIngredients = recipe.ingredients.filter((x) =>
+                    typeof x === 'string'
+                        ? activeIngredients.includes((x.startsWith('?') ? x.substring(1) : x) as Ingredient)
+                        : x.some((substitute) =>
+                              activeIngredients.includes((substitute.startsWith('?') ? substitute.substring(1) : substitute) as Ingredient)
+                          )
+                ).length;
+                let score = Math.min(100, totalIngredients ? Math.round((matchingIngredients / totalIngredients) * 100) : 100);
                 return {
-                    recipe: recipe,
+                    recipe,
                     score,
                 };
             })
-            .filter((result) => result.score > 0)
-            .sort((a, b) => -Math.sign(a.score - b.score))
-            .map((r) => r.recipe);
-    }, [filter]);
-
-    const [activeCategory, setActiveCategory] = useState<Category>(categories[0]);
+            .filter((result) => result.score > 80)
+            .sort((a, b) =>
+                a.score > b.score
+                    ? -1
+                    : a.score < b.score
+                      ? 1
+                      : a.recipe.title < b.recipe.title
+                        ? -1
+                        : a.recipe.title > b.recipe.title
+                          ? 1
+                          : 0
+            );
+    }, [activeIngredients]);
 
     return (
         <div className='d-flex flex-column gap-5'>
@@ -67,7 +101,22 @@ export function RecipeFinderPage() {
                                 .filter((x) => x.category === activeCategory)
                                 .map((i) => (
                                     <div key={i.ingredient}>
-                                        <input type='checkbox' className='btn-check' id={`btn-${i.ingredient}`} autoComplete='off' />
+                                        <input
+                                            type='checkbox'
+                                            className='btn-check'
+                                            id={`btn-${i.ingredient}`}
+                                            autoComplete='off'
+                                            checked={activeIngredients?.includes(i.ingredient)}
+                                            onChange={(e) => {
+                                                if (e.target.checked) {
+                                                    setActiveIngredients((x) =>
+                                                        (x ?? []).filter((x) => x !== i.ingredient).concat(i.ingredient)
+                                                    );
+                                                } else {
+                                                    setActiveIngredients((x) => (x ?? []).filter((x) => x !== i.ingredient));
+                                                }
+                                            }}
+                                        />
                                         <label className='btn btn-outline-primary rounded-pill border-0' htmlFor={`btn-${i.ingredient}`}>
                                             {i.ingredient}
                                         </label>
@@ -76,22 +125,26 @@ export function RecipeFinderPage() {
                         </div>
                     </div>
 
-                    <RecipesIntro />
-
-                    {filter ? (
+                    {activeIngredients?.length ? (
                         <>
                             {!!matchingRecipes.length && (
-                                <div className='d-flex flex-column gap-5'>
-                                    {matchingRecipes.map((r) => (
-                                        <RecipeLink key={r.title} recipe={r} />
-                                    ))}
-                                </div>
+                                <>
+                                    <RecipesIntro />
+                                    <div className='d-flex flex-column gap-5'>
+                                        {matchingRecipes.map((r) => (
+                                            <RecipeLink key={r.recipe.title} recipe={r.recipe} score={r.score} />
+                                        ))}
+                                    </div>
+                                </>
                             )}
 
                             {!matchingRecipes.length && (
                                 <div className='d-flex flex-column align-items-center justify-content-center bg-light py-5 px-2 gap-1'>
-                                    <div className='ff-title fs-5'>No recipes match your search</div>
-                                    <div>Please clear your search and try different search terms.</div>
+                                    <div className='ff-title fs-5'>No recipes match your checked ingredients</div>
+                                    <div>
+                                        Please continue checking off ingredients you have or can obtain easily until you have the majority
+                                        of the ingredients needed for a recipe.
+                                    </div>
                                 </div>
                             )}
                         </>

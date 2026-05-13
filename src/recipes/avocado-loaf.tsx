@@ -18,12 +18,23 @@ const recipe: Recipe = {
                 TikTok. But as soon as the nice gentleman said he was making an avocado loaf, I knew I had to give this a try and THMify it!
             </>,
             <>
-                This is a sweeter loaf, perfect for any <AcronymToggle>S</AcronymToggle> breakfast! And even if you don't find the bright green color enticing, I think you
-                and your children will find this pleasantly delicious!
+                This is a sweeter loaf, perfect for any <AcronymToggle>S</AcronymToggle> breakfast! And even if you don't find the bright
+                green color enticing, I think you and your children will find this pleasantly delicious!
             </>,
         ],
     },
     servings: '8 servings',
+    ingredients: [
+        'Avocados',
+        ['THM Gentle Sweet', 'Truvia'],
+        'Eggs',
+        'Vanilla Extract',
+        ['THM Baking Blend'],
+        'Integral Collagen',
+        'Baking Powder',
+        'Mineral Salt',
+        '?Chocolate Chips',
+    ],
     Ingredients: [
         <>2 ripe avocados</>,
         <>
@@ -41,7 +52,6 @@ const recipe: Recipe = {
             1/4-1/2 cup of on plan chocolate chips <Optional />
         </>,
     ],
-
     Directions: (
         <>
             <p>Preheat oven to 350 degrees and grease a loaf tin.</p>

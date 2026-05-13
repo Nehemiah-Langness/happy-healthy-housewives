@@ -52,7 +52,7 @@ export interface Recipe {
     similar?: RecipeName[];
 
     /** List of ingredients */
-    ingredients?: (Ingredient | Ingredient[])[];
+    ingredients?: (`?${Ingredient}`| Ingredient | (`?${Ingredient}`| Ingredient)[])[];
 }
 
 type Quote = {

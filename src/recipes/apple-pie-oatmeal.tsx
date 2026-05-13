@@ -22,6 +22,21 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: [
+        'Apple',
+        'Cinnamon',
+        'THM Gentle Sweet',
+        'Old Fashioned Oats',
+        'Steel Cut Oats',
+        'Psyllium Flakes',
+        'Ground Flaxseed',
+        'Cinnamon',
+        'Stevia',
+        'Egg Whites',
+        'Maple Extract',
+        'Butter Extract',
+        '?Raisins',
+    ],
     Ingredients: [
         <IngredientList
             title='Topping'

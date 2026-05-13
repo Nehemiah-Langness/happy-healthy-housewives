@@ -19,6 +19,16 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: [
+        'Butter',
+        ['THM Gentle Sweet', 'Truvia'],
+        'Nut Milk',
+        'THM Baking Blend',
+        'Black Strap Molasses',
+        'Vanilla Extract',
+        'Mineral Salt',
+        'Chocolate Chips',
+    ],
     Ingredients: [
         <>2 sticks butter, softened (you may use a vegan butter replacement)</>,
         <>

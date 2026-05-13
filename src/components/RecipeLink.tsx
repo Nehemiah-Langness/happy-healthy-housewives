@@ -8,10 +8,12 @@ export function RecipeLink({
     recipe,
     preview,
     className,
+    score,
 }: {
     recipe: Recipe & { slug: RecipeName };
     preview?: boolean;
     className?: string;
+    score?: number;
 }) {
     return (
         <Link
@@ -27,6 +29,11 @@ export function RecipeLink({
                 <h1 className='dancing-script text-dark'>{recipe.title}</h1>
                 <span className=''>{recipe.brief}</span>
                 <div className='flex-grow-1 d-flex align-items-end flex-wrap gap-2'>
+                    {score ? (
+                        <div className='text-nowrap badge bg-primary-subtle text-dark' style={{ fontStyle: 'italic' }}>
+                            {score.toFixed(0)}% match
+                        </div>
+                    ) : null}
                     {recipe.tags.map((x) => (
                         <span key={x} className='text-dark badge bg-info-subtle'>
                             {x}

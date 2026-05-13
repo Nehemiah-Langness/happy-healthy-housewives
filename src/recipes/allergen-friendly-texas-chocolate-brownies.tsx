@@ -6,6 +6,7 @@ import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
+
     title: 'Allergen Friendly Texas Chocolate Brownies',
     tags: ['THM S', 'Keto Friendly', 'GF', 'DF', 'Nut Free Option', 'Egg Free', 'Apple Free'],
     dateAdded: new Date('2025-05-19'),
@@ -28,7 +29,7 @@ const recipe: Recipe = {
         ],
     },
     ingredients: [
-        'THM Baking Blend',
+        ['THM Baking Blend', 'Briana Thomas Baking Mix'],
         'Erythritol',
         'Cocoa Powder',
         'Baking Powder',
@@ -43,7 +44,7 @@ const recipe: Recipe = {
         'THM Gentle Sweet',
         'Stevia',
         'Caramel Extract',
-        'Chopped Pecans',
+        '?Chopped Pecans',
     ],
     Ingredients: [
         <IngredientList

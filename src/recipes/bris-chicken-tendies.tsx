@@ -22,6 +22,20 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Makes 10-12 strips',
+    ingredients: [
+        'Chicken Tenders',
+        'Unflavored Pork Rinds',
+        'Chili Powder',
+        'Garlic Powder',
+        'Onion Powder',
+        'Paprika',
+        'Cumin',
+        ['Salt', 'Mineral Salt'],
+        'Black Pepper',
+        'Cayenne Pepper',
+        'Eggs',
+        'Unsweetened Nut Milk',
+    ],
     Ingredients: [
         '1 bag of frozen chicken tenders, defrosted',
         '1 bag of unflavored pork rinds',
@@ -56,8 +70,8 @@ const recipe: Recipe = {
             </p>
             <p>
                 <b>Baking option: </b>
-                Preheat oven to 375&deg;. Grease a large cookie sheet and place all tenders on the sheet. Spray the tops of the tenders with your
-                cooking oil. Cook in oven for 15-20 minutes.
+                Preheat oven to 375&deg;. Grease a large cookie sheet and place all tenders on the sheet. Spray the tops of the tenders with
+                your cooking oil. Cook in oven for 15-20 minutes.
             </p>
         </>
     ),

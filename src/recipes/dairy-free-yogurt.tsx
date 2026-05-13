@@ -30,15 +30,16 @@ const recipe: Recipe = {
         ],
     },
     servings: '8 servings',
+    ingredients: [['Almond Milk', 'Cashew Milk'], '?Glucomannan Powder', '?Baobab Powder', 'Raw Honey', 'Yogurt Cultures'],
     Ingredients: [
         <>
             2 quarts of almond or cashew milk <Optional reason='I made my own to make this extra budget friendly, see below' />
         </>,
         <>
-            5 tsp gluccie (Glucomannan powder) <Optional reason='Optional*'/>
+            5 tsp gluccie (Glucomannan powder) <Optional reason='Optional*' />
         </>,
         <>
-            5 tsp baobob <Optional reason='Optional*'/>
+            5 tsp baobob <Optional reason='Optional*' />
         </>,
         <>1 tsp raw local honey (this provides food for the cultures to feed on)</>,
         <>

@@ -1,17 +1,8 @@
-const categoryNames = {
-    'Dairy / Non-Dairy': '',
-    Baking: '',
-    'Seasoning & Extracts': '',
-    'Vinegar & Oil': '',
-    'Nuts & Seeds': '',
-    'Fruits & Vegetables': '',
-    'Fiber & Grains': '',
-    Protein: '',
-};
+import { ingredientMap } from '../services/ingredient-map';
 
-export const categories = Object.entries(categoryNames)
-    .map(([key], i) => [key, i] as [Category, number])
-    .sort(([, aSort], [, bSort]) => Math.sign(aSort - bSort))
-    .map(([key]) => key);
+export type Category = (typeof ingredientMap)[keyof typeof ingredientMap];
 
-export type Category = keyof typeof categoryNames;
+export const categories = Object.keys(Object.values(ingredientMap).reduce((c, n) => ({ ...c, [n]: '' }), {})).sort((a, b) =>
+    a < b ? -1 : a > b ? 1 : 0
+) as Category[];
+

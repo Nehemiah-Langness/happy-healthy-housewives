@@ -15,6 +15,16 @@ const recipe: Recipe = {
         To me, it screams summer is here! `,
     },
     servings: 'Single Serving',
+    ingredients: [
+        'Chicken Breasts',
+        'Mineral Salt',
+        'Black Pepper',
+        'Garlic Powder',
+        ['Romaine Lettuce', 'Salad Mix'],
+        'Goat Cheese',
+        'Strawberries',
+        ['Easy Balsamic Glaze', 'Sugar Free Balsamic Vinegar'],
+    ],
     Ingredients: [
         '1 chicken breast',
         '1/4 tsp of mineral salt',

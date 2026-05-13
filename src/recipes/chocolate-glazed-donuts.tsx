@@ -24,6 +24,19 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Approximately 6 donuts',
+    ingredients: [
+        ['THM Super Sweet', 'Pyure'],
+        'Egg Whites',
+        'MCT Oil',
+        'THM Baking Blend',
+        'Baking Powder',
+        ['Mineral Salt', 'Salt'],
+        'Cocoa Powder',
+        ['THM Gentle Sweet', 'Truvia'],
+        'Vanilla Extract',
+        'Almond Milk',
+        'Instant Espresso Powder',
+    ],
     Ingredients: [
         <IngredientList
             title='Donuts'

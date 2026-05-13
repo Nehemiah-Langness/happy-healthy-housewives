@@ -18,6 +18,21 @@ const recipe: Recipe = {
         ],
     },
     servings: '8 Servings',
+    ingredients: [
+        'Unsweetened Applesauce',
+        'Old Fashioned Oats',
+        'Unsweetened Nut Milk',
+        'Egg Whites',
+        'THM Gentle Sweet',
+        'Cinnamon',
+        'Baking Soda',
+        'Coconut Oil',
+        ['Whey Protein', 'THM Creamy Dreamy Hemp Protein'],
+        ['Vanilla Extract', 'Caramel Extract'],
+        'Apple',
+        'Coconut Oil',
+        'THM Baking Blend',
+    ],
     Ingredients: [
         <IngredientList
             title='Base'

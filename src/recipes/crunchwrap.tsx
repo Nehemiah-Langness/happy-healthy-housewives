@@ -15,6 +15,7 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: ['Low Carb Tortillas', 'Beef', 'Shredded Cheddar', '?Tomatoes', '?Lettuce', '?Salsa', '?Sour Cream'],
     Ingredients: [
         <>2 Low carb tortillas</>,
         <>Beef, cooked and seasoned to liking</>,

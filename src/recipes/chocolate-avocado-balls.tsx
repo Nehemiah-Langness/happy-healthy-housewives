@@ -19,16 +19,26 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Approximately 24 balls',
+    ingredients: [
+        'Unsweetened Baking Chocolate',
+        'Coconut Manna',
+        'Vanilla Extract',
+        ['THM Super Sweet', 'Pyure'],
+        'Avocados',
+        ['Mineral Salt', 'Salt'],
+        ['Cocoa Powder', 'Unsweetened Coconut Flakes', 'Chocolate'],
+    ],
     Ingredients: [
         '5 oz. unsweetened bakers chocolate',
         '2 Tbsp. coconut manna',
         '1 tsp. vanilla extract',
-        <>3 Tbsp. powdered <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)</>,
+        <>
+            3 Tbsp. powdered <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)
+        </>,
         '1/3 c. mashed avocado (about 1 small avocado)',
         'Pinch of mineral salt',
         'cocoa powder, unsweetened coconut flakes, or melted chocolate for rolling',
     ],
-
     Directions: (
         <>
             <p>In a double boiler, melt together chocolate, coconut manna, vanilla extract, Super Sweet, and salt.</p>

@@ -19,6 +19,7 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: ['Sugar Free Balsamic Vinegar', ['THM Gentle Sweet', 'Truvia']],
     Ingredients: [
         <>1 cup No sugar added Balsamic Vinegar</>,
         <>

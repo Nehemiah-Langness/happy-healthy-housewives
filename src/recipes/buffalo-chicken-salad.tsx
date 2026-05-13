@@ -18,6 +18,16 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple',
+    ingredients: [
+        'Canned Chicken',
+        'Mayonnaise',
+        'Hot Sauce',
+        ['Butter', 'Coconut Oil'],
+        'Celery',
+        ['Mineral Salt', 'Salt'],
+        'Black Pepper',
+        '?Blue Cheese Crumbles',
+    ],
     Ingredients: [
         <>1 can of chicken, drained</>,
         <>2 Tbsp mayonnaise</>,
