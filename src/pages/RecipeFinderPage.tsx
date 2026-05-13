@@ -42,6 +42,7 @@ export function RecipeFinderPage() {
                         score: 0,
                         recipe,
                         requiredMissing: 100,
+                        matchingIngredients: 0,
                     };
                 }
                 const totalIngredients = recipe.ingredients.filter((x) =>
@@ -61,7 +62,7 @@ export function RecipeFinderPage() {
                               activeIngredients.includes((substitute.startsWith('?') ? substitute.substring(1) : substitute) as Ingredient)
                           )
                 );
-                let score = Math.min(
+                const score = Math.min(
                     100,
                     totalIngredients.length ? Math.round((matchingIngredients / totalIngredients.length) * 100) : 100
                 );
@@ -69,10 +70,11 @@ export function RecipeFinderPage() {
                     recipe,
                     score,
                     requiredMissing: totalIngredients.length - matchingIngredients,
+                    matchingIngredients: matchingIngredients,
                     missingIngredients,
                 };
             })
-            .filter((result) => result.requiredMissing < 3)
+            .filter((result) => result.requiredMissing < 3 && result.matchingIngredients > 0)
             .sort((a, b) =>
                 a.requiredMissing > b.requiredMissing
                     ? 1

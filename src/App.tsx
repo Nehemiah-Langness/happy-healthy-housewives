@@ -86,6 +86,9 @@ function App() {
                             <Route path=':recipe' element={<RecipePage />} />
                         </Route>
                     </Route>
+                    <Route path='*' element={<Redirect to='/' />}>
+
+                    </Route>
                 </Route>
             </Routes>
         </BrowserRouter>
