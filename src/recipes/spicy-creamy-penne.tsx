@@ -18,6 +18,20 @@ const recipe: Recipe = {
         ],
     },
     servings: '4-6 Servings',
+    ingredients: [
+        ['Penne Pasta', 'Pasta', 'Brown Rice'],
+        'Spicy Italian Sausage',
+        'Chopped Garlic',
+        'Mushrooms',
+        'Yellow Onions',
+        'Green Bell Peppers',
+        'Eggplants',
+        'Italian Seasoning',
+        'Oregano',
+        ['Salt', 'Mineral Salt', 'Sea Salt'],
+        'Pepper',
+        ['Half and Half', 'Coconut Milk'],
+    ],
     Ingredients: [
         <>
             1 package <b>Dreamfields Penne</b> (or <AcronymToggle>FP</AcronymToggle> noodle of choice. Can use brown rice noodles for{' '}

@@ -23,6 +23,16 @@ const recipe: Recipe = {
         ],
     },
     servingSize: '2-4 tablespoons',
+    ingredients: [
+        ['THM Gentle Sweet', 'Pyure'],
+        ['Pumpkin', 'Pumpkin Puree'],
+        ['Sweetened Condensed Milk', "My Montana Kitchen's Sweetened Condensed Milk"],
+        ['Pumpkin Pie Spice', 'Ground Clove'],
+        ['Pumpkin Pie Spice', 'Cinnamon'],
+        ['Pumpkin Pie Spice', 'Ground Ginger'],
+        ['Pumpkin Pie Spice', 'Ground Nutmeg'],
+        ['Mineral Salt', 'Salt'],
+    ],
     Ingredients: [
         <>1/2 cup of water</>,
         <>

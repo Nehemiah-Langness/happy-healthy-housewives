@@ -1,5 +1,6 @@
 import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -17,6 +18,16 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: [
+        'Old Fashioned Oats',
+        'Unsweetened Nut Milk',
+        'Chai Seeds',
+        ['Sugar-free Raspberry Jam', 'Raspberry Jam'],
+        ['Low-fat Cottage Cheese', 'Dairy Free Yogurt'],
+        'Cocoa',
+        'THM Super Sweet',
+        '?Nut Milk',
+    ],
     Ingredients: [
         <IngredientList
             title='Oats Layer'
@@ -32,8 +43,10 @@ const recipe: Recipe = {
             Ingredients={[
                 '1/2 cup low fat cottage cheese (or DF yogurt)',
                 '1 Tbsp Cocoa',
-                <>3 tsp <AffiliateLink>THM Super Sweet</AffiliateLink></>,
-                'A splash of nut milk (optional if not blending)',
+                <>
+                    3 tsp <AffiliateLink>THM Super Sweet</AffiliateLink>
+                </>,
+                <>A splash of nut milk <Optional reason='optional if not blending'/></>,
             ]}
         />,
     ],

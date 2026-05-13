@@ -22,6 +22,17 @@ const recipe: Recipe = {
         },
     ],
     servings: 'Approximately 8 chicken thighs',
+    ingredients: [
+        'Paprika',
+        'Chili Powder',
+        'Cumin',
+        'Onion Powder',
+        'Garlic Powder',
+        'Mineral Salt',
+        'Black Pepper',
+        'THM Super Sweet',
+        'Boneless Skinless Chicken Thighs',
+    ],
     Ingredients: [
         <>1 TBS Paprika</>,
         <>1 TBS Chili Powder</>,

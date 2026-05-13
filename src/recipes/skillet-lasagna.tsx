@@ -1,3 +1,4 @@
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -22,9 +23,25 @@ const recipe: Recipe = {
         ],
     },
     servings: '4 - 6 servings',
+    ingredients: [
+        'Ground Beef',
+        '?Mushrooms',
+        'Yellow Onions',
+        ['Garlic Clove', 'Chopped Garlic'],
+        'Canned Diced Tomatoes',
+        'Canned Tomato Sauce',
+        'Italian Seasoning',
+        'Oregano',
+        ['?Mineral Salt', '?Sea Salt', '?Salt'],
+        '?Pepper',
+        'Lasagna Sheets',
+        ['?Mozzarella', '?Ricotta']
+    ],
     Ingredients: [
         <>1 lb ground beef</>,
-        <>6 &ndash; 8 oz ground mushrooms (optional, but adds some great hidden veggies)</>,
+        <>
+            6 &ndash; 8 oz ground mushrooms <Optional reason='optional, but adds some great hidden veggies' />
+        </>,
         <>1 yellow onion, diced</>,
         <>1 Tbsp chopped garlic</>,
         <>14 oz can of diced tomatoes</>,
@@ -35,7 +52,9 @@ const recipe: Recipe = {
         <>
             1 box of <b>Dreamfields</b> lasagna sheets (or <b>Hearts of Palm Pasta</b>)
         </>,
-        <>Mozzarella or ricotta (optional topping)</>,
+        <>
+            Mozzarella or ricotta <Optional />
+        </>,
     ],
     Directions: (
         <>

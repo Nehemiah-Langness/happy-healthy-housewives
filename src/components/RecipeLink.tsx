@@ -3,17 +3,20 @@ import { recipeLink } from '../services/recipe-link';
 import type { Recipe } from '../types/recipe';
 import { RecipeLinkImage } from './RecipeLinkImage';
 import type { RecipeName } from '../types/recipe-name';
+import { smartJoin } from '../services/smart-join';
 
 export function RecipeLink({
     recipe,
     preview,
     className,
     score,
+    missing,
 }: {
     recipe: Recipe & { slug: RecipeName };
     preview?: boolean;
     className?: string;
     score?: number;
+    missing?: string[];
 }) {
     return (
         <Link
@@ -40,6 +43,7 @@ export function RecipeLink({
                         </span>
                     ))}
                 </div>
+                {!!missing?.length && <div style={{ fontStyle: 'italic' }}>Missing: {smartJoin(missing)}</div>}
             </div>
         </Link>
     );

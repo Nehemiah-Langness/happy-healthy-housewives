@@ -31,18 +31,18 @@ const recipe: Recipe = {
         'Mineral Salt',
     ],
     Ingredients: [
-        '1 ripe banana',
-        '2 cups of old fashioned oats',
-        '1 cup of nut milk',
-        '1/2 cup egg whites',
-        '1/2 cup cocoa',
+        <>1 ripe banana</>,
+        <>2 cups of old fashioned oats</>,
+        <>1 cup of nut milk</>,
+        <>1/2 cup egg whites</>,
+        <>1/2 cup cocoa</>,
         <>
             3/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
         </>,
-        '2 TBS coconut oil',
-        '1 tsp vanilla extract',
-        '1 tsp baking soda',
-        'Dash of mineral salt',
+        <>2 TBS coconut oil</>,
+        <>1 tsp vanilla extract</>,
+        <>1 tsp baking soda</>,
+        <>Dash of mineral salt</>,
     ],
     Directions: (
         <>

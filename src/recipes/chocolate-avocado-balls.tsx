@@ -29,15 +29,15 @@ const recipe: Recipe = {
         ['Cocoa Powder', 'Unsweetened Coconut Flakes', 'Chocolate'],
     ],
     Ingredients: [
-        '5 oz. unsweetened bakers chocolate',
-        '2 Tbsp. coconut manna',
-        '1 tsp. vanilla extract',
+        <>5 oz. unsweetened bakers chocolate</>,
+        <>2 Tbsp. coconut manna</>,
+        <>1 tsp. vanilla extract</>,
         <>
             3 Tbsp. powdered <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)
         </>,
-        '1/3 c. mashed avocado (about 1 small avocado)',
-        'Pinch of mineral salt',
-        'cocoa powder, unsweetened coconut flakes, or melted chocolate for rolling',
+        <>1/3 c. mashed avocado (about 1 small avocado)</>,
+        <>Pinch of mineral salt</>,
+        <>cocoa powder, unsweetened coconut flakes, or melted chocolate for rolling</>,
     ],
     Directions: (
         <>

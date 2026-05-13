@@ -22,6 +22,21 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: [
+        ['Pumpkin Spice Syrup', 'THM Gentle Sweet', 'Pyure'],
+        ['Pumpkin Spice Syrup', 'Pumpkin', 'Pumpkin Puree'],
+        ['Pumpkin Spice Syrup', 'Sweetened Condensed Milk', "My Montana Kitchen's Sweetened Condensed Milk"],
+        ['Pumpkin Spice Syrup', 'Pumpkin Pie Spice', 'Ground Clove'],
+        ['Pumpkin Spice Syrup', 'Pumpkin Pie Spice', 'Cinnamon'],
+        ['Pumpkin Spice Syrup', 'Pumpkin Pie Spice', 'Ground Ginger'],
+        ['Pumpkin Spice Syrup', 'Pumpkin Pie Spice', 'Ground Nutmeg'],
+        ['Pumpkin Spice Syrup', 'Mineral Salt', 'Salt'],
+        ['Almond Milk', 'Cashew Milk'],
+        ['Mineral Salt', 'Salt'],
+        'Vanilla Extract',
+        'Glucomannan Powder',
+        ['Whey Protein', 'THM Creamy Dreamy Hemp Protein'],
+    ],
     Ingredients: [
         <>
             2 Tbsp <LinkToRecipe recipe='pumpkin-spice-syrup'>Pumpkin Spice Syrup</LinkToRecipe>
@@ -48,7 +63,7 @@ const recipe: Recipe = {
             <p>Pour into a glass and enjoy!</p>
         </>
     ),
-    similar: ['pumpkin-spice-coffee', 'pumpkin-spice-syrup']
+    similar: ['pumpkin-spice-coffee', 'pumpkin-spice-syrup'],
 };
 
 export default recipe;

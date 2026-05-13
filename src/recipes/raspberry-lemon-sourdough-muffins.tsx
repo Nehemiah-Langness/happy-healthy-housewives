@@ -19,6 +19,19 @@ const recipe: Recipe = {
         ],
     },
     servings: '8 large muffins',
+    ingredients: [
+        'Active Sourdough Starter',
+        'Egg Whites',
+        'Vanilla Extract',
+        'Lemon Extract',
+        ['Mineral Salt', 'Salt'],
+        'Unsweetened Applesauce',
+        'THM Gentle Sweet',
+        'Baking Soda',
+        ['Raspberries', 'Frozen Raspberries'],
+        'Coconut Oil',
+        'THM Gentle Sweet'
+    ],
     Ingredients: [
         <>2 cups ACTIVE sourdough starter</>,
         <>3 Tbsp egg whites</>,

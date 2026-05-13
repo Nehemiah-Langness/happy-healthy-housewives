@@ -18,12 +18,12 @@ const recipe: Recipe = {
     servings: 'Single Serving',
     ingredients: [['Salad Mix', 'Chopped Romaine'], 'Tomatoes', 'Bacon', 'Mayonnaise', 'Mineral Salt', 'Black Pepper', '?Shredded Cheddar'],
     Ingredients: [
-        '1 bag of salad mix salad (or 2 cups chopped romaine)',
-        '1/2 medium tomato, chopped',
-        '3 slices of bacon, cooked and chopped',
-        '1 Tbsp mayonnaise',
-        '1/2 tsp mineral salt',
-        '1/2 tsp black pepper',
+        <>1 bag of salad mix salad (or 2 cups chopped romaine)</>,
+        <>1/2 medium tomato, chopped</>,
+        <>3 slices of bacon, cooked and chopped</>,
+        <>1 Tbsp mayonnaise</>,
+        <>1/2 tsp mineral salt</>,
+        <>1/2 tsp black pepper</>,
         <>
             A sprinkle of shredded cheddar <Optional />
         </>,

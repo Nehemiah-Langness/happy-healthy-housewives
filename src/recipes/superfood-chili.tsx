@@ -25,6 +25,23 @@ const recipe: Recipe = {
         ],
     },
     servings: '4 servings',
+    ingredients:[
+        'Ground Beef',
+        'Mushrooms',
+        'Green Bell Peppers',
+        'Yellow Onions',
+        'Frozen Cauliflower Rice',
+        'Chili Powder', 
+        'Onion Powder',
+        'Liquid Aminos',
+        'Cayenne Pepper',
+        ['Mineral Salt', 'Salt'],
+        'Black Pepper',
+        'Canned Diced Tomatoes',
+        'Dark Red Kidney Beans',
+        'Baobab Powder',
+        'Gelatin'
+    ],
     Ingredients: [
         <>1lb ground beef</>,
         <>8oz mushrooms</>,

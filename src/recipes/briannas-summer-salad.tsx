@@ -26,12 +26,12 @@ const recipe: Recipe = {
         ['Easy Balsamic Glaze', 'Sugar Free Balsamic Vinegar'],
     ],
     Ingredients: [
-        '1 chicken breast',
-        '1/4 tsp of mineral salt',
-        '1/4 tsp of black pepper',
-        '1/4 tsp of garlic powder',
-        '1 to 2 cups of romaine lettuce or salad mix',
-        '2 Tbsp goat cheese',
+        <>1 chicken breast</>,
+        <>1/4 tsp of mineral salt</>,
+        <>1/4 tsp of black pepper</>,
+        <>1/4 tsp of garlic powder</>,
+        <>1 to 2 cups of romaine lettuce or salad mix</>,
+        <>2 Tbsp goat cheese</>,
         <>
             3-4 chopped strawberries (or other fruit as pictured for <AcronymToggle>XO</AcronymToggle>)
         </>,

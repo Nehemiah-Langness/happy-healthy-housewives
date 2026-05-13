@@ -18,6 +18,14 @@ const recipe: Recipe = {
             </>,
         ],
     },
+    ingredients: [
+        ['Graham Crackers', "Coach Betty's Graham Cracker Crumbs"],
+        ['Sweetened Condensed Milk', 'My Montana Kitchen\'s Sweetened Condensed Milk'],
+        'Semi-Sweet Chocolate Chips',
+        'Coconut Flakes',
+        ['Chopped Walnuts', 'Walnuts']
+
+    ],
     Ingredients: [
         <>
             1 recipe of{' '}

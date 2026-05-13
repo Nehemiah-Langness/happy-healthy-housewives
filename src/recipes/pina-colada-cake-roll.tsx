@@ -1,6 +1,7 @@
 import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
 import { LinkToRecipe } from '../components/LinkToRecipe';
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -26,6 +27,21 @@ const recipe: Recipe = {
         ],
     },
     servings: '12 servings',
+    ingredients: [
+        'THM Baking Blend',
+        'Dairy Free Yogurt',
+        'Eggs',
+        'Coconut Oil',
+        ['THM Gentle Sweet', 'Truvia'],
+        'Baking Powder',
+        ['Mineral Salt', 'Salt'],
+        'Rum Extract',
+        'Coconut Cream',
+        'Vanilla Extract',
+        ['Butter', 'Vegan Butter'],
+        'Pineapple Extract',
+        'Erythritol',
+    ],
     Ingredients: [
         <IngredientList
             title='Cake'
@@ -56,7 +72,9 @@ const recipe: Recipe = {
                 <>1 Tbsp coconut cream</>,
                 <>1 tsp vanilla extract</>,
                 <>1 1/2 cup powdered erythritol</>,
-                <>Yellow all-natural food coloring (optional)</>,
+                <>
+                    Yellow all-natural food coloring <Optional />
+                </>,
             ]}
         />,
     ],
@@ -99,9 +117,7 @@ const recipe: Recipe = {
             </p>
         </>
     ),
-    redirects: [
-        'piña-colada-cake-roll'
-    ]
+    redirects: ['piña-colada-cake-roll'],
 };
 
 export default recipe;

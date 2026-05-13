@@ -51,12 +51,12 @@ const recipe: Recipe = {
                 <>
                     1/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink>
                 </>,
-                '1/4 tsp black strap molasses',
-                '1/8 tsp mineral salt',
-                '3 Tbsp unsweetened almond milk',
-                '1 Tbsp coconut oil',
-                '2 tsp vanilla extract',
-                '1 Tbsp cinnamon',
+                <>1/4 tsp black strap molasses</>,
+                <>1/8 tsp mineral salt</>,
+                <>3 Tbsp unsweetened almond milk</>,
+                <>1 Tbsp coconut oil</>,
+                <>2 tsp vanilla extract</>,
+                <>1 Tbsp cinnamon</>,
             ]}
         />,
         <IngredientList
@@ -68,7 +68,7 @@ const recipe: Recipe = {
                 <>
                     1/2 cup <AffiliateLink>THM Super Sweet</AffiliateLink>
                 </>,
-                '2 tsp baking powder',
+                <>2 tsp baking powder</>,
                 <>
                     1 doonk of <AffiliateLink>THM Pure Stevia</AffiliateLink>
                 </>,
@@ -81,10 +81,10 @@ const recipe: Recipe = {
                         Cinnamon Baking Chips
                     </ExternalLink>
                 </span>,
-                '4 large eggs',
-                '1 cup unsweetened almond milk',
-                '1/2 cup yogurt',
-                '1 tsp vanilla extract ',
+                <>4 large eggs</>,
+                <>1 cup unsweetened almond milk</>,
+                <>1/2 cup yogurt</>,
+                <>1 tsp vanilla extract</>,
             ]}
         />,
     ],

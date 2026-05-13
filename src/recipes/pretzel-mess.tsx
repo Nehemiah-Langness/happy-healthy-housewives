@@ -18,6 +18,7 @@ const recipe: Recipe = {
         ],
     },
     servingSize: '1/3 cup',
+    ingredients: ['Pretzels', 'White Chocolate Chips', ['Sugar-free Chocolate Chips', 'Chocolate Chips'], 'THM Gentle Sweet'],
     Ingredients: [
         <>1/2 bag of Unique Sprouted Pretzels, crushed</>,
         <>
@@ -40,7 +41,12 @@ const recipe: Recipe = {
     ),
     Notes: (
         <>
-            <p>If you'd like to make this dairy free, use this white chocolate recipe: <ExternalLink to='https://www.lowcarbsosimple.com/the-ultimate-dairy-free-sugar-free-white-chocolate/'>The Ultimate Diary Free/Sugar Free White Chocolate</ExternalLink></p>
+            <p>
+                If you'd like to make this dairy free, use this white chocolate recipe:{' '}
+                <ExternalLink to='https://www.lowcarbsosimple.com/the-ultimate-dairy-free-sugar-free-white-chocolate/'>
+                    The Ultimate Diary Free/Sugar Free White Chocolate
+                </ExternalLink>
+            </p>
         </>
     ),
 };

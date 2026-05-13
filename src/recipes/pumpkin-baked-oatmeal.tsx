@@ -16,35 +16,53 @@ const recipe: Recipe = {
         ],
     },
     servings: '8 servings',
+    ingredients: [
+        'Bananas',
+        'Old Fashioned Oats',
+        ['Pumpkin', 'Pumpkin Puree'],
+        'Egg Whites',
+        ['Pumpkin Pie Spice', 'Ground Clove'],
+        ['Pumpkin Pie Spice', 'Cinnamon'],
+        ['Pumpkin Pie Spice', 'Ground Ginger'],
+        ['Pumpkin Pie Spice', 'Ground Nutmeg'],
+        'Baking Soda',
+        ['THM Gentle Sweet', 'Truvia'],
+        'Coconut Oil',
+        ['Whey Protein', 'THM Creamy Dreamy Hemp Protein'],
+        ['Mineral Salt', 'Salt'],
+        ['Low-fat Cream Cheese', 'Cream Cheese'],
+        ['THM Super Sweet', 'Pyure'],
+        'Unsweetened Nut Milk',
+    ],
     Ingredients: [
         <IngredientList
             title='Base'
             Ingredients={[
-                '1 Banana',
-                '2 cups old fashioned oats',
-                '1/2 cup unsweetened nut milk',
-                '1/2 cup pumpkin puree',
-                '1/2 cup egg whites',
-                '2 tsp Pumpkin Pie Spice (equal parts clove, cinnamon, nutmeg, and ginger)',
-                '1 tsp baking soda',
+                <>1 Banana</>,
+                <>2 cups old fashioned oats</>,
+                <>1/2 cup unsweetened nut milk</>,
+                <>1/2 cup pumpkin puree</>,
+                <>1/2 cup egg whites</>,
+                <>2 tsp Pumpkin Pie Spice (equal parts clove, cinnamon, nutmeg, and ginger)</>,
+                <>1 tsp baking soda</>,
                 <>
                     3/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
                 </>,
-                '2 TBS coconut oil (melted)',
+                <>2 TBS coconut oil (melted)</>,
                 <>
                     4 TBS whey or <AffiliateLink>THM Creamy Dreamy protein</AffiliateLink>
                 </>,
-                'pinch of mineral salt',
+                <>pinch of mineral salt</>,
             ]}
         />,
         <IngredientList
             title='Frosting'
             Ingredients={[
-                '5 wedges of LLCC cheese, room temp (or 5 Tbsps of DF cream cheese)',
+                <>5 wedges of LLCC cheese, room temp (or 5 Tbsps of DF cream cheese)</>,
                 <>
                     1 Tbsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)
                 </>,
-                '2 Tbsp unsweetened nut milk',
+                <>2 Tbsp unsweetened nut milk</>,
             ]}
         />,
     ],

@@ -12,23 +12,37 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            <>Oh Mama's, I am so excited to bring you this summer cocktail that you can share with your friends! 
-            This wonderful drink is great for your taste buds AND your blood sugar!  A few years back, before 
-            I started Trim Healthy Mama, my Mom and I were obsessed with this cocktail found at our favorite 
-            restaurant, the Sangarita! We recreated an off-plan version, but I really wanted to find a way to 
-            make this <AffiliateLink>THM</AffiliateLink> compliant.</>,
+            <>
+                Oh Mama's, I am so excited to bring you this summer cocktail that you can share with your friends! This wonderful drink is
+                great for your taste buds AND your blood sugar! A few years back, before I started Trim Healthy Mama, my Mom and I were
+                obsessed with this cocktail found at our favorite restaurant, the Sangarita! We recreated an off-plan version, but I really
+                wanted to find a way to make this <AffiliateLink>THM</AffiliateLink> compliant.
+            </>,
             `It's summery, on the sweeter side, and the perfect drink to make for a gathering. I hope you enjoy!`,
         ],
     },
+    ingredients: [
+        ['Trim Mamarita', 'Tequila'],
+        ['Trim Mamarita', 'Lime Juice'],
+        ['Trim Mamarita', 'Orange Bitters'],
+        ['Trim Mamarita', 'Stevia'],
+        'Dry Red Wine',
+        ['THM Super Sweet', 'Pyure'],
+        'Pineapple Extract',
+        'Coconut Extract',
+        'Cherry Extract',
+    ],
     Ingredients: [
-        <span>
+        <>
             2 servings of <LinkToRecipe recipe='trim-mamarita'>Trim Mamarita‘s</LinkToRecipe>
-        </span>,
-        '1 bottle of dry red wine',
-        <>3 TBS of <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure), or more if you like it sweeter</>,
-        '2 tsp of pineapple extract',
-        '1 tsp of coconut extract',
-        '1 tsp of cherry extract',
+        </>,
+        <>1 bottle of dry red wine</>,
+        <>
+            3 TBS of <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure), or more if you like it sweeter
+        </>,
+        <>2 tsp of pineapple extract</>,
+        <>1 tsp of coconut extract</>,
+        <>1 tsp of cherry extract</>,
     ],
     Directions: (
         <>
@@ -40,7 +54,7 @@ const recipe: Recipe = {
             <p>This recipe may only make a half pitcher, double if you need a larger pitcher.</p>
         </>
     ),
-    similar: ['trim-mamarita']
+    similar: ['trim-mamarita'],
 };
 
 export default recipe;

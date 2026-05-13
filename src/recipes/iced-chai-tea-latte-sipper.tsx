@@ -19,13 +19,20 @@ const recipe: Recipe = {
         ],
     },
     servings: '1 Quart',
+    ingredients: [
+        'Coffee',
+        'Chai Tea',
+        'Stevia',
+        ['Mineral Salt', 'Salt'],
+        'Unsweetened Nut Milk'
+    ],
     Ingredients: [
-        '1 cup cold coffee',
-        '2 cups of your favorite chai tea, brewed',
-        'Ice',
-        '1-2 doonks (1/32 tsp) pure stevia',
-        'pinch of mineral salt',
-        '1/4 cup unsweetened nut milk',
+        <>1 cup cold coffee</>,
+        <>2 cups of your favorite chai tea, brewed</>,
+        <>Ice</>,
+        <>1-2 doonks (1/32 tsp) pure stevia</>,
+        <>pinch of mineral salt</>,
+        <>1/4 cup unsweetened nut milk</>,
     ],
     Directions: (
         <>

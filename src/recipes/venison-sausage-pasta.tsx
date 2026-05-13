@@ -18,26 +18,46 @@ const recipe: Recipe = {
             </>,
         ],
     },
+    ingredients: [
+        'Venison Sausages',
+        'Extra Virgin Olive Oil',
+        'Onions',
+        'Minced Garlic',
+        'Canned Diced Tomatoes',
+        ['Balsamic Vinegar', 'Sugar Free Balsamic Vinegar'],
+        'Red Pepper Flakes',
+        'Kalamata Olives',
+        'Basil',
+        'Oregano',
+        ['?Salt', '?Mineral Salt', '?Sea Salt'],
+        ['?Pepper'],
+        ['Pasta', 'Zucchini Noodles'],
+    ],
     Ingredients: [
-    <>4 large venison sausages</>,
-    <>3 Tbsp. extra virgin olive oil </>,
-    <>1 onion, diced </>,
-    <>1 Tbsp. minced garlic </>,
-    <>2 (14oz) cans of diced tomatoes </>,
-    <>1 Tbsp. balsamic vinegar</>,
-    <>Pinch of red pepper flakes (or more if you're a spicy mama)</>,
-    <>1/2 cup kalamata olives, seeded and chopped </>,
-    <>1 Tbsp. basil </>,
-    <>1 Tbsp. oregano </>,
-    <>Salt and pepper to taste </>,
-    <>1 package of <b>Dreamfields</b> pasta or 6 cups of zucchini noodles </>,
-],
+        <>4 large venison sausages</>,
+        <>3 Tbsp. extra virgin olive oil </>,
+        <>1 onion, diced </>,
+        <>1 Tbsp. minced garlic </>,
+        <>2 (14oz) cans of diced tomatoes </>,
+        <>1 Tbsp. balsamic vinegar</>,
+        <>Pinch of red pepper flakes (or more if you're a spicy mama)</>,
+        <>1/2 cup kalamata olives, seeded and chopped </>,
+        <>1 Tbsp. basil </>,
+        <>1 Tbsp. oregano </>,
+        <>Salt and pepper to taste </>,
+        <>
+            1 package of <b>Dreamfields</b> pasta or 6 cups of zucchini noodles{' '}
+        </>,
+    ],
 
     Directions: (
         <>
             <p>Heat olive oil in a skillet, add sausages and brown evenly (approx. 6 minutes). </p>
             <p>Add diced onion and cook until translucent.</p>
-            <p>Add remaining ingredients (minus the noodles) and cook until sausages reach an internal temperature of 152&deg; F (or higher). </p>
+            <p>
+                Add remaining ingredients (minus the noodles) and cook until sausages reach an internal temperature of 152&deg; F (or
+                higher).{' '}
+            </p>
             <p>Serve sausage and sauce over a bed of delicious noodles. Enjoy! </p>
         </>
     ),

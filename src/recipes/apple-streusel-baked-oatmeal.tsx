@@ -29,7 +29,7 @@ const recipe: Recipe = {
         'Coconut Oil',
         ['Whey Protein', 'THM Creamy Dreamy Hemp Protein'],
         ['Vanilla Extract', 'Caramel Extract'],
-        'Apple',
+        'Apples',
         'Coconut Oil',
         'THM Baking Blend',
     ],
@@ -37,17 +37,17 @@ const recipe: Recipe = {
         <IngredientList
             title='Base'
             Ingredients={[
-                '1/2 cup of unsweetened applesauce',
-                '2 cups Old Fashioned Oats',
-                '1/2 cup unsweetened nut milk',
-                '1/2 cup egg whites',
+                <>1/2 cup of unsweetened applesauce</>,
+                <>2 cups Old Fashioned Oats</>,
+                <>1/2 cup unsweetened nut milk</>,
+                <>1/2 cup egg whites</>,
                 <>3/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)</>,
-                '1 tsp cinnamon',
-                '1 tsp baking soda',
-                '1 Tbsp coconut oil',
+                <>1 tsp cinnamon</>,
+                <>1 tsp baking soda</>,
+                <>1 Tbsp coconut oil</>,
                 <>4 Tbsp Whey Protein or <AffiliateLink>THM Creamy Dreamy Hemp Protein</AffiliateLink></>,
-                '1 tsp of vanilla or caramel extract',
-                '1/2 medium apple, diced',
+                <>1 tsp of vanilla or caramel extract</>,
+                <>1/2 medium apple, diced</>,
             ]}
         />,
         <IngredientList

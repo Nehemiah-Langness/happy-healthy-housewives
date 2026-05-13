@@ -15,11 +15,12 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: ['Dry Red Wine', 'Cinnamon Sticks', 'Ground Nutmeg', 'Ground Clove', 'THM Gentle Sweet'],
     Ingredients: [
-        '1 bottle of dry red wine',
-        '3-4 Cinnamon sticks',
-        '1/2 tsp of ground nutmeg',
-        '1/4 tsp of ground clove',
+        <>1 bottle of dry red wine</>,
+        <>3-4 Cinnamon sticks</>,
+        <>1/2 tsp of ground nutmeg</>,
+        <>1/4 tsp of ground clove</>,
         <>
             1/4-1/2 cup of <AffiliateLink>THM Gentle Sweet</AffiliateLink>
         </>,

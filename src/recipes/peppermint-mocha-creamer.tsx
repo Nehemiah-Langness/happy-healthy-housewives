@@ -20,6 +20,12 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: [
+        'Half and Half',
+        'Cocoa Powder',
+        'Peppermint Extract',
+        'THM Gentle Sweet'
+    ],
     Ingredients: [
         <>
             1 half gallon of half and half (or equal amounts of nut milk for <AcronymToggle>DF</AcronymToggle> or{' '}

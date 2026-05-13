@@ -23,6 +23,17 @@ const recipe: Recipe = {
         ],
     },
     servings: '8 cups',
+    ingredients: [
+        'Canned Diced Tomatoes',
+        'Canned Diced Tomatoes with Green Chilies',
+        'Onions',
+        ['Garlic Clove', 'Minced Garlic'],
+        ['Mineral Salt', 'Salt'],
+        'Black Pepper',
+        ['Lime Juice', 'Limes'],
+        'Cilantro'
+
+    ],
     Ingredients: [
         <>1 (28oz) can of diced tomatoes</>,
         <>2 (10oz) can of diced tomatoes and green chilies (we prefer Rotel Original)</>,

@@ -11,6 +11,16 @@ const recipe: Recipe = {
     file: 'TunaPastaSalad.pdf',
     quote: [],
     servings: '6-8 Servings',
+    ingredients: [
+        ['Elbow Noodles', 'Pasta'],
+        'Canned Tuna',
+        'Green Bell Peppers',
+        'Celery',
+        'Onions',
+        ['Mineral Salt', 'Salt'],
+        'Black Pepper',
+        'Mayonnaise'
+    ],
     Ingredients: [
         <>
             One box of Dreamfields Elbow noodles

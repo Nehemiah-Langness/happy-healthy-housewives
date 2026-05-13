@@ -2,6 +2,7 @@ import { IngredientList } from '../components/IngredientList';
 import type { Recipe } from '../types/recipe';
 import { AffiliateLink } from '../components/AffiliateLink';
 import { LinkToRecipe } from '../components/LinkToRecipe';
+import { Optional } from '../components/Optional';
 
 const recipe: Recipe = {
     title: 'Superfood Oatmeal',
@@ -21,6 +22,20 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: [
+        'Old Fashioned Oats',
+        'Quick Cook Steel Cut Oats',
+        'Stevia',
+        'Ground Flaxseed',
+        'Psyllium Flakes',
+        'Baobab Powder',
+        '?THM Creamy Dreamy Hemp Protein',
+        'Frozen Cauliflower Rice',
+        'Egg Whites',
+        'Gelatin',
+        ['Mineral Salt', 'Salt'],
+        'THM Gentle Sweet',
+    ],
     Ingredients: [
         <>1/8 &ndash; 1/4 c. old fashioned oats</>,
         <>1/8 &ndash; 1/4 c. quick cook steel cut oats</>,
@@ -31,7 +46,7 @@ const recipe: Recipe = {
         <>1 &ndash; 2 tsp. whole husk psyllium flakes</>,
         <>1 tsp. baobab powder</>,
         <>
-            1 tsp. <AffiliateLink>THM Creamy Dreamy Hemp Protein</AffiliateLink> (optional)
+            1 tsp. <AffiliateLink>THM Creamy Dreamy Hemp Protein</AffiliateLink> <Optional />
         </>,
         <>1/4 c. frozen cauliflower rice</>,
         <>1/4 c. egg whites (boxed is best)</>,

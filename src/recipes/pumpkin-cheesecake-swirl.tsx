@@ -24,6 +24,25 @@ const recipe: Recipe = {
         ],
     },
     servings: '2 pies for multiple servings',
+    ingredients: [
+        ['Pumpkin', 'Pumpkin Puree'],
+        'Eggs',
+        ['Butter', 'Coconut Oil'],
+        'THM Baking Blend',
+        'THM Gentle Sweet',
+        'Stevia',
+        'Vanilla Extract',
+        'Baking Powder',
+        ['Mineral Salt', 'Salt'],
+        ['Pumpkin Pie Spice', 'Ground Clove'],
+        ['Pumpkin Pie Spice', 'Cinnamon'],
+        ['Pumpkin Pie Spice', 'Ground Ginger'],
+        ['Pumpkin Pie Spice', 'Ground Nutmeg'],
+        'Glucomannan Powder',
+        'Cream Cheese',
+        'Caramel Extract',
+        'Unsweetened Nut Milk',
+    ],
     Ingredients: [
         <IngredientList
             title='Cake'
@@ -87,8 +106,14 @@ const recipe: Recipe = {
     ),
     Notes: (
         <>
-            <p>You can use any <AcronymToggle>DF</AcronymToggle> sub for the cream cheese. I particularly like the Kite Hill brand, as their ingredients are the best you'll find.</p>
-            <p>I had to split this recipe between two pie dishes, as mine are rather small. If your pie dish is larger, you can use just one!</p>
+            <p>
+                You can use any <AcronymToggle>DF</AcronymToggle> sub for the cream cheese. I particularly like the Kite Hill brand, as
+                their ingredients are the best you'll find.
+            </p>
+            <p>
+                I had to split this recipe between two pie dishes, as mine are rather small. If your pie dish is larger, you can use just
+                one!
+            </p>
         </>
     ),
 };

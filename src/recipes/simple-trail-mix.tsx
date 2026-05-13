@@ -15,6 +15,11 @@ const recipe: Recipe = {
     },
     servings: '',
     servingSize: '',
+    ingredients: [
+        'Mixed Nuts',
+        'Salted Caramel Chips',
+        ['Dried Blueberries', 'Dried Berries']
+    ],
     Ingredients: [
         <>1 container of mixed nuts</>,
         <>1 package of Lily's Salted Caramel Chips</>,

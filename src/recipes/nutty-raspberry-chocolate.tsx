@@ -31,6 +31,15 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: [
+        'Bakers Chocolate',
+        'Coconut Manna',
+        ['THM Super Sweet', 'Pyure'],
+        'Vanilla Extract',
+        'Dried Raspberries',
+        'Raw Pistachios',
+        'Almond Slivers',
+    ],
     Ingredients: [
         <>4oz bakers chocolate</>,
         <>6 Tbsps coconut manna</>,

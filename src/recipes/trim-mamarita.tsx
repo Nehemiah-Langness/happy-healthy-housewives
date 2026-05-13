@@ -25,12 +25,13 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: ['Tequila', 'Lime Juice', 'Orange Bitters', 'Stevia'],
     Ingredients: [
-        '1-2 fl oz Tequila',
-        '2 fl oz lime juice',
-        '5 drops of orange bitters',
-        '1-2 doonks (1/32 tsp) pure stevia',
-        '1 cup ice cubes (or 1/2 cup water for on the rocks)',
+        <>1-2 fl oz Tequila</>,
+        <>2 fl oz lime juice</>,
+        <>5 drops of orange bitters</>,
+        <>1-2 doonks (1/32 tsp) pure stevia</>,
+        <>1 cup ice cubes (or 1/2 cup water for on the rocks)</>,
     ],
     Directions: (
         <>
@@ -50,7 +51,7 @@ const recipe: Recipe = {
         </>
     ),
     redirects: ['mamaritas'],
-    similar: ['trim-sangarita']
+    similar: ['trim-sangarita'],
 };
 
 export default recipe;

@@ -28,6 +28,17 @@ const recipe: Recipe = {
         ],
     },
     servings: '12 servings',
+    ingredients: [
+        ['Chocolate Cake', 'Chocolate Brownies'],
+        'Frozen Strawberries',
+        ['Lemons', 'Lemon Juice'],
+        'THM Gentle Sweet',
+        'Baobab Powder',
+        'Gelatin',
+        'Cream Cheese',
+        'Vanilla Extract',
+        'Nut Milk',
+    ],
     Ingredients: [
         <IngredientList
             title='Chocolate cake (Sin Layer)'
@@ -41,19 +52,27 @@ const recipe: Recipe = {
                 </>,
             ]}
         />,
-        <IngredientList title="Strawberry Jelly (Christ's Blood Layer)" 
+        <IngredientList
+            title="Strawberry Jelly (Christ's Blood Layer)"
             Ingredients={[
                 <>2 cups frozen strawberries</>,
                 <>2 tsp lemon juice</>,
-                <>3 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)</>,
+                <>
+                    3 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
+                </>,
                 <>2 tsp baobab powder</>,
                 <>2 Tbsp gelatin</>,
             ]}
         />,
-        <IngredientList title='Cream cheese frosting (White as Snow layer)' 
+        <IngredientList
+            title='Cream cheese frosting (White as Snow layer)'
             Ingredients={[
-                <>1 block of softened cream cheese (can use <b>KiteHill</b> brand for <AcronymToggle>DF</AcronymToggle>)</>,
-                <>3 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)</>,
+                <>
+                    1 block of softened cream cheese (can use <b>KiteHill</b> brand for <AcronymToggle>DF</AcronymToggle>)
+                </>,
+                <>
+                    3 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
+                </>,
                 <>1 tsp Vanilla Extract</>,
                 <>4 Tbsp Nut Milk of choice</>,
             ]}

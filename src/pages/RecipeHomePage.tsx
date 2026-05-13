@@ -72,29 +72,25 @@ export function RecipeHomePage() {
                             .toLowerCase()
                             .replace(/['".-]/g, '')
                             .indexOf(currentTerms);
-                        if (hasMatch < 0) return '';
 
-                        const newString = x.substring(
-                            hasMatch +
-                                words
-                                    .slice(0, -1)
-                                    .filter((x) => x)
-                                    .join(' ').length
-                        );
+                        if (hasMatch < 0 || x === filter || filter.startsWith(x)) return '';
 
-                        if (newString[0] !== ' ') return '';
-                        return newString.split(' ').filter((x) => x)[0];
+                        return x;
                     }
                 })
                 .filter((x) => x)
-                .flatMap((x) =>
-                    x.split(' ').map((y) => ({
-                        search: y.toLowerCase().replace(/['".-]/g, ''),
-                        text: y,
-                    }))
-                )
+                .map((y) => ({
+                    search: y.toLowerCase().replace(/['".-]/g, ''),
+                    text: y,
+                }))
+                // .flatMap((x) =>
+                //     x.split(' ').map((y) => ({
+                //         search: y.toLowerCase().replace(/['".-]/g, ''),
+                //         text: y,
+                //     }))
+                // )
                 .filter((x) => {
-                    return x.search.startsWith(filterTerm) && x.text !== lastWord;
+                    return x.search.includes(filterTerm) && x.text !== lastWord;
                 })
                 .reduce((c, n) => {
                     c.add(n.text);
@@ -136,7 +132,7 @@ export function RecipeHomePage() {
                                 if (e.code === 'Tab' || e.code === 'Enter') {
                                     if (suggestions[suggestionIndex]) {
                                         e.preventDefault();
-                                        setFilter((f) => f.split(' ').slice(0, -1).concat(suggestions[suggestionIndex]).join(' '));
+                                        setFilter(suggestions[suggestionIndex].trim());
                                     }
                                 }
                                 if (e.code === 'ArrowUp') {

@@ -23,6 +23,20 @@ const recipe: Recipe = {
         ],
     },
     servings: '12 large muffins',
+    ingredients: [
+        'Sourdough Discard',
+        'Whole Wheat Flour',
+        'Eggs',
+        ['Mineral Salt', 'Salt'],
+        'Baking Powder',
+        'Baking Soda',
+        'THM Gentle Sweet',
+        '1/3-fat Cream Cheese',
+        'Onions',
+        'Canned Chicken',
+        'Black Pepper',
+        'Onion Powder',
+    ],
     Ingredients: [
         <IngredientList
             title='Muffins'

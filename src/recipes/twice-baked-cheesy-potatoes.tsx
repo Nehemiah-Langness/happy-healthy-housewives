@@ -1,5 +1,6 @@
 import { AcronymToggle } from '../components/AcronymToggle';
 import { AffiliateLink } from '../components/AffiliateLink';
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -19,18 +20,30 @@ const recipe: Recipe = {
             </>
         ),
     },
+    ingredients: [
+        'Gold Yukon Potatoes',
+        'Low-fat Cottage Cheese',
+        'Plain Non-fat Greek Yogurt',
+        'Butter',
+        ['Sea Salt', 'Mineral Salt', 'Salt'],
+        'Pepper',
+        'Garlic Powder',
+        'Onion Powder',
+        'Low-skim Mozzarella',
+        ['?Turkey Bacon', '?Chicken Breasts'],
+    ],
     Ingredients: [
-        '8 Gold Yukon Potatoes',
-        '1 cup low fat cottage cheese',
-        '1/2 cup non-fat Greek yogurt',
-        '2 TBS butter',
-        '1/4 cup water',
-        '2 tsp salt',
-        '2 tsp pepper',
-        '2 tsp garlic powder',
-        '2 tsp onion powder',
-        '1/2 cup - split of low skim mozzarella',
-        'Optional add ins: cooked and diced turkey bacon or grilled chicken breasts',
+        <>8 Gold Yukon Potatoes</>,
+        <>1 cup low fat cottage cheese</>,
+        <>1/2 cup non-fat Greek yogurt</>,
+        <>2 TBS butter</>,
+        <>1/4 cup water</>,
+        <>2 tsp salt</>,
+        <>2 tsp pepper</>,
+        <>2 tsp garlic powder</>,
+        <>2 tsp onion powder</>,
+        <>1/2 cup - split of low skim mozzarella</>,
+        <>Cooked and diced turkey bacon or grilled chicken breasts <Optional reason='Optional add-ins'/></>,
     ],
     Directions: (
         <>
@@ -48,9 +61,7 @@ const recipe: Recipe = {
             <p>Serve warm and enjoy!</p>
         </>
     ),
-    redirects: [
-        'twice-baked-cheesy-potatoes-thm-e'
-    ]
+    redirects: ['twice-baked-cheesy-potatoes-thm-e'],
 };
 
 export default recipe;

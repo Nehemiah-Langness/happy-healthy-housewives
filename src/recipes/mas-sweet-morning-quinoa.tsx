@@ -14,6 +14,23 @@ const recipe: Recipe = {
     file: 'MasSweetMorningQuinoa.pdf',
     quote: [],
     servings: 'Single Serving',
+    ingredients: [
+        'Quinoa',
+        ['Sea Salt', 'Mineral Salt', 'Salt'],
+        ['Frozen Cranberries', 'Cranberries'],
+        ['Frozen Blueberries'],
+        'Nut Milk',
+        'Egg Whites',
+        ['?Butter Extract', '?Maple Extract'],
+        'Baobab Powder',
+        'Psyllium Flakes',
+        'Ground Flaxseed',
+        'THM Duo Greens',
+        'Cauliflower',
+        'Cinnamon',
+        'THM Gentle Sweet',
+        ['MCT Oil', 'Butter', 'Ghee']
+    ],
     Ingredients: [
         <IngredientList
             title='Dry Ingredients'

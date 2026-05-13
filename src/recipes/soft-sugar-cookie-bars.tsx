@@ -1,6 +1,7 @@
 import { AcronymToggle } from '../components/AcronymToggle';
 import { AffiliateLink } from '../components/AffiliateLink';
 import { IngredientList } from '../components/IngredientList';
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -33,6 +34,16 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Approximately 12 cookie squares',
+    ingredients: [
+        'THM Baking Blend',
+        ['Mineral Salt', 'Salt'],
+        'Baking Powder',
+        ['Butter', 'Vegan Butter'],
+        ['THM Gentle Sweet', 'Pyure'],
+        'Eggs',
+        'Vanilla Extract',
+        ['Heavy Cream', 'Coconut Cream'],
+    ],
     Ingredients: [
         <IngredientList
             title='Cookie Crust'
@@ -66,7 +77,9 @@ const recipe: Recipe = {
                 <>
                     1 Tbsp heavy whipping cream (or coconut cream for <AcronymToggle>DF</AcronymToggle>)
                 </>,
-                <>All natural food coloring (optional)</>,
+                <>
+                    All natural food coloring <Optional />
+                </>,
             ]}
         />,
     ],
@@ -77,7 +90,8 @@ const recipe: Recipe = {
             <p>Cream together butter and sweetener until light and fluffy. Beat in the egg and vanilla extract.</p>
             <p>Combine dry and wet ingredients, mix well.</p>
             <p>
-                Press cookie batter into the bottom of the pan until evenly spread and flat. Bake for 22 minutes (or until golden brown).{' '}
+                Press cookie batter into the bottom of the pan until evenly spread and flat. Bake for 22 minutes (or until golden
+                brown).{' '}
             </p>
             <p>Cool on a wire rack, making sure they are cooled completely before applying the frosting.</p>
             <p>

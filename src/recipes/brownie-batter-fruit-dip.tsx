@@ -29,15 +29,15 @@ const recipe: Recipe = {
         <>
             1/2 cup of low-fat Greek yogurt (or a <LinkToRecipe recipe='dairy-free-yogurt'>dairy free yogurt</LinkToRecipe>)
         </>,
-        '1/2 Tbsp of Cocoa Powder',
+        <>1/2 Tbsp of Cocoa Powder</>,
         <>
             1 tsp <AffiliateLink>THM Super Sweet</AffiliateLink> (or more to taste)
         </>,
-        '1/4 tsp vanilla extract',
+        <>1/4 tsp vanilla extract</>,
         <>
             1/4 tsp Cake Batter extract <Optional reason='optional, but gives a much better taste' />
         </>,
-        '1 pinch mineral salt',
+        <>1 pinch mineral salt</>,
     ],
     IngredientNotes: (
         <>

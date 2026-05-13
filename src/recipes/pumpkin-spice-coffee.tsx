@@ -18,6 +18,13 @@ const recipe: Recipe = {
         ],
     },
     servings: 'One 12 Cup Pot',
+    ingredients: [
+        ['Pumpkin Pie Spice', 'Ground Clove'],
+        ['Pumpkin Pie Spice', 'Cinnamon'],
+        ['Pumpkin Pie Spice', 'Ground Ginger'],
+        ['Pumpkin Pie Spice', 'Ground Nutmeg'],
+        'Coffee'
+    ],
     Ingredients: [<>12 TBS of coffee grounds</>, <>2 TBS of Pumpkin Pie Spice </>],
     Directions: (
         <>

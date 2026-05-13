@@ -20,6 +20,16 @@ const recipe: Recipe = {
         ],
     },
     servings: '1 Serving',
+    ingredients: [
+        'Old Fashioned Oats',
+        ['Unsweetened Nut Milk', 'Unsweetened Vanilla Nut Milk'],
+        'Peaches',
+        'Psyllium Flakes',
+        'Baobab Powder',
+        'Whey Protein',
+        ['Mineral Salt', 'Salt'],
+        ['THM Gentle Sweet', 'Truvia'],
+    ],
     Ingredients: [
         <>1/2 cup of old fashioned oats</>,
         <>
@@ -38,7 +48,6 @@ const recipe: Recipe = {
             1 TBS <AffiliateLink>THM Gentle Sweet</AffiliateLink> (or Truvia)
         </>,
     ],
-
     Directions: (
         <>
             <p>In a small sauce pan combine oats, psyllium flakes, almond milk, and baobab.</p>

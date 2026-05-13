@@ -26,6 +26,14 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: [
+        ['Nut Milk', 'Nut Milk Ice Cubes'],
+        'Coconut Cream',
+        'Dairy Free Yogurt',
+        'Stevia',
+        'Vanilla Extract',
+        ['Mineral Salt', 'Salt'],
+    ],
     Ingredients: [
         <>1 cup of nut milk ice cubes</>,
         <>1 Tbsp coconut cream</>,

@@ -1,6 +1,7 @@
 import { AcronymToggle } from '../components/AcronymToggle';
 import { AffiliateLink } from '../components/AffiliateLink';
 import { LinkToRecipe } from '../components/LinkToRecipe';
+import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
@@ -21,6 +22,18 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Single Serving',
+    ingredients: [
+        ['Plain Non-fat Greek Yogurt', 'Dairy Free Yogurt'],
+        'THM Super Sweet',
+        'Chai Seeds',
+        'Ground Flaxseed',
+        'Unsweetened Coconut Flakes',
+        'Baobab Powder',
+        'Sunflower Lecithin',
+        'Coconut Extract',
+        ['Frozen Blueberries', 'Blueberries'],
+        ['Mineral Salt', 'Salt'],
+    ],
     Ingredients: [
         <>
             1/2 cup of Plain Nonfat Greek Yogurt (or <LinkToRecipe recipe='dairy-free-yogurt'>Dairy Free Yogurt</LinkToRecipe>)
@@ -37,7 +50,7 @@ const recipe: Recipe = {
         <>1/4 cup frozen blueberries</>,
         <>2 pinches of mineral salt</>,
         <>
-            1 Tbsp old fashioned oats (optional, this low amount will keep the fuel type in <AcronymToggle>S</AcronymToggle> mode)
+            1 Tbsp old fashioned oats <Optional>(Optional, this low amount will keep the fuel type in <AcronymToggle>S</AcronymToggle> mode)</Optional>
         </>,
     ],
     Directions: (

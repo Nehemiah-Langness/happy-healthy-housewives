@@ -1,7 +1,8 @@
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
-    title: "",
+    title: '',
+    titleAlt: '',
     tags: [],
     dateAdded: new Date('2025-05-15'),
     brief: ``,
@@ -9,15 +10,12 @@ const recipe: Recipe = {
     file: '',
     quote: {
         person: '',
-        Quote: [
-            <></>,
-        ],
+        Quote: [<></>],
     },
     servings: '',
     servingSize: '',
-    Ingredients: [
-        <></>,
-    ],
+    ingredients: [],
+    Ingredients: [<></>],
     IngredientNotes: (
         <>
             <b></b>
@@ -33,6 +31,8 @@ const recipe: Recipe = {
             <p></p>
         </>
     ),
+    similar: [],
+    redirects: [],
 };
 
 export default recipe;

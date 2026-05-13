@@ -31,6 +31,12 @@ const recipe: Recipe = {
         },
     ],
     servings: '6-8 servings',
+    ingredients: [
+        ['Ground Beef', 'Ground Lamb'],
+        'Garlic Clove',
+        'Onions',
+        ['Frozen Peas/Carrots', 'Frozen Greenbeans', 'Peas', 'Carrots', 'Greenbeans']
+    ],
     Ingredients: [
         <IngredientList
             title='Base'

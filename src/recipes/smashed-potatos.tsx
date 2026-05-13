@@ -17,8 +17,12 @@ const recipe: Recipe = {
         ],
     },
     servings: '6 servings',
-    Ingredients: ['24 small yellow potatoes (think bite sized)', 'Olive oil', 'Salt and pepper to taste'],
-
+    ingredients: ['Small Yellow Potatoes', 'Olive Oil', ['?Mineral Salt', '?Salt', '?Sea Salt'], '?Pepper'],
+    Ingredients: [
+        <>24 small yellow potatoes (think bite sized)</>, 
+        <>Olive oil</>, 
+        <>Salt and pepper to taste</>
+    ],
     Directions: (
         <>
             <p>Fill a pot with water and bring to a boil. Add potatoes and salt to the water and boil for 10 minutes.</p>

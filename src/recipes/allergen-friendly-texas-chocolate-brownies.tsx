@@ -6,7 +6,6 @@ import { Optional } from '../components/Optional';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
-
     title: 'Allergen Friendly Texas Chocolate Brownies',
     tags: ['THM S', 'Keto Friendly', 'GF', 'DF', 'Nut Free Option', 'Egg Free', 'Apple Free'],
     dateAdded: new Date('2025-05-19'),
@@ -34,7 +33,7 @@ const recipe: Recipe = {
         'Cocoa Powder',
         'Baking Powder',
         'Mineral Salt',
-        ['Unsweetened Milk', 'Unsweetened Nut Milk', 'Almond Milk', 'Cashew Milk', 'Coconut Milk', 'Flax Milk'],
+        ['Unsweetened Nut Milk', 'Almond Milk', 'Cashew Milk', 'Coconut Milk', 'Flax Milk'],
         ['Apple Cider Vinegar', 'White Vinegar'],
         'Vanilla Extract',
         'Yogurt',
@@ -55,19 +54,19 @@ const recipe: Recipe = {
                     <ExternalLink to='https://www.briana-thomas.com/brianas-baking-mix/'>Briana Thomas Baking Mix</ExternalLink> (for Nut
                     Free)
                 </>,
-                '1/2 cup Erythritol',
-                '1/2 cup cocoa powder (Dutch pressed is best)',
-                '1 1/2 tsp baking powder',
-                '1/4 tsp mineral salt',
+                <>1/2 cup Erythritol</>,
+                <>1/2 cup cocoa powder (Dutch pressed is best)</>,
+                <>1 1/2 tsp baking powder</>,
+                <>1/4 tsp mineral salt</>,
                 <>
                     1 1/2 cup unsweetened milk of choice <Optional reason='See Notes' />
                 </>,
-                '1/2 tsp apple cider vinegar or white vinegar',
-                '1/2 tsp vanilla extract',
+                <>1/2 tsp apple cider vinegar or white vinegar</>,
+                <>1/2 tsp vanilla extract</>,
                 <>
                     2 Tbsp yogurt (my <LinkToRecipe recipe='dairy-free-yogurt'>Dairy Free Yogurt</LinkToRecipe> works great!)
                 </>,
-                '1/4 cup measured, then melted coconut oil',
+                <>1/4 cup measured, then melted coconut oil</>,
             ]}
         />,
         <IngredientList

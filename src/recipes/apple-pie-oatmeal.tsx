@@ -23,7 +23,7 @@ const recipe: Recipe = {
     },
     servings: 'Single Serving',
     ingredients: [
-        'Apple',
+        'Apples',
         'Cinnamon',
         'THM Gentle Sweet',
         'Old Fashioned Oats',

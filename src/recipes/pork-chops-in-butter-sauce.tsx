@@ -19,6 +19,20 @@ const recipe: Recipe = {
         ],
     },
     servings: '4 servings',
+    ingredients: [
+        'Pork Chops',
+        ['Mineral Salt', 'Salt'],
+        'Black Pepper',
+        'Italian Seasoning',
+        'Onion Powder',
+        'Asparagus',
+        ['Butter', 'Coconut Oil'],
+        'Minced Garlic',
+        'Chicken Broth',
+        'Almond Milk',
+        'Glucomannan Powder',
+        'Lemon Juice',
+    ],
     Ingredients: [
         <IngredientList
             title='Pork'

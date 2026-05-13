@@ -2,7 +2,7 @@ import { AffiliateLink } from '../components/AffiliateLink';
 import type { Recipe } from '../types/recipe';
 
 const recipe: Recipe = {
-    title: "Walnut Snowballs",
+    title: 'Walnut Snowballs',
     tags: ['THM XO', 'DF Option'],
     dateAdded: new Date('2025-05-22'),
     brief: `These little things are crazy addictive but still a healthy choice for you and your family. The perfect treat after a snowball fight!`,
@@ -10,13 +10,26 @@ const recipe: Recipe = {
     quote: {
         person: 'Brianna',
         Quote: [
-            <>My mother in law makes these wonderful little crunchy balls of goodness every year. My whole family loves them! Now we can all enjoy them while also blessing our waistline and blood sugar. Be careful, these little guys are addictive!</>,
+            <>
+                My mother in law makes these wonderful little crunchy balls of goodness every year. My whole family loves them! Now we can
+                all enjoy them while also blessing our waistline and blood sugar. Be careful, these little guys are addictive!
+            </>,
         ],
     },
     servings: '32 snowballs',
+    ingredients: [
+        'Butter',
+        'THM Gentle Sweet',
+        'Vanilla Extract',
+        'Sprouted Flour',
+        ['Chopped Walnuts', 'Walnuts'],
+        'Semi-Sweet Chocolate Chips',
+    ],
     Ingredients: [
         <>3/4 cups of butter, softened (may use plant based butter)</>,
-        <>1/3 cup of <AffiliateLink>THM Gentle Sweet</AffiliateLink></>,
+        <>
+            1/3 cup of <AffiliateLink>THM Gentle Sweet</AffiliateLink>
+        </>,
         <>3 Tbsp of water</>,
         <>1 tsp of vanilla extract</>,
         <>1 and 3/4 cup Sprouted Flour</>,

@@ -28,19 +28,19 @@ const recipe: Recipe = {
         'Instant Coffee',
     ],
     Ingredients: [
-        '4 oz food grade cocoa butter',
-        '4 oz coconut manna (or coconut butter)',
+        <>4 oz food grade cocoa butter</>,
+        <>4 oz coconut manna (or coconut butter)</>,
         <>
             4 Tbsp <AffiliateLink>THM Gentle Sweet</AffiliateLink>
         </>,
-        '1 tsp vanilla extract',
+        <>1 tsp vanilla extract</>,
         <>
             Batch of{' '}
             <ExternalLink to='https://mymontanakitchen.com/2-ingredient-dairy-free-sweetened-condensed-milk-thm-s-sugar-free-low-carb/'>
                 My Montana Kitchen's sweetened condensed milk
             </ExternalLink>
         </>,
-        '1 1/2 Tbsp instant coffee',
+        <>1 1/2 Tbsp instant coffee</>,
     ],
     Directions: (
         <>

@@ -98,9 +98,9 @@ export function RecipePage() {
                         </a>
                     )}
                 </div>
-                <small className='text-muted ps-2'>
+                {<small className='text-muted ps-2'>
                     *You can select "Save to a PDF" in your print settings to save this recipe as a PDF
-                </small>
+                </small>}
             </div>
 
             {!!matchingRecipe.servings && (

@@ -31,28 +31,41 @@ const recipe: Recipe = {
         },
     ],
     servingSize: '2 Slices',
+    ingredients: [
+        'Inactive Sourdough Starter',
+        'White Whole Wheat Flour',
+        'Unsweetened Nut Milk',
+        'Baking Powder',
+        'Baking Soda',
+        ['Greek Yogurt', 'Almond Yogurt'],
+        'Orange Extract',
+        ['Egg Whites', 'Liquid Eggs'],
+        ['THM Gentle Sweet', 'Truvia'],
+        ['Mineral Salt', 'Sea Salt', 'Salt'],
+        ['Oranges', 'Orange Zest'],
+    ],
     Ingredients: [
         <IngredientList
             title='Loaf'
             Ingredients={[
-                '1/2 cup of inactive starter',
-                '2 1/2 cups of white whole wheat flour',
-                '1 cup of unsweetened nut milk',
-                '2 tsp Baking Powder',
-                '1/4 tsp Baking Soda',
+                <>1/2 cup of inactive starter</>,
+                <>2 1/2 cups of white whole wheat flour</>,
+                <>1 cup of unsweetened nut milk</>,
+                <>2 tsp Baking Powder</>,
+                <>1/4 tsp Baking Soda</>,
                 <>
                     3/4 cup of 0% Greek Yogurt (or almond yogurt for a <b>DF</b> option)
                 </>,
-                '1 tsp Orange Extract',
-                '2 egg whites or 1/4 cup of liquid egg whites',
-                '1/2 cup Gentle Sweet (or Truvia)',
-                '1/4 tsp of Salt',
-                'Zest of 1 small orange',
+                <>1 tsp Orange Extract</>,
+                <>2 egg whites or 1/4 cup of liquid egg whites</>,
+                <>1/2 cup Gentle Sweet (or Truvia)</>,
+                <>1/4 tsp of Salt</>,
+                <>Zest of 1 small orange</>,
             ]}
         />,
         <IngredientList
             title='Glaze'
-            Ingredients={['3 Tbs Gentle Sweet (or Truvia)', 'Juice of the zested orange', '2 tsp unsweetened nut milk']}
+            Ingredients={[<>3 Tbs Gentle Sweet (or Truvia)</>, <>Juice of the zested orange</>, <>2 tsp unsweetened nut milk</>]}
         />,
     ],
 

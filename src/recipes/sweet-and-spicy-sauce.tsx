@@ -27,17 +27,24 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple',
+    ingredients: [
+        ['Sugar-free Mayonnaise', 'Mayonnaise', 'Low-fat Greek Yogurt', 'Greek Yogurt', 'Dairy Free Yogurt'],
+        'Hot Sauce',
+        ['THM Super Sweet', 'Pyure'],
+        'Vanilla Extract',
+        ['Mineral Salt', 'Salt'],
+    ],
     Ingredients: [
-        <span>
+        <>
             1/2 cup Sugar Free Mayonnaise (Greek Yogurt or <LinkToRecipe recipe='dairy-free-yogurt'>Dairy Free Yogurt</LinkToRecipe> for{' '}
             <AcronymToggle>FP</AcronymToggle>)
-        </span>,
-        '1/4 cup Hot Sauce',
-        <span>
+        </>,
+        <>1/4 cup Hot Sauce</>,
+        <>
             1 1/2 tsp of <AffiliateLink>THM Super Sweet</AffiliateLink> (or <b>Pyure</b>)
-        </span>,
-        '1/2 tsp of Vanilla extract.',
-        '1 pinch mineral salt.',
+        </>,
+        <>1/2 tsp of Vanilla extract.</>,
+        <>1 pinch mineral salt.</>,
     ],
 
     Directions: (

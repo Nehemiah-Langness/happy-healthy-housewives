@@ -22,16 +22,26 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Multiple Servings',
+    ingredients: [
+        'Yellow Mustard',
+        ['Low-fat Greek Yogurt', 'Dairy Free Yogurt'],
+        'THM Super Sweet',
+        'Garlic Powder',
+        'Onion Powder',
+        ['Mineral Salt', 'Salt'],
+    ],
     Ingredients: [
-        '1/2 cup of Yellow Mustard',
+        <>1/2 cup of Yellow Mustard</>,
         <>
             4 TBS of Low Fat Greek Yogurt (or <LinkToRecipe recipe='dairy-free-yogurt'>Dairy Free Yogurt</LinkToRecipe> for{' '}
             <AcronymToggle>DF</AcronymToggle>)
         </>,
-        <>1 tsp of <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)</>,
-        '1/4  tsp of Garlic Powder',
-        '1/2 tsp of Onion Powder',
-        '2 pinches of salt',
+        <>
+            1 tsp of <AffiliateLink>THM Super Sweet</AffiliateLink> (or Pyure)
+        </>,
+        <>1/4  tsp of Garlic Powder</>,
+        <>1/2 tsp of Onion Powder</>,
+        <>2 pinches of salt</>,
     ],
 
     Directions: (

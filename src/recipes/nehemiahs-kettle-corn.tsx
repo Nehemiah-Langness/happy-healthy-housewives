@@ -18,13 +18,14 @@ const recipe: Recipe = {
         ],
     },
     servings: 'Approximately 6 servings',
+    ingredients: ['Popcorn', ['Butter', 'Coconut Oil'], 'THM Gentle Sweet', ['Mineral Salt', 'Salt']],
     Ingredients: [
-        '2/3 cup popcorn',
-        '1/2 Tbsp butter (or coconut oil) to not burn things',
+        <>2/3 cup popcorn</>,
+        <>1/2 Tbsp butter (or coconut oil) to not burn things</>,
         <>
             1/4 cup <AffiliateLink>THM Gentle Sweet</AffiliateLink>
         </>,
-        'Mineral salt for flavor',
+        <>Mineral salt for flavor</>,
     ],
 
     Directions: (
@@ -48,9 +49,7 @@ const recipe: Recipe = {
         </>
     ),
 
-    redirects: [
-        'nehemiahs-kettle-corn-2'
-    ]
+    redirects: ['nehemiahs-kettle-corn-2'],
 };
 
 export default recipe;
